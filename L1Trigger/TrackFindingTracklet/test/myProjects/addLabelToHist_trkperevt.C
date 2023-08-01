@@ -12,7 +12,7 @@ void SetPlotStyle(); // Sets plot style to some CMS thing I think idk Emily reco
 
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text);
 
-void addLabelToHist (){
+void addLabelToHist_trkperevt (){
     
     SetPlotStyle();
 
@@ -51,7 +51,7 @@ void addLabelToHist (){
     c.SaveAs(saveDir + "electron_trkperevt.pdf");
 
     TTbarHist->Draw(); 
-    sprintf(ctxt, "TTbar PU0=200");
+    sprintf(ctxt, "TTbar PU200");
     mySmallText(0.25, 0.76, 1, ctxt);    
     c.SaveAs(saveDir + "TTbar_trkperevt.pdf");
 
