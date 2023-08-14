@@ -1,8 +1,0 @@
-universe = vanilla
-arguments = "$(argument)"
-output = NtupleGridOutput/submit01.out
-error = NtupleGridOutput/submit01.err
-log = NtupleGridOutput/submit01.log
-+JobFlavour = "tomorrow"
-queue
-

@@ -1,0 +1,8 @@
+universe = vanilla
+arguments = "$(argument)"
+output = NtupleGridOutput/SingleElectronPU0D88_HYBRID/submit01.out
+error = NtupleGridOutput/SingleElectronPU0D88_HYBRID/submit01.err
+log = NtupleGridOutput/SingleElectronPU0D88_HYBRID/submit01.log
++JobFlavour = "tomorrow"
+queue
+

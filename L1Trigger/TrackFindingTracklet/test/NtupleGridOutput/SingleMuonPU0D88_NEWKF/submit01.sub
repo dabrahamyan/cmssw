@@ -1,0 +1,8 @@
+universe = vanilla
+arguments = "$(argument)"
+output = NtupleGridOutput/SingleMuonPU0D88_NEWKF/submit01.out
+error = NtupleGridOutput/SingleMuonPU0D88_NEWKF/submit01.err
+log = NtupleGridOutput/SingleMuonPU0D88_NEWKF/submit01.log
++JobFlavour = "tomorrow"
+queue
+
