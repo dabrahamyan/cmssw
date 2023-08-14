@@ -16,7 +16,6 @@ void addLabelToHist_trkperevt (){
     
     SetPlotStyle();
 
-  
 
     // Load in directory where the root files containing histograms are stored
     TString dir = "/eos/user/d/dabraham/L1NtupleTrackExamples/";
@@ -30,9 +29,13 @@ void addLabelToHist_trkperevt (){
     TFile *electronFile= new TFile(dir + "output_SingleElectronPU0D88.root");
     TH1F *electronHist= (TH1F*)electronFile->Get("ntrk_tot");
     
-    // TTbar
-    TFile *TTbarFile= new TFile(dir + "output_TTbar_PU200_D88.root");
-    TH1F *TTbarHist= (TH1F*)TTbarFile->Get("ntrk_tot");
+    // TTbar PU=200
+    TFile *TTbarPU200File= new TFile(dir + "output_TTbar_PU200_D88.root");
+    TH1F *TTbarPU200Hist= (TH1F*)TTbarPU200File->Get("ntrk_tot");
+
+    //TTbar PU=0
+    TFile *TTbarPU0File= new TFile(dir + "output_TTbar_PU0_D88.root");
+    TH1F *TTbarPU0Hist= (TH1F*)TTbarPU0File->Get("ntrk_tot");
 
     // Draw and Print Histograms to pdf
     TString saveDir = "plotPDFs/";
@@ -41,20 +44,24 @@ void addLabelToHist_trkperevt (){
     char ctxt[500];
 
     muonHist->Draw(); 
-    sprintf(ctxt, "Single Muon PU0");
+    sprintf(ctxt, "Single Muon PU=0");
     mySmallText(0.45, 0.76, 1, ctxt);    
     c.SaveAs(saveDir + "muon_trkperevt.pdf");
 
     electronHist->Draw(); 
-    sprintf(ctxt, "Single Electron PU0");
+    sprintf(ctxt, "Single Electron PU=0");
     mySmallText(0.45, 0.76, 1, ctxt);    
     c.SaveAs(saveDir + "electron_trkperevt.pdf");
 
-    TTbarHist->Draw(); 
-    sprintf(ctxt, "TTbar PU200");
+    TTbarPU200Hist->Draw(); 
+    sprintf(ctxt, "TTbar PU=200");
     mySmallText(0.25, 0.76, 1, ctxt);    
-    c.SaveAs(saveDir + "TTbar_trkperevt.pdf");
+    c.SaveAs(saveDir + "TTbarPU200_trkperevt.pdf");
 
+    TTbarPU0Hist->Draw(); 
+    sprintf(ctxt, "TTbar PU=0");
+    mySmallText(0.25, 0.76, 1, ctxt);    
+    c.SaveAs(saveDir + "TTbarPU0_trkperevt.pdf");
   
     // ---------------Debug code-----------------
     // muonEtaHist->Print("all");
