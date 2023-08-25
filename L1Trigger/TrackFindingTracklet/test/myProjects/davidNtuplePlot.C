@@ -5,7 +5,10 @@
 //
 // By Louise Skinnari, June 2013
 //
-// EDIT: David Abrahamyan added another histogram (h_ntrk) which is # of tracks/event. July 2023
+// EDIT: David Abrahamyan changed this to include more stuff. August 2023
+// for diff inJet # saving do:
+// .L davidNtuplePlot.C
+// davidNtuplePlot("TTbar_PU200_D88_HYBRID_noTrunc", "/eos/user/d/dabraham/L1NtupleTrackExamples/", "", 0)
 // ----------------------------------------------------------------------------------------------------------------
 
 #include "TROOT.h"
@@ -47,10 +50,10 @@ void makeResidualIntervalPlot(
 // Main script
 // ----------------------------------------------------------------------------------------------------------------
 
-void davidNtuplePlot(TString type = "TTbar_PU200_D88_NEWKF", //SingleMuon_PU0_D88  TTbar_PU0_D88  SingleElectronPU0D88
-                       TString type_dir = "/eos/user/d/dabraham/L1NtupleTrackExamples/",
-                       TString treeName = "",
-                       int TP_select_injet = 0,
+void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_D88  TTbar_PU0_D88  SingleElectronPU0D88
+                       TString type_dir,//  /eos/user/d/dabraham/L1NtupleTrackExamples/
+                       TString treeName,
+                       int TP_select_injet,
                        int TP_select_pdgid = 0,
                        int TP_select_eventid = 0,
                        bool useTightCuts = false,

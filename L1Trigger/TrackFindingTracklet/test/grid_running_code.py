@@ -1,20 +1,22 @@
-## change txt file (input files), output file, and version of NtupleMaker, and 
-
 import os
 import sys
 from itertools import islice
 
 ############## Things to Change ###################
-dataName = 'TTbarPU200D88_HYBRID' # what submit files and output files are named
+# dataName = 'TTbarPU200D88_HYBRID_fullTrunc' # what submit files and output files are named (no ".root")
+# filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
+# cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID_trkJets.py' # cfg file used to run each job
+
+dataName = 'TTbarPU200D88_NEWKF_fullTrunc' # what submit files and output files are named (no ".root")
 filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
-cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID.py' # cfg file used to run each job
+cfgFile = 'L1TrackNtupleMaker_cfg_grid_NEWKF_trkJets.py' # cfg file used to run each job
 ###################################################
 
 submit = 'universe = vanilla\n' ## writing .sub file
 submit += 'arguments = "$(argument)"\n'
-submit += 'output = NtupleGridOutput/' + dataName + '/submit01.out\n' # where to output outputs
-submit += 'error = NtupleGridOutput/' + dataName + '/submit01.err\n'
-submit += 'log = NtupleGridOutput/' + dataName + '/submit01.log\n'
+submit += 'output = NtupleGridOutput/' + dataName + '/submit$(ClusterId).out\n' # where to output outputs
+submit += 'error = NtupleGridOutput/' + dataName + '/submit$(ClusterId).err\n'
+submit += 'log = NtupleGridOutput/' + dataName + '/submit$(ClusterId).log\n'
 submit += '+JobFlavour = "tomorrow"\n' 
 submit += 'queue\n'
 submitName = 'NtupleGridOutput/' + dataName + '/submit01.sub'

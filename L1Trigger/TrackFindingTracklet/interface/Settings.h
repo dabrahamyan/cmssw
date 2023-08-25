@@ -601,7 +601,7 @@ namespace trklet {
     double ptcutte_{1.8};  //Minimum pt in TE
 
     // VALUE AUTOMATICALLY INCREASED FOR EXTENDED TRACKING BY PYTHON CFG
-    unsigned int nbitstrackletindex_{7};  //Bits used to store the tracklet index
+    unsigned int nbitstrackletindex_{10000}; // was 7 before  //Bits used to store the tracklet index
 
     unsigned int nbitsitc_{4};           //Bits used to store the iTC, a unique
                                          //identifier assigned to each TC within a sector
@@ -868,30 +868,30 @@ namespace trklet {
     // Set to large value, e.g. 10000, to disable truncation
     unsigned int maxstepoffset_{0};
     // turn off truncation for displaced tracking (not implemented properly for displaced seeding)
-    unsigned int maxstepoffset_extended_{10000};
+    unsigned int maxstepoffset_extended_{0};
 
     //Number of processing steps for one event (108=18TM*240MHz/40MHz)
 
     //IR should be set to 108 to match the FW for the summer chain, but ultimately should be at 156
     std::unordered_map<std::string, unsigned int> maxstep_{
-        {"IR", 156},  //IR will run at a higher clock speed to handle
+        {"IR", 156},  // 156 //IR will run at a higher clock speed to handle
                       //input links running at 25 Gbits/s
         //Set to 108 to match firmware project 240 MHz clock
 
-        {"VMR", 107},
-        {"TE", 107},
-        {"TC", 108},
-        {"PR", 108},
-        {"ME", 108},
+        {"VMR", 107}, // 107
+        {"TE", 107}, //  107
+        {"TC", 108}, //  108
+        {"PR", 108}, //  108
+        {"ME", 108}, //  108
         //NOTE: The MC is set to 108, but `mergedepth`
         //removes 3 iterations to emulate the delay
         //due to the HLS priority encoder
-        {"MC", 108},
-        {"TB", 108},
-        {"MP", 108},
-        {"TP", 108},
-        {"TRE", 108},
-        {"DR", 108}};  //Specifies how many tracks allowed per bin in DR
+        {"MC", 108}, //  108
+        {"TB", 108}, //  108
+        {"MP", 108}, //  108
+        {"TP", 108}, //  108
+        {"TRE", 108}, // 108
+        {"DR", 108}}; // 108 //Specifies how many tracks allowed per bin in DR
 
     // If set to true this will generate debub printout in text files
     std::unordered_map<std::string, bool> writeMonitorData_{{"IL", false},
