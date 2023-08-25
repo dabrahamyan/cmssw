@@ -150,6 +150,8 @@ namespace trklet {
     }
     numWorkers_ = setup_->kfNumWorker();
     partialTrackWordBits_ = TTBV::S_ / 2;
+
+
   }
 
   void ProducerKFout::produce(Event& iEvent, const EventSetup& iSetup) {
@@ -178,7 +180,8 @@ namespace trklet {
         TrackKFOutSAPtrCollections temp_collection;
         for (int iLink = 0; iLink < setup_->tfpNumChannel(); iLink++) {
           TrackKFOutSAPtrCollection temp;
-          for (int iTrack = 0; iTrack < setup_->numFramesIO(); iTrack++)
+          // for (int iTrack = 0; iTrack < setup_->numFramesIO(); iTrack++) // CHANGED TO GIVE MORE SPACE TO OUTTRACKSTREAMS
+          for (int iTrack = 0; iTrack < (setup_->numFramesIO()) * 3; iTrack++) // ADDED * 3 to make it longer
             temp.emplace_back(std::make_shared<TrackKFOut>());
           temp_collection.push_back(temp);
         }
@@ -326,6 +329,7 @@ namespace trklet {
            // Route Tracks in eta based on their sort key
       for (int iRegion = 0; iRegion < setup_->numRegions(); iRegion++) {
         int buffered_tracks[] = {0, 0};
+
         for (int iTrack = 0;
              iTrack < setup_->numFramesIO() * ((double)TTBV::S_ / TTTrack_TrackWord::TrackBitWidths::kTrackWordSize);
              iTrack++) {
@@ -333,14 +337,24 @@ namespace trklet {
             for (int iLink = 0; iLink < setup_->tfpNumChannel(); iLink++) {
               if ((inTrackStreams[iRegion][iWorker][iTrack]->sortKey() == iLink) &&
                   (inTrackStreams[iRegion][iWorker][iTrack]->dataValid() == true)) {
+
+                // DEBUG CODE
+                // cout << "iLink = " << iLink << "; iWorker = " << iWorker << "; iRegion = " << iRegion << "; buffered_tracks[iLink] = " << buffered_tracks[iLink] << "; iTrack: " << iTrack << endl;
+                // int outSize = outTrackStreams[0][0].size();
+                // int inSize = inTrackStreams[0][0].size();
+                // cout << "outTrackStreams[0][0] Size: " << outSize << endl;
+                // cout << "inTrackStreams[0][0] Size: " << inSize << endl;
+                
                 outTrackStreams[iRegion][iLink][buffered_tracks[iLink]] = inTrackStreams[iRegion][iWorker][iTrack];
+
                 buffered_tracks[iLink] = buffered_tracks[iLink] + 1;
               }
             }
           }
         }
       }
-
+    // DEBUG CODE
+      //cout << "line 363" << endl;
       // Pack output of router onto each link, with correct partial tracks in correct places
       for (int iRegion = 0; iRegion < setup_->numRegions(); iRegion++) {
         for (int iLink = 0; iLink < setup_->tfpNumChannel(); iLink++) {
@@ -368,6 +382,8 @@ namespace trklet {
           outputStreamsTracks[iLink].emplace_back(
               outputStreamsTracks[iLink][numLinkTracks++]);  //Pad out with final repeated track
         }                                                    //If there is an odd number of tracks
+        // DEBUG CODE
+      //cout << "line 392" << endl;
         for (int iTrack = 0; iTrack < (int)(sortedPartialTracks[iLink].size()); iTrack++) {
           if (iTrack % 2 != 1)  // Write to links every other partial track, 3 partial tracks per full TTTrack
             continue;
@@ -395,6 +411,9 @@ namespace trklet {
     // store products
     iEvent.emplace(edPutTokenAccepted_, move(accepted));
     iEvent.emplace(edPutTokenLost_, move(lost));
+
+    // DEBUG CODE
+    //cout << "End of ProducerKFout::produce" << endl;
   }
 }  // namespace trklet
 

@@ -797,7 +797,7 @@ int Tracklet::disk() const {
 
 void Tracklet::setTrackletIndex(unsigned int index) {
   trackletIndex_ = index;
-  assert(index <= settings_.ntrackletmax());
+  //assert(index <= settings_.ntrackletmax());
 }
 
 int Tracklet::getISeed() const {
@@ -814,7 +814,7 @@ int Tracklet::getITC() const {
 
 void Tracklet::setTrackIndex(int index) {
   trackIndex_ = index;
-  assert(index <= (int)settings_.ntrackletmax());
+  //assert(index <= (int)settings_.ntrackletmax());
 }
 
 int Tracklet::trackIndex() const { return trackIndex_; }
