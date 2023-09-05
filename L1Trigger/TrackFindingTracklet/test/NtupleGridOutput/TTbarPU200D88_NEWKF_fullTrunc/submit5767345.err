@@ -1,0 +1,1138 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 125X_mcRun4_realistic_v5.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+25-Aug-2023 16:16:33 CEST  Initiating request to open file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root
+25-Aug-2023 16:16:42 CEST  Successfully opened file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root
+%MSG-w XrdAdaptorLvl3:  AfterFile 25-Aug-2023 16:16:55 CEST pre-events
+Deactivating heplnx228.pp.rl.ac.uk from active sources because its quality (638) is higher than 260 and 4 times larger than the other active server st-096-gg500o4v.cern.ch (13) 
+%MSG
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 301, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:12.577 CEST
+Begin processing the 2nd record. Run 1, Event 302, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:15.846 CEST
+Begin processing the 3rd record. Run 1, Event 303, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:19.272 CEST
+Begin processing the 4th record. Run 1, Event 304, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:33.219 CEST
+Begin processing the 5th record. Run 1, Event 305, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:36.710 CEST
+Begin processing the 6th record. Run 1, Event 306, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:40.817 CEST
+Begin processing the 7th record. Run 1, Event 307, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:44.495 CEST
+Begin processing the 8th record. Run 1, Event 309, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:48.257 CEST
+Begin processing the 9th record. Run 1, Event 308, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:51.042 CEST
+Begin processing the 10th record. Run 1, Event 311, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:57.032 CEST
+Begin processing the 11th record. Run 1, Event 312, LumiSection 4 on stream 0 at 25-Aug-2023 16:17:59.963 CEST
+Begin processing the 12th record. Run 1, Event 313, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:06.140 CEST
+Begin processing the 13th record. Run 1, Event 310, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:10.037 CEST
+Begin processing the 14th record. Run 1, Event 314, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:13.454 CEST
+Begin processing the 15th record. Run 1, Event 315, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:16.896 CEST
+Begin processing the 16th record. Run 1, Event 316, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:20.064 CEST
+Begin processing the 17th record. Run 1, Event 317, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:23.655 CEST
+Begin processing the 18th record. Run 1, Event 318, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:27.811 CEST
+Begin processing the 19th record. Run 1, Event 320, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:31.563 CEST
+Begin processing the 20th record. Run 1, Event 319, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:35.631 CEST
+Begin processing the 21st record. Run 1, Event 321, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:38.916 CEST
+Begin processing the 22nd record. Run 1, Event 322, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:42.759 CEST
+Begin processing the 23rd record. Run 1, Event 323, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:45.868 CEST
+Begin processing the 24th record. Run 1, Event 324, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:49.540 CEST
+Begin processing the 25th record. Run 1, Event 325, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:53.373 CEST
+Begin processing the 26th record. Run 1, Event 327, LumiSection 4 on stream 0 at 25-Aug-2023 16:18:56.973 CEST
+Begin processing the 27th record. Run 1, Event 326, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:00.190 CEST
+Begin processing the 28th record. Run 1, Event 329, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:04.384 CEST
+Begin processing the 29th record. Run 1, Event 328, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:08.109 CEST
+Begin processing the 30th record. Run 1, Event 331, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:11.156 CEST
+Begin processing the 31st record. Run 1, Event 330, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:14.447 CEST
+Begin processing the 32nd record. Run 1, Event 333, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:17.889 CEST
+Begin processing the 33rd record. Run 1, Event 332, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:22.314 CEST
+Begin processing the 34th record. Run 1, Event 335, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:25.847 CEST
+Begin processing the 35th record. Run 1, Event 336, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:29.548 CEST
+Begin processing the 36th record. Run 1, Event 334, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:33.400 CEST
+Begin processing the 37th record. Run 1, Event 337, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:36.854 CEST
+Begin processing the 38th record. Run 1, Event 338, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:40.236 CEST
+Begin processing the 39th record. Run 1, Event 340, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:43.130 CEST
+Begin processing the 40th record. Run 1, Event 339, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:46.595 CEST
+Begin processing the 41st record. Run 1, Event 341, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:51.021 CEST
+Begin processing the 42nd record. Run 1, Event 342, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:55.556 CEST
+Begin processing the 43rd record. Run 1, Event 344, LumiSection 4 on stream 0 at 25-Aug-2023 16:19:59.131 CEST
+Begin processing the 44th record. Run 1, Event 343, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:02.281 CEST
+Begin processing the 45th record. Run 1, Event 345, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:06.050 CEST
+Begin processing the 46th record. Run 1, Event 347, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:10.026 CEST
+Begin processing the 47th record. Run 1, Event 346, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:14.389 CEST
+Begin processing the 48th record. Run 1, Event 349, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:18.012 CEST
+Begin processing the 49th record. Run 1, Event 348, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:21.791 CEST
+Begin processing the 50th record. Run 1, Event 350, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:26.124 CEST
+Begin processing the 51st record. Run 1, Event 351, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:29.849 CEST
+Begin processing the 52nd record. Run 1, Event 353, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:33.975 CEST
+Begin processing the 53rd record. Run 1, Event 354, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:38.070 CEST
+Begin processing the 54th record. Run 1, Event 352, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:41.545 CEST
+Begin processing the 55th record. Run 1, Event 355, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:44.925 CEST
+Begin processing the 56th record. Run 1, Event 356, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:48.704 CEST
+Begin processing the 57th record. Run 1, Event 358, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:52.590 CEST
+Begin processing the 58th record. Run 1, Event 357, LumiSection 4 on stream 0 at 25-Aug-2023 16:20:56.950 CEST
+Begin processing the 59th record. Run 1, Event 360, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:01.005 CEST
+Begin processing the 60th record. Run 1, Event 359, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:04.696 CEST
+Begin processing the 61st record. Run 1, Event 362, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:08.517 CEST
+Begin processing the 62nd record. Run 1, Event 361, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:12.567 CEST
+Begin processing the 63rd record. Run 1, Event 364, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:16.063 CEST
+Begin processing the 64th record. Run 1, Event 365, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:19.893 CEST
+Begin processing the 65th record. Run 1, Event 363, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:23.709 CEST
+Begin processing the 66th record. Run 1, Event 367, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:28.343 CEST
+Begin processing the 67th record. Run 1, Event 366, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:31.646 CEST
+Begin processing the 68th record. Run 1, Event 368, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:35.811 CEST
+Begin processing the 69th record. Run 1, Event 369, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:39.772 CEST
+Begin processing the 70th record. Run 1, Event 370, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:43.904 CEST
+Begin processing the 71st record. Run 1, Event 371, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:47.121 CEST
+Begin processing the 72nd record. Run 1, Event 373, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:51.382 CEST
+Begin processing the 73rd record. Run 1, Event 372, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:54.573 CEST
+[2023-08-25 16:21:57.098288 +0200][Error  ][PostMaster        ][  155] [eoscmshlt-ip565.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 74th record. Run 1, Event 374, LumiSection 4 on stream 0 at 25-Aug-2023 16:21:57.352 CEST
+[2023-08-25 16:21:58.713577 +0200][Error  ][PostMaster        ][  155] [eoscmshlt.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 75th record. Run 1, Event 376, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:01.086 CEST
+Begin processing the 76th record. Run 1, Event 375, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:04.317 CEST
+Begin processing the 77th record. Run 1, Event 377, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:07.903 CEST
+Begin processing the 78th record. Run 1, Event 378, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:11.915 CEST
+Begin processing the 79th record. Run 1, Event 379, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:15.052 CEST
+Begin processing the 80th record. Run 1, Event 380, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:18.041 CEST
+Begin processing the 81st record. Run 1, Event 381, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:21.408 CEST
+Begin processing the 82nd record. Run 1, Event 382, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:24.835 CEST
+Begin processing the 83rd record. Run 1, Event 383, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:28.439 CEST
+Begin processing the 84th record. Run 1, Event 384, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:32.182 CEST
+Begin processing the 85th record. Run 1, Event 385, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:34.812 CEST
+Begin processing the 86th record. Run 1, Event 386, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:38.559 CEST
+Begin processing the 87th record. Run 1, Event 387, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:42.520 CEST
+Begin processing the 88th record. Run 1, Event 389, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:45.622 CEST
+Begin processing the 89th record. Run 1, Event 388, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:49.348 CEST
+Begin processing the 90th record. Run 1, Event 390, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:52.315 CEST
+Begin processing the 91st record. Run 1, Event 391, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:55.706 CEST
+Begin processing the 92nd record. Run 1, Event 392, LumiSection 4 on stream 0 at 25-Aug-2023 16:22:59.704 CEST
+Begin processing the 93rd record. Run 1, Event 394, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:03.817 CEST
+%MSG-w XrdAdaptorLvl3:  source 25-Aug-2023 16:23:08 CEST PreSource
+Deactivating st-096-ii2019d1.cern.ch from active sources because its quality (666) is higher than 260 and 4 times larger than the other active server st-096-gg500o4v.cern.ch (122) 
+%MSG
+Begin processing the 94th record. Run 1, Event 393, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:08.203 CEST
+Begin processing the 95th record. Run 1, Event 395, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:11.662 CEST
+Begin processing the 96th record. Run 1, Event 396, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:15.234 CEST
+Begin processing the 97th record. Run 1, Event 397, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:19.860 CEST
+Begin processing the 98th record. Run 1, Event 398, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:24.029 CEST
+Begin processing the 99th record. Run 1, Event 400, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:27.257 CEST
+Begin processing the 100th record. Run 1, Event 399, LumiSection 4 on stream 0 at 25-Aug-2023 16:23:31.492 CEST
+Begin processing the 101st record. Run 1, Event 901, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:35.257 CEST
+Begin processing the 102nd record. Run 1, Event 902, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:39.389 CEST
+Begin processing the 103rd record. Run 1, Event 904, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:43.890 CEST
+Begin processing the 104th record. Run 1, Event 903, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:47.578 CEST
+Begin processing the 105th record. Run 1, Event 905, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:51.304 CEST
+Begin processing the 106th record. Run 1, Event 906, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:55.725 CEST
+Begin processing the 107th record. Run 1, Event 907, LumiSection 10 on stream 0 at 25-Aug-2023 16:23:59.779 CEST
+Begin processing the 108th record. Run 1, Event 909, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:03.712 CEST
+Begin processing the 109th record. Run 1, Event 908, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:07.107 CEST
+[2023-08-25 16:24:10.055689 +0200][Error  ][PostMaster        ][  155] [eoscms-ns-ip563.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 110th record. Run 1, Event 911, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:10.430 CEST
+Begin processing the 111th record. Run 1, Event 910, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:14.161 CEST
+Begin processing the 112th record. Run 1, Event 912, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:18.087 CEST
+Begin processing the 113th record. Run 1, Event 913, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:20.997 CEST
+Begin processing the 114th record. Run 1, Event 914, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:24.691 CEST
+Begin processing the 115th record. Run 1, Event 915, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:28.523 CEST
+Begin processing the 116th record. Run 1, Event 916, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:32.456 CEST
+Begin processing the 117th record. Run 1, Event 918, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:35.817 CEST
+Begin processing the 118th record. Run 1, Event 917, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:40.259 CEST
+Begin processing the 119th record. Run 1, Event 919, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:44.261 CEST
+Begin processing the 120th record. Run 1, Event 920, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:48.252 CEST
+Begin processing the 121st record. Run 1, Event 922, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:51.577 CEST
+Begin processing the 122nd record. Run 1, Event 921, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:55.491 CEST
+Begin processing the 123rd record. Run 1, Event 923, LumiSection 10 on stream 0 at 25-Aug-2023 16:24:59.330 CEST
+Begin processing the 124th record. Run 1, Event 924, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:02.516 CEST
+Begin processing the 125th record. Run 1, Event 925, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:06.329 CEST
+Begin processing the 126th record. Run 1, Event 926, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:09.564 CEST
+Begin processing the 127th record. Run 1, Event 927, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:13.089 CEST
+Begin processing the 128th record. Run 1, Event 928, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:16.840 CEST
+Begin processing the 129th record. Run 1, Event 929, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:20.475 CEST
+Begin processing the 130th record. Run 1, Event 931, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:24.353 CEST
+Begin processing the 131st record. Run 1, Event 930, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:27.825 CEST
+Begin processing the 132nd record. Run 1, Event 932, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:31.465 CEST
+Begin processing the 133rd record. Run 1, Event 934, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:34.091 CEST
+Begin processing the 134th record. Run 1, Event 933, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:37.543 CEST
+Begin processing the 135th record. Run 1, Event 935, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:41.180 CEST
+Begin processing the 136th record. Run 1, Event 936, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:45.165 CEST
+Begin processing the 137th record. Run 1, Event 938, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:49.391 CEST
+Begin processing the 138th record. Run 1, Event 937, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:53.212 CEST
+Begin processing the 139th record. Run 1, Event 940, LumiSection 10 on stream 0 at 25-Aug-2023 16:25:56.947 CEST
+Begin processing the 140th record. Run 1, Event 939, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:00.749 CEST
+Begin processing the 141st record. Run 1, Event 941, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:04.429 CEST
+Begin processing the 142nd record. Run 1, Event 942, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:08.287 CEST
+Begin processing the 143rd record. Run 1, Event 944, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:11.885 CEST
+Begin processing the 144th record. Run 1, Event 945, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:15.095 CEST
+Begin processing the 145th record. Run 1, Event 943, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:18.469 CEST
+Begin processing the 146th record. Run 1, Event 947, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:22.187 CEST
+Begin processing the 147th record. Run 1, Event 946, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:26.121 CEST
+Begin processing the 148th record. Run 1, Event 949, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:29.737 CEST
+Begin processing the 149th record. Run 1, Event 948, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:33.126 CEST
+Begin processing the 150th record. Run 1, Event 950, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:37.023 CEST
+Begin processing the 151st record. Run 1, Event 951, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:40.705 CEST
+Begin processing the 152nd record. Run 1, Event 952, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:44.156 CEST
+Begin processing the 153rd record. Run 1, Event 953, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:47.778 CEST
+Begin processing the 154th record. Run 1, Event 954, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:51.077 CEST
+Begin processing the 155th record. Run 1, Event 956, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:54.431 CEST
+Begin processing the 156th record. Run 1, Event 955, LumiSection 10 on stream 0 at 25-Aug-2023 16:26:58.345 CEST
+Begin processing the 157th record. Run 1, Event 958, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:01.289 CEST
+Begin processing the 158th record. Run 1, Event 957, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:05.274 CEST
+Begin processing the 159th record. Run 1, Event 960, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:08.931 CEST
+Begin processing the 160th record. Run 1, Event 959, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:12.395 CEST
+Begin processing the 161st record. Run 1, Event 961, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:15.675 CEST
+Begin processing the 162nd record. Run 1, Event 962, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:19.855 CEST
+Begin processing the 163rd record. Run 1, Event 963, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:23.571 CEST
+Begin processing the 164th record. Run 1, Event 964, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:27.331 CEST
+Begin processing the 165th record. Run 1, Event 965, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:30.801 CEST
+Begin processing the 166th record. Run 1, Event 966, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:34.874 CEST
+Begin processing the 167th record. Run 1, Event 968, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:37.909 CEST
+Begin processing the 168th record. Run 1, Event 967, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:41.199 CEST
+Begin processing the 169th record. Run 1, Event 970, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:45.165 CEST
+[2023-08-25 16:27:47.063607 +0200][Error  ][XRootD            ][  155] [xrootd-cms-uk.gridpp.rl.ac.uk:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch&triedrc=resel, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 170th record. Run 1, Event 971, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:49.509 CEST
+Begin processing the 171st record. Run 1, Event 972, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:52.678 CEST
+Begin processing the 172nd record. Run 1, Event 969, LumiSection 10 on stream 0 at 25-Aug-2023 16:27:56.981 CEST
+Begin processing the 173rd record. Run 1, Event 973, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:00.584 CEST
+Begin processing the 174th record. Run 1, Event 975, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:04.610 CEST
+Begin processing the 175th record. Run 1, Event 974, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:07.967 CEST
+Begin processing the 176th record. Run 1, Event 976, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:12.659 CEST
+Begin processing the 177th record. Run 1, Event 977, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:16.516 CEST
+Begin processing the 178th record. Run 1, Event 978, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:19.784 CEST
+Begin processing the 179th record. Run 1, Event 979, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:23.076 CEST
+Begin processing the 180th record. Run 1, Event 980, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:27.034 CEST
+Begin processing the 181st record. Run 1, Event 981, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:30.726 CEST
+Begin processing the 182nd record. Run 1, Event 982, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:34.125 CEST
+Begin processing the 183rd record. Run 1, Event 983, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:38.349 CEST
+Begin processing the 184th record. Run 1, Event 984, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:41.628 CEST
+Begin processing the 185th record. Run 1, Event 986, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:45.522 CEST
+Begin processing the 186th record. Run 1, Event 985, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:48.959 CEST
+Begin processing the 187th record. Run 1, Event 987, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:52.516 CEST
+Begin processing the 188th record. Run 1, Event 988, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:55.964 CEST
+Begin processing the 189th record. Run 1, Event 989, LumiSection 10 on stream 0 at 25-Aug-2023 16:28:59.649 CEST
+Begin processing the 190th record. Run 1, Event 991, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:02.668 CEST
+Begin processing the 191st record. Run 1, Event 990, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:05.989 CEST
+Begin processing the 192nd record. Run 1, Event 992, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:09.550 CEST
+Begin processing the 193rd record. Run 1, Event 993, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:12.773 CEST
+Begin processing the 194th record. Run 1, Event 995, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:16.541 CEST
+Begin processing the 195th record. Run 1, Event 994, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:20.143 CEST
+Begin processing the 196th record. Run 1, Event 997, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:24.579 CEST
+Begin processing the 197th record. Run 1, Event 996, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:28.237 CEST
+Begin processing the 198th record. Run 1, Event 999, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:31.642 CEST
+Begin processing the 199th record. Run 1, Event 998, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:35.417 CEST
+Begin processing the 200th record. Run 1, Event 1000, LumiSection 10 on stream 0 at 25-Aug-2023 16:29:38.739 CEST
+Begin processing the 201st record. Run 1, Event 1403, LumiSection 15 on stream 0 at 25-Aug-2023 16:29:42.174 CEST
+Begin processing the 202nd record. Run 1, Event 1402, LumiSection 15 on stream 0 at 25-Aug-2023 16:29:45.545 CEST
+Begin processing the 203rd record. Run 1, Event 1401, LumiSection 15 on stream 0 at 25-Aug-2023 16:29:49.766 CEST
+Begin processing the 204th record. Run 1, Event 1405, LumiSection 15 on stream 0 at 25-Aug-2023 16:29:53.708 CEST
+Begin processing the 205th record. Run 1, Event 1404, LumiSection 15 on stream 0 at 25-Aug-2023 16:29:57.399 CEST
+Begin processing the 206th record. Run 1, Event 1407, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:01.120 CEST
+Begin processing the 207th record. Run 1, Event 1408, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:04.909 CEST
+Begin processing the 208th record. Run 1, Event 1409, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:08.586 CEST
+Begin processing the 209th record. Run 1, Event 1406, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:12.216 CEST
+Begin processing the 210th record. Run 1, Event 1410, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:15.663 CEST
+Begin processing the 211th record. Run 1, Event 1411, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:19.125 CEST
+Begin processing the 212th record. Run 1, Event 1412, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:23.564 CEST
+Begin processing the 213th record. Run 1, Event 1413, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:26.675 CEST
+Begin processing the 214th record. Run 1, Event 1414, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:30.178 CEST
+Begin processing the 215th record. Run 1, Event 1416, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:33.940 CEST
+Begin processing the 216th record. Run 1, Event 1415, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:37.784 CEST
+Begin processing the 217th record. Run 1, Event 1417, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:41.167 CEST
+Begin processing the 218th record. Run 1, Event 1418, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:44.529 CEST
+Begin processing the 219th record. Run 1, Event 1419, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:47.400 CEST
+Begin processing the 220th record. Run 1, Event 1420, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:51.088 CEST
+Begin processing the 221st record. Run 1, Event 1422, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:54.025 CEST
+Begin processing the 222nd record. Run 1, Event 1421, LumiSection 15 on stream 0 at 25-Aug-2023 16:30:57.230 CEST
+Begin processing the 223rd record. Run 1, Event 1423, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:00.995 CEST
+Begin processing the 224th record. Run 1, Event 1424, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:03.606 CEST
+Begin processing the 225th record. Run 1, Event 1425, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:07.400 CEST
+Begin processing the 226th record. Run 1, Event 1426, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:10.782 CEST
+Begin processing the 227th record. Run 1, Event 1427, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:14.782 CEST
+Begin processing the 228th record. Run 1, Event 1428, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:18.446 CEST
+Begin processing the 229th record. Run 1, Event 1430, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:22.153 CEST
+Begin processing the 230th record. Run 1, Event 1429, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:25.807 CEST
+Begin processing the 231st record. Run 1, Event 1431, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:28.895 CEST
+Begin processing the 232nd record. Run 1, Event 1433, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:32.630 CEST
+Begin processing the 233rd record. Run 1, Event 1434, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:35.609 CEST
+Begin processing the 234th record. Run 1, Event 1435, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:38.385 CEST
+Begin processing the 235th record. Run 1, Event 1436, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:41.692 CEST
+Begin processing the 236th record. Run 1, Event 1432, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:46.045 CEST
+Begin processing the 237th record. Run 1, Event 1437, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:49.598 CEST
+Begin processing the 238th record. Run 1, Event 1438, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:52.653 CEST
+Begin processing the 239th record. Run 1, Event 1440, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:55.489 CEST
+Begin processing the 240th record. Run 1, Event 1441, LumiSection 15 on stream 0 at 25-Aug-2023 16:31:59.213 CEST
+Begin processing the 241st record. Run 1, Event 1439, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:02.745 CEST
+Begin processing the 242nd record. Run 1, Event 1442, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:06.525 CEST
+Begin processing the 243rd record. Run 1, Event 1444, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:09.865 CEST
+Begin processing the 244th record. Run 1, Event 1443, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:13.229 CEST
+Begin processing the 245th record. Run 1, Event 1445, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:16.807 CEST
+Begin processing the 246th record. Run 1, Event 1447, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:20.579 CEST
+Begin processing the 247th record. Run 1, Event 1446, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:24.638 CEST
+Begin processing the 248th record. Run 1, Event 1448, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:27.905 CEST
+Begin processing the 249th record. Run 1, Event 1449, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:31.365 CEST
+Begin processing the 250th record. Run 1, Event 1450, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:34.939 CEST
+Begin processing the 251st record. Run 1, Event 1453, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:38.203 CEST
+[2023-08-25 16:32:41.256974 +0200][Error  ][XRootD            ][  155] [xrootd-cms-uk.gridpp.rl.ac.uk:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch&triedrc=resel, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 252nd record. Run 1, Event 1451, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:42.149 CEST
+Begin processing the 253rd record. Run 1, Event 1452, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:45.600 CEST
+Begin processing the 254th record. Run 1, Event 1455, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:48.553 CEST
+Begin processing the 255th record. Run 1, Event 1456, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:51.526 CEST
+Begin processing the 256th record. Run 1, Event 1454, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:54.874 CEST
+Begin processing the 257th record. Run 1, Event 1457, LumiSection 15 on stream 0 at 25-Aug-2023 16:32:58.813 CEST
+Begin processing the 258th record. Run 1, Event 1458, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:01.982 CEST
+Begin processing the 259th record. Run 1, Event 1459, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:05.498 CEST
+Begin processing the 260th record. Run 1, Event 1460, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:09.002 CEST
+Begin processing the 261st record. Run 1, Event 1461, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:12.824 CEST
+Begin processing the 262nd record. Run 1, Event 1462, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:16.711 CEST
+Begin processing the 263rd record. Run 1, Event 1463, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:20.367 CEST
+Begin processing the 264th record. Run 1, Event 1464, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:23.597 CEST
+Begin processing the 265th record. Run 1, Event 1466, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:26.773 CEST
+Begin processing the 266th record. Run 1, Event 1465, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:30.570 CEST
+Begin processing the 267th record. Run 1, Event 1467, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:34.069 CEST
+Begin processing the 268th record. Run 1, Event 1468, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:37.536 CEST
+Begin processing the 269th record. Run 1, Event 1470, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:40.629 CEST
+Begin processing the 270th record. Run 1, Event 1469, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:44.264 CEST
+Begin processing the 271st record. Run 1, Event 1471, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:48.047 CEST
+Begin processing the 272nd record. Run 1, Event 1472, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:51.734 CEST
+Begin processing the 273rd record. Run 1, Event 1474, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:54.909 CEST
+Begin processing the 274th record. Run 1, Event 1473, LumiSection 15 on stream 0 at 25-Aug-2023 16:33:57.851 CEST
+Begin processing the 275th record. Run 1, Event 1476, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:00.617 CEST
+Begin processing the 276th record. Run 1, Event 1477, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:04.900 CEST
+Begin processing the 277th record. Run 1, Event 1475, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:08.416 CEST
+Begin processing the 278th record. Run 1, Event 1479, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:12.534 CEST
+Begin processing the 279th record. Run 1, Event 1478, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:15.756 CEST
+Begin processing the 280th record. Run 1, Event 1480, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:19.483 CEST
+Begin processing the 281st record. Run 1, Event 1482, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:22.494 CEST
+Begin processing the 282nd record. Run 1, Event 1481, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:25.630 CEST
+Begin processing the 283rd record. Run 1, Event 1484, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:29.208 CEST
+Begin processing the 284th record. Run 1, Event 1483, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:33.189 CEST
+Begin processing the 285th record. Run 1, Event 1486, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:36.265 CEST
+Begin processing the 286th record. Run 1, Event 1485, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:39.917 CEST
+Begin processing the 287th record. Run 1, Event 1488, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:43.229 CEST
+Begin processing the 288th record. Run 1, Event 1487, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:46.673 CEST
+Begin processing the 289th record. Run 1, Event 1489, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:49.745 CEST
+Begin processing the 290th record. Run 1, Event 1490, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:53.323 CEST
+Begin processing the 291st record. Run 1, Event 1491, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:56.357 CEST
+Begin processing the 292nd record. Run 1, Event 1493, LumiSection 15 on stream 0 at 25-Aug-2023 16:34:59.445 CEST
+Begin processing the 293rd record. Run 1, Event 1492, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:03.050 CEST
+Begin processing the 294th record. Run 1, Event 1495, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:06.735 CEST
+Begin processing the 295th record. Run 1, Event 1494, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:10.227 CEST
+Begin processing the 296th record. Run 1, Event 1496, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:14.063 CEST
+Begin processing the 297th record. Run 1, Event 1498, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:18.102 CEST
+Begin processing the 298th record. Run 1, Event 1497, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:21.785 CEST
+Begin processing the 299th record. Run 1, Event 1499, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:24.951 CEST
+Begin processing the 300th record. Run 1, Event 1500, LumiSection 15 on stream 0 at 25-Aug-2023 16:35:29.137 CEST
+Begin processing the 301st record. Run 1, Event 1501, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:32.247 CEST
+Begin processing the 302nd record. Run 1, Event 1502, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:35.550 CEST
+Begin processing the 303rd record. Run 1, Event 1503, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:38.320 CEST
+Begin processing the 304th record. Run 1, Event 1504, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:42.451 CEST
+Begin processing the 305th record. Run 1, Event 1506, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:46.161 CEST
+Begin processing the 306th record. Run 1, Event 1507, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:50.480 CEST
+Begin processing the 307th record. Run 1, Event 1508, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:53.680 CEST
+Begin processing the 308th record. Run 1, Event 1505, LumiSection 16 on stream 0 at 25-Aug-2023 16:35:56.794 CEST
+Begin processing the 309th record. Run 1, Event 1509, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:00.819 CEST
+Begin processing the 310th record. Run 1, Event 1511, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:04.467 CEST
+Begin processing the 311th record. Run 1, Event 1512, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:07.916 CEST
+Begin processing the 312th record. Run 1, Event 1510, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:11.235 CEST
+Begin processing the 313th record. Run 1, Event 1513, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:14.882 CEST
+Begin processing the 314th record. Run 1, Event 1514, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:18.073 CEST
+Begin processing the 315th record. Run 1, Event 1516, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:22.261 CEST
+Begin processing the 316th record. Run 1, Event 1515, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:25.942 CEST
+Begin processing the 317th record. Run 1, Event 1517, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:30.055 CEST
+Begin processing the 318th record. Run 1, Event 1518, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:33.648 CEST
+Begin processing the 319th record. Run 1, Event 1519, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:37.043 CEST
+Begin processing the 320th record. Run 1, Event 1520, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:40.606 CEST
+Begin processing the 321st record. Run 1, Event 1521, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:44.411 CEST
+Begin processing the 322nd record. Run 1, Event 1522, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:47.674 CEST
+Begin processing the 323rd record. Run 1, Event 1523, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:51.396 CEST
+Begin processing the 324th record. Run 1, Event 1524, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:54.408 CEST
+Begin processing the 325th record. Run 1, Event 1526, LumiSection 16 on stream 0 at 25-Aug-2023 16:36:57.959 CEST
+Begin processing the 326th record. Run 1, Event 1525, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:01.651 CEST
+Begin processing the 327th record. Run 1, Event 1527, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:05.540 CEST
+Begin processing the 328th record. Run 1, Event 1528, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:09.244 CEST
+Begin processing the 329th record. Run 1, Event 1530, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:12.855 CEST
+Begin processing the 330th record. Run 1, Event 1529, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:16.666 CEST
+Begin processing the 331st record. Run 1, Event 1532, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:20.156 CEST
+Begin processing the 332nd record. Run 1, Event 1531, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:24.185 CEST
+Begin processing the 333rd record. Run 1, Event 1533, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:27.521 CEST
+Begin processing the 334th record. Run 1, Event 1535, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:32.492 CEST
+[2023-08-25 16:37:34.448049 +0200][Error  ][XRootD            ][  155] [cms-xrd-global.cern.ch:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch,xrootd-cms-uk.gridpp.rl.ac.uk,xrootd-cms-redir-int.cr.cnaf.infn.it,eoscms-ns-ip563.cern.ch,eoscms-ns-ip563.cern.ch,llrxrd-redir.in2p3.fr,eoscmsgsi.cern.ch,eoscmsgsi.cern.ch,eoscmsgsi-ip556.cern.ch,xrootd-redic.pi.infn.it&triedrc=resel,enoent,enoent,enoent, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 335th record. Run 1, Event 1536, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:35.819 CEST
+Begin processing the 336th record. Run 1, Event 1537, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:39.347 CEST
+Begin processing the 337th record. Run 1, Event 1534, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:42.763 CEST
+Begin processing the 338th record. Run 1, Event 1538, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:45.970 CEST
+Begin processing the 339th record. Run 1, Event 1540, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:48.805 CEST
+Begin processing the 340th record. Run 1, Event 1539, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:52.157 CEST
+Begin processing the 341st record. Run 1, Event 1542, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:55.611 CEST
+Begin processing the 342nd record. Run 1, Event 1541, LumiSection 16 on stream 0 at 25-Aug-2023 16:37:58.579 CEST
+Begin processing the 343rd record. Run 1, Event 1543, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:01.693 CEST
+Begin processing the 344th record. Run 1, Event 1544, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:05.977 CEST
+Begin processing the 345th record. Run 1, Event 1545, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:09.543 CEST
+Begin processing the 346th record. Run 1, Event 1546, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:12.978 CEST
+Begin processing the 347th record. Run 1, Event 1548, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:15.708 CEST
+Begin processing the 348th record. Run 1, Event 1547, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:18.940 CEST
+Begin processing the 349th record. Run 1, Event 1549, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:22.617 CEST
+Begin processing the 350th record. Run 1, Event 1550, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:26.891 CEST
+Begin processing the 351st record. Run 1, Event 1551, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:30.378 CEST
+Begin processing the 352nd record. Run 1, Event 1552, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:34.029 CEST
+Begin processing the 353rd record. Run 1, Event 1554, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:37.465 CEST
+Begin processing the 354th record. Run 1, Event 1553, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:41.037 CEST
+Begin processing the 355th record. Run 1, Event 1555, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:44.511 CEST
+Begin processing the 356th record. Run 1, Event 1556, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:47.983 CEST
+Begin processing the 357th record. Run 1, Event 1557, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:51.691 CEST
+Begin processing the 358th record. Run 1, Event 1559, LumiSection 16 on stream 0 at 25-Aug-2023 16:38:58.188 CEST
+Begin processing the 359th record. Run 1, Event 1558, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:01.705 CEST
+Begin processing the 360th record. Run 1, Event 1560, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:06.057 CEST
+Begin processing the 361st record. Run 1, Event 1561, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:10.964 CEST
+Begin processing the 362nd record. Run 1, Event 1562, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:14.301 CEST
+Begin processing the 363rd record. Run 1, Event 1564, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:18.300 CEST
+Begin processing the 364th record. Run 1, Event 1563, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:22.272 CEST
+Begin processing the 365th record. Run 1, Event 1565, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:25.741 CEST
+Begin processing the 366th record. Run 1, Event 1566, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:29.109 CEST
+Begin processing the 367th record. Run 1, Event 1567, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:32.952 CEST
+Begin processing the 368th record. Run 1, Event 1569, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:36.977 CEST
+Begin processing the 369th record. Run 1, Event 1568, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:40.547 CEST
+Begin processing the 370th record. Run 1, Event 1570, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:44.027 CEST
+Begin processing the 371st record. Run 1, Event 1571, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:47.638 CEST
+Begin processing the 372nd record. Run 1, Event 1572, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:51.098 CEST
+Begin processing the 373rd record. Run 1, Event 1574, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:54.071 CEST
+Begin processing the 374th record. Run 1, Event 1573, LumiSection 16 on stream 0 at 25-Aug-2023 16:39:58.023 CEST
+Begin processing the 375th record. Run 1, Event 1575, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:02.741 CEST
+Begin processing the 376th record. Run 1, Event 1576, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:06.161 CEST
+Begin processing the 377th record. Run 1, Event 1577, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:09.843 CEST
+Begin processing the 378th record. Run 1, Event 1578, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:14.252 CEST
+Begin processing the 379th record. Run 1, Event 1579, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:17.689 CEST
+Begin processing the 380th record. Run 1, Event 1581, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:21.021 CEST
+Begin processing the 381st record. Run 1, Event 1580, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:23.792 CEST
+Begin processing the 382nd record. Run 1, Event 1582, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:27.753 CEST
+Begin processing the 383rd record. Run 1, Event 1583, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:31.359 CEST
+Begin processing the 384th record. Run 1, Event 1584, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:35.954 CEST
+Begin processing the 385th record. Run 1, Event 1586, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:39.496 CEST
+Begin processing the 386th record. Run 1, Event 1585, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:42.878 CEST
+Begin processing the 387th record. Run 1, Event 1587, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:47.249 CEST
+Begin processing the 388th record. Run 1, Event 1589, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:52.642 CEST
+[2023-08-25 16:40:54.840858 +0200][Error  ][PostMaster        ][  155] [eoscms-ns-ip563.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 389th record. Run 1, Event 1588, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:56.183 CEST
+Begin processing the 390th record. Run 1, Event 1590, LumiSection 16 on stream 0 at 25-Aug-2023 16:40:59.385 CEST
+Begin processing the 391st record. Run 1, Event 1591, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:03.462 CEST
+Begin processing the 392nd record. Run 1, Event 1592, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:07.204 CEST
+Begin processing the 393rd record. Run 1, Event 1593, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:10.883 CEST
+Begin processing the 394th record. Run 1, Event 1595, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:13.989 CEST
+Begin processing the 395th record. Run 1, Event 1594, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:17.427 CEST
+Begin processing the 396th record. Run 1, Event 1596, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:21.983 CEST
+Begin processing the 397th record. Run 1, Event 1597, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:25.823 CEST
+Begin processing the 398th record. Run 1, Event 1598, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:29.329 CEST
+Begin processing the 399th record. Run 1, Event 1600, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:33.589 CEST
+Begin processing the 400th record. Run 1, Event 1599, LumiSection 16 on stream 0 at 25-Aug-2023 16:41:37.049 CEST
+Begin processing the 401st record. Run 1, Event 2102, LumiSection 22 on stream 0 at 25-Aug-2023 16:41:40.743 CEST
+Begin processing the 402nd record. Run 1, Event 2101, LumiSection 22 on stream 0 at 25-Aug-2023 16:41:44.097 CEST
+Begin processing the 403rd record. Run 1, Event 2103, LumiSection 22 on stream 0 at 25-Aug-2023 16:41:46.779 CEST
+Begin processing the 404th record. Run 1, Event 2104, LumiSection 22 on stream 0 at 25-Aug-2023 16:41:50.254 CEST
+Begin processing the 405th record. Run 1, Event 2105, LumiSection 22 on stream 0 at 25-Aug-2023 16:41:53.669 CEST
+Begin processing the 406th record. Run 1, Event 2106, LumiSection 22 on stream 0 at 25-Aug-2023 16:41:56.854 CEST
+Begin processing the 407th record. Run 1, Event 2107, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:00.765 CEST
+Begin processing the 408th record. Run 1, Event 2108, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:04.688 CEST
+Begin processing the 409th record. Run 1, Event 2109, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:08.497 CEST
+Begin processing the 410th record. Run 1, Event 2110, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:12.245 CEST
+Begin processing the 411th record. Run 1, Event 2111, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:15.361 CEST
+Begin processing the 412th record. Run 1, Event 2112, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:18.647 CEST
+Begin processing the 413th record. Run 1, Event 2113, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:22.418 CEST
+Begin processing the 414th record. Run 1, Event 2114, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:26.318 CEST
+Begin processing the 415th record. Run 1, Event 2115, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:29.322 CEST
+Begin processing the 416th record. Run 1, Event 2116, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:32.950 CEST
+Begin processing the 417th record. Run 1, Event 2117, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:36.451 CEST
+Begin processing the 418th record. Run 1, Event 2118, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:39.618 CEST
+Begin processing the 419th record. Run 1, Event 2119, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:43.336 CEST
+Begin processing the 420th record. Run 1, Event 2120, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:46.682 CEST
+Begin processing the 421st record. Run 1, Event 2122, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:50.021 CEST
+Begin processing the 422nd record. Run 1, Event 2123, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:53.035 CEST
+Begin processing the 423rd record. Run 1, Event 2125, LumiSection 22 on stream 0 at 25-Aug-2023 16:42:57.211 CEST
+Begin processing the 424th record. Run 1, Event 2121, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:00.551 CEST
+Begin processing the 425th record. Run 1, Event 2126, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:04.399 CEST
+Begin processing the 426th record. Run 1, Event 2124, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:07.706 CEST
+Begin processing the 427th record. Run 1, Event 2127, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:11.288 CEST
+Begin processing the 428th record. Run 1, Event 2129, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:14.849 CEST
+Begin processing the 429th record. Run 1, Event 2128, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:18.329 CEST
+Begin processing the 430th record. Run 1, Event 2130, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:21.327 CEST
+Begin processing the 431st record. Run 1, Event 2132, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:24.984 CEST
+Begin processing the 432nd record. Run 1, Event 2131, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:28.104 CEST
+Begin processing the 433rd record. Run 1, Event 2133, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:31.463 CEST
+Begin processing the 434th record. Run 1, Event 2134, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:34.913 CEST
+Begin processing the 435th record. Run 1, Event 2135, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:37.659 CEST
+Begin processing the 436th record. Run 1, Event 2136, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:41.478 CEST
+Begin processing the 437th record. Run 1, Event 2137, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:44.474 CEST
+Begin processing the 438th record. Run 1, Event 2139, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:48.142 CEST
+Begin processing the 439th record. Run 1, Event 2138, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:51.834 CEST
+Begin processing the 440th record. Run 1, Event 2140, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:55.154 CEST
+Begin processing the 441st record. Run 1, Event 2141, LumiSection 22 on stream 0 at 25-Aug-2023 16:43:58.484 CEST
+Begin processing the 442nd record. Run 1, Event 2143, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:02.621 CEST
+Begin processing the 443rd record. Run 1, Event 2142, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:05.802 CEST
+Begin processing the 444th record. Run 1, Event 2144, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:09.548 CEST
+Begin processing the 445th record. Run 1, Event 2146, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:12.935 CEST
+Begin processing the 446th record. Run 1, Event 2145, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:16.591 CEST
+Begin processing the 447th record. Run 1, Event 2148, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:19.264 CEST
+Begin processing the 448th record. Run 1, Event 2147, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:23.580 CEST
+Begin processing the 449th record. Run 1, Event 2150, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:27.077 CEST
+Begin processing the 450th record. Run 1, Event 2149, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:30.656 CEST
+Begin processing the 451st record. Run 1, Event 2151, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:33.631 CEST
+Begin processing the 452nd record. Run 1, Event 2152, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:37.867 CEST
+Begin processing the 453rd record. Run 1, Event 2153, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:41.171 CEST
+Begin processing the 454th record. Run 1, Event 2155, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:44.355 CEST
+Begin processing the 455th record. Run 1, Event 2157, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:47.589 CEST
+[2023-08-25 16:44:48.801491 +0200][Error  ][PostMaster        ][  155] [eoscmsgsi-ip556.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+[2023-08-25 16:44:48.801590 +0200][Error  ][PostMaster        ][  155] [eoscmsgsi.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 456th record. Run 1, Event 2154, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:51.846 CEST
+Begin processing the 457th record. Run 1, Event 2156, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:55.375 CEST
+Begin processing the 458th record. Run 1, Event 2158, LumiSection 22 on stream 0 at 25-Aug-2023 16:44:59.855 CEST
+Begin processing the 459th record. Run 1, Event 2159, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:03.308 CEST
+Begin processing the 460th record. Run 1, Event 2161, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:06.887 CEST
+Begin processing the 461st record. Run 1, Event 2162, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:10.047 CEST
+Begin processing the 462nd record. Run 1, Event 2163, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:13.879 CEST
+Begin processing the 463rd record. Run 1, Event 2160, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:17.122 CEST
+Begin processing the 464th record. Run 1, Event 2164, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:20.743 CEST
+Begin processing the 465th record. Run 1, Event 2165, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:23.684 CEST
+Begin processing the 466th record. Run 1, Event 2166, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:27.832 CEST
+Begin processing the 467th record. Run 1, Event 2167, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:31.296 CEST
+Begin processing the 468th record. Run 1, Event 2168, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:35.277 CEST
+Begin processing the 469th record. Run 1, Event 2169, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:38.812 CEST
+Begin processing the 470th record. Run 1, Event 2171, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:41.897 CEST
+Begin processing the 471st record. Run 1, Event 2170, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:45.969 CEST
+Begin processing the 472nd record. Run 1, Event 2172, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:49.573 CEST
+Begin processing the 473rd record. Run 1, Event 2173, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:53.978 CEST
+Begin processing the 474th record. Run 1, Event 2174, LumiSection 22 on stream 0 at 25-Aug-2023 16:45:57.721 CEST
+Begin processing the 475th record. Run 1, Event 2176, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:01.436 CEST
+Begin processing the 476th record. Run 1, Event 2175, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:04.740 CEST
+Begin processing the 477th record. Run 1, Event 2177, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:08.937 CEST
+Begin processing the 478th record. Run 1, Event 2179, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:18.693 CEST
+Begin processing the 479th record. Run 1, Event 2178, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:22.981 CEST
+[2023-08-25 16:46:30.861398 +0200][Error  ][XRootD            ][  155] [cms-xrd-global.cern.ch:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch,xrootd-cms-uk.gridpp.rl.ac.uk,llrxrd-redir.in2p3.fr,eoscmshlt.cern.ch,eoscmshlt.cern.ch,eoscmshlt-ip565.cern.ch,xrootd-cms-redir-int.cr.cnaf.infn.it,eoscms-ns-ip563.cern.ch,eoscms-ns-ip563.cern.ch,xrootd-redic.pi.infn.it&triedrc=resel,enoent,enoent,enoent, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 480th record. Run 1, Event 2180, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:31.421 CEST
+Begin processing the 481st record. Run 1, Event 2181, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:34.587 CEST
+Begin processing the 482nd record. Run 1, Event 2182, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:38.129 CEST
+Begin processing the 483rd record. Run 1, Event 2183, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:40.678 CEST
+Begin processing the 484th record. Run 1, Event 2184, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:44.132 CEST
+Begin processing the 485th record. Run 1, Event 2185, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:47.232 CEST
+Begin processing the 486th record. Run 1, Event 2186, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:50.707 CEST
+Begin processing the 487th record. Run 1, Event 2188, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:54.531 CEST
+Begin processing the 488th record. Run 1, Event 2187, LumiSection 22 on stream 0 at 25-Aug-2023 16:46:57.521 CEST
+Begin processing the 489th record. Run 1, Event 2189, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:00.457 CEST
+Begin processing the 490th record. Run 1, Event 2190, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:05.083 CEST
+Begin processing the 491st record. Run 1, Event 2191, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:09.454 CEST
+Begin processing the 492nd record. Run 1, Event 2192, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:13.597 CEST
+Begin processing the 493rd record. Run 1, Event 2194, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:17.386 CEST
+Begin processing the 494th record. Run 1, Event 2193, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:20.831 CEST
+Begin processing the 495th record. Run 1, Event 2196, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:24.458 CEST
+Begin processing the 496th record. Run 1, Event 2195, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:28.181 CEST
+Begin processing the 497th record. Run 1, Event 2197, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:31.528 CEST
+Begin processing the 498th record. Run 1, Event 2198, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:34.774 CEST
+Begin processing the 499th record. Run 1, Event 2200, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:38.424 CEST
+Begin processing the 500th record. Run 1, Event 2199, LumiSection 22 on stream 0 at 25-Aug-2023 16:47:41.735 CEST
+Begin processing the 501st record. Run 1, Event 2802, LumiSection 29 on stream 0 at 25-Aug-2023 16:47:44.912 CEST
+Begin processing the 502nd record. Run 1, Event 2801, LumiSection 29 on stream 0 at 25-Aug-2023 16:47:49.275 CEST
+Begin processing the 503rd record. Run 1, Event 2803, LumiSection 29 on stream 0 at 25-Aug-2023 16:47:53.306 CEST
+Begin processing the 504th record. Run 1, Event 2804, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:01.804 CEST
+Begin processing the 505th record. Run 1, Event 2805, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:04.738 CEST
+Begin processing the 506th record. Run 1, Event 2806, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:15.827 CEST
+Begin processing the 507th record. Run 1, Event 2807, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:19.627 CEST
+Begin processing the 508th record. Run 1, Event 2809, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:23.377 CEST
+Begin processing the 509th record. Run 1, Event 2808, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:26.932 CEST
+Begin processing the 510th record. Run 1, Event 2810, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:31.322 CEST
+Begin processing the 511th record. Run 1, Event 2811, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:34.666 CEST
+Begin processing the 512th record. Run 1, Event 2813, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:38.371 CEST
+Begin processing the 513th record. Run 1, Event 2814, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:42.322 CEST
+Begin processing the 514th record. Run 1, Event 2812, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:45.309 CEST
+Begin processing the 515th record. Run 1, Event 2816, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:48.796 CEST
+Begin processing the 516th record. Run 1, Event 2815, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:52.299 CEST
+[2023-08-25 16:48:55.514619 +0200][Error  ][PostMaster        ][  155] [eoscms-ns-ip563.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 517th record. Run 1, Event 2818, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:56.016 CEST
+Begin processing the 518th record. Run 1, Event 2817, LumiSection 29 on stream 0 at 25-Aug-2023 16:48:59.889 CEST
+Begin processing the 519th record. Run 1, Event 2819, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:03.407 CEST
+Begin processing the 520th record. Run 1, Event 2820, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:06.495 CEST
+Begin processing the 521st record. Run 1, Event 2821, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:09.753 CEST
+Begin processing the 522nd record. Run 1, Event 2822, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:13.297 CEST
+Begin processing the 523rd record. Run 1, Event 2823, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:16.935 CEST
+Begin processing the 524th record. Run 1, Event 2824, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:19.675 CEST
+Begin processing the 525th record. Run 1, Event 2825, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:23.036 CEST
+Begin processing the 526th record. Run 1, Event 2826, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:26.416 CEST
+Begin processing the 527th record. Run 1, Event 2827, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:29.915 CEST
+Begin processing the 528th record. Run 1, Event 2829, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:33.094 CEST
+Begin processing the 529th record. Run 1, Event 2828, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:36.138 CEST
+Begin processing the 530th record. Run 1, Event 2830, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:40.324 CEST
+Begin processing the 531st record. Run 1, Event 2831, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:43.533 CEST
+Begin processing the 532nd record. Run 1, Event 2832, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:46.816 CEST
+Begin processing the 533rd record. Run 1, Event 2833, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:49.481 CEST
+Begin processing the 534th record. Run 1, Event 2834, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:53.269 CEST
+Begin processing the 535th record. Run 1, Event 2835, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:55.466 CEST
+Begin processing the 536th record. Run 1, Event 2837, LumiSection 29 on stream 0 at 25-Aug-2023 16:49:58.971 CEST
+Begin processing the 537th record. Run 1, Event 2836, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:02.119 CEST
+Begin processing the 538th record. Run 1, Event 2838, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:06.081 CEST
+Begin processing the 539th record. Run 1, Event 2839, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:09.453 CEST
+Begin processing the 540th record. Run 1, Event 2840, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:12.991 CEST
+Begin processing the 541st record. Run 1, Event 2841, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:16.003 CEST
+Begin processing the 542nd record. Run 1, Event 2842, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:20.511 CEST
+Begin processing the 543rd record. Run 1, Event 2843, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:23.386 CEST
+Begin processing the 544th record. Run 1, Event 2845, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:27.260 CEST
+Begin processing the 545th record. Run 1, Event 2844, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:30.543 CEST
+Begin processing the 546th record. Run 1, Event 2847, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:33.767 CEST
+Begin processing the 547th record. Run 1, Event 2846, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:37.888 CEST
+Begin processing the 548th record. Run 1, Event 2848, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:41.420 CEST
+Begin processing the 549th record. Run 1, Event 2849, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:45.329 CEST
+Begin processing the 550th record. Run 1, Event 2850, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:49.041 CEST
+Begin processing the 551st record. Run 1, Event 2851, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:51.823 CEST
+Begin processing the 552nd record. Run 1, Event 2853, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:55.618 CEST
+Begin processing the 553rd record. Run 1, Event 2854, LumiSection 29 on stream 0 at 25-Aug-2023 16:50:58.477 CEST
+Begin processing the 554th record. Run 1, Event 2852, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:01.966 CEST
+Begin processing the 555th record. Run 1, Event 2856, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:05.811 CEST
+Begin processing the 556th record. Run 1, Event 2855, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:08.838 CEST
+Begin processing the 557th record. Run 1, Event 2857, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:12.280 CEST
+Begin processing the 558th record. Run 1, Event 2858, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:15.527 CEST
+Begin processing the 559th record. Run 1, Event 2859, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:18.602 CEST
+Begin processing the 560th record. Run 1, Event 2860, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:21.812 CEST
+Begin processing the 561st record. Run 1, Event 2862, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:25.412 CEST
+Begin processing the 562nd record. Run 1, Event 2861, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:28.319 CEST
+Begin processing the 563rd record. Run 1, Event 2863, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:30.870 CEST
+Begin processing the 564th record. Run 1, Event 2864, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:35.045 CEST
+Begin processing the 565th record. Run 1, Event 2865, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:38.308 CEST
+Begin processing the 566th record. Run 1, Event 2866, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:41.756 CEST
+Begin processing the 567th record. Run 1, Event 2868, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:45.155 CEST
+Begin processing the 568th record. Run 1, Event 2867, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:48.813 CEST
+Begin processing the 569th record. Run 1, Event 2869, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:51.438 CEST
+Begin processing the 570th record. Run 1, Event 2870, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:54.748 CEST
+Begin processing the 571st record. Run 1, Event 2871, LumiSection 29 on stream 0 at 25-Aug-2023 16:51:57.597 CEST
+Begin processing the 572nd record. Run 1, Event 2872, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:01.310 CEST
+Begin processing the 573rd record. Run 1, Event 2873, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:04.850 CEST
+Begin processing the 574th record. Run 1, Event 2875, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:08.363 CEST
+Begin processing the 575th record. Run 1, Event 2874, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:12.609 CEST
+Begin processing the 576th record. Run 1, Event 2877, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:16.008 CEST
+Begin processing the 577th record. Run 1, Event 2876, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:19.656 CEST
+Begin processing the 578th record. Run 1, Event 2879, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:23.039 CEST
+Begin processing the 579th record. Run 1, Event 2880, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:27.016 CEST
+Begin processing the 580th record. Run 1, Event 2878, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:31.042 CEST
+Begin processing the 581st record. Run 1, Event 2881, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:35.165 CEST
+Begin processing the 582nd record. Run 1, Event 2883, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:38.879 CEST
+Begin processing the 583rd record. Run 1, Event 2884, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:41.500 CEST
+Begin processing the 584th record. Run 1, Event 2882, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:45.230 CEST
+Begin processing the 585th record. Run 1, Event 2885, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:48.619 CEST
+Begin processing the 586th record. Run 1, Event 2886, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:52.666 CEST
+Begin processing the 587th record. Run 1, Event 2887, LumiSection 29 on stream 0 at 25-Aug-2023 16:52:56.074 CEST
+Begin processing the 588th record. Run 1, Event 2888, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:00.897 CEST
+Begin processing the 589th record. Run 1, Event 2889, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:04.120 CEST
+Begin processing the 590th record. Run 1, Event 2891, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:07.723 CEST
+Begin processing the 591st record. Run 1, Event 2890, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:11.423 CEST
+Begin processing the 592nd record. Run 1, Event 2892, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:15.650 CEST
+Begin processing the 593rd record. Run 1, Event 2893, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:19.538 CEST
+Begin processing the 594th record. Run 1, Event 2894, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:23.261 CEST
+Begin processing the 595th record. Run 1, Event 2896, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:27.291 CEST
+Begin processing the 596th record. Run 1, Event 2895, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:30.383 CEST
+Begin processing the 597th record. Run 1, Event 2898, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:34.483 CEST
+Begin processing the 598th record. Run 1, Event 2897, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:38.298 CEST
+[2023-08-25 16:53:41.501978 +0200][Error  ][PostMaster        ][  155] [eoscmshlt-ip565.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 599th record. Run 1, Event 2899, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:41.600 CEST
+[2023-08-25 16:53:42.813799 +0200][Error  ][PostMaster        ][  155] [eoscmshlt.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 600th record. Run 1, Event 2900, LumiSection 29 on stream 0 at 25-Aug-2023 16:53:45.592 CEST
+Begin processing the 601st record. Run 1, Event 3201, LumiSection 33 on stream 0 at 25-Aug-2023 16:53:49.434 CEST
+Begin processing the 602nd record. Run 1, Event 3202, LumiSection 33 on stream 0 at 25-Aug-2023 16:53:53.093 CEST
+Begin processing the 603rd record. Run 1, Event 3203, LumiSection 33 on stream 0 at 25-Aug-2023 16:53:56.667 CEST
+Begin processing the 604th record. Run 1, Event 3204, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:00.851 CEST
+Begin processing the 605th record. Run 1, Event 3205, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:04.393 CEST
+Begin processing the 606th record. Run 1, Event 3206, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:08.912 CEST
+Begin processing the 607th record. Run 1, Event 3208, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:12.429 CEST
+Begin processing the 608th record. Run 1, Event 3207, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:16.162 CEST
+Begin processing the 609th record. Run 1, Event 3209, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:19.720 CEST
+Begin processing the 610th record. Run 1, Event 3211, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:23.250 CEST
+Begin processing the 611th record. Run 1, Event 3212, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:26.619 CEST
+Begin processing the 612th record. Run 1, Event 3210, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:30.288 CEST
+Begin processing the 613th record. Run 1, Event 3213, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:34.682 CEST
+Begin processing the 614th record. Run 1, Event 3214, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:38.189 CEST
+Begin processing the 615th record. Run 1, Event 3215, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:40.997 CEST
+Begin processing the 616th record. Run 1, Event 3216, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:45.309 CEST
+Begin processing the 617th record. Run 1, Event 3217, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:49.491 CEST
+Begin processing the 618th record. Run 1, Event 3218, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:53.103 CEST
+Begin processing the 619th record. Run 1, Event 3220, LumiSection 33 on stream 0 at 25-Aug-2023 16:54:56.390 CEST
+Begin processing the 620th record. Run 1, Event 3219, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:00.229 CEST
+Begin processing the 621st record. Run 1, Event 3221, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:03.783 CEST
+Begin processing the 622nd record. Run 1, Event 3222, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:07.658 CEST
+Begin processing the 623rd record. Run 1, Event 3223, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:10.679 CEST
+Begin processing the 624th record. Run 1, Event 3225, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:14.270 CEST
+Begin processing the 625th record. Run 1, Event 3226, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:17.975 CEST
+Begin processing the 626th record. Run 1, Event 3224, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:21.623 CEST
+Begin processing the 627th record. Run 1, Event 3227, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:25.123 CEST
+[2023-08-25 16:55:25.198056 +0200][Error  ][PostMaster        ][  155] [eoscmsgsi-ip556.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+[2023-08-25 16:55:25.198179 +0200][Error  ][PostMaster        ][  155] [eoscmsgsi.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 628th record. Run 1, Event 3229, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:28.855 CEST
+Begin processing the 629th record. Run 1, Event 3228, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:31.841 CEST
+Begin processing the 630th record. Run 1, Event 3230, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:35.961 CEST
+Begin processing the 631st record. Run 1, Event 3232, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:39.978 CEST
+Begin processing the 632nd record. Run 1, Event 3231, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:43.848 CEST
+Begin processing the 633rd record. Run 1, Event 3233, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:47.505 CEST
+Begin processing the 634th record. Run 1, Event 3234, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:50.673 CEST
+Begin processing the 635th record. Run 1, Event 3236, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:53.528 CEST
+Begin processing the 636th record. Run 1, Event 3235, LumiSection 33 on stream 0 at 25-Aug-2023 16:55:56.889 CEST
+Begin processing the 637th record. Run 1, Event 3237, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:00.343 CEST
+Begin processing the 638th record. Run 1, Event 3239, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:04.316 CEST
+Begin processing the 639th record. Run 1, Event 3238, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:08.010 CEST
+Begin processing the 640th record. Run 1, Event 3240, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:12.665 CEST
+Begin processing the 641st record. Run 1, Event 3241, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:16.392 CEST
+Begin processing the 642nd record. Run 1, Event 3242, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:19.388 CEST
+Begin processing the 643rd record. Run 1, Event 3243, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:23.683 CEST
+Begin processing the 644th record. Run 1, Event 3244, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:27.168 CEST
+Begin processing the 645th record. Run 1, Event 3245, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:30.468 CEST
+Begin processing the 646th record. Run 1, Event 3246, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:34.244 CEST
+Begin processing the 647th record. Run 1, Event 3247, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:37.586 CEST
+Begin processing the 648th record. Run 1, Event 3249, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:40.776 CEST
+Begin processing the 649th record. Run 1, Event 3250, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:44.483 CEST
+Begin processing the 650th record. Run 1, Event 3248, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:47.737 CEST
+Begin processing the 651st record. Run 1, Event 3251, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:51.323 CEST
+Begin processing the 652nd record. Run 1, Event 3252, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:54.704 CEST
+Begin processing the 653rd record. Run 1, Event 3253, LumiSection 33 on stream 0 at 25-Aug-2023 16:56:58.148 CEST
+Begin processing the 654th record. Run 1, Event 3254, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:01.806 CEST
+Begin processing the 655th record. Run 1, Event 3255, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:05.136 CEST
+Begin processing the 656th record. Run 1, Event 3256, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:08.332 CEST
+Begin processing the 657th record. Run 1, Event 3257, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:12.094 CEST
+Begin processing the 658th record. Run 1, Event 3258, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:15.547 CEST
+Begin processing the 659th record. Run 1, Event 3259, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:19.076 CEST
+Begin processing the 660th record. Run 1, Event 3260, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:23.022 CEST
+Begin processing the 661st record. Run 1, Event 3261, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:26.750 CEST
+[2023-08-25 16:57:28.393080 +0200][Error  ][XRootD            ][  155] [cms-xrd-global.cern.ch:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1098cms-xrd-global011098cms-xrd-global02.cern.ch,+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch,xrootd-cms-uk.gridpp.rl.ac.uk,llrxrd-redir.in2p3.fr,eoscmshlt.cern.ch,eoscmshlt.cern.ch,eoscmshlt-ip565.cern.ch,xrootd-redic.pi.infn.it,eoscms-ns-ip563.cern.ch,eoscms-ns-ip563.cern.ch,xrootd-cms-redir-int.cr.cnaf.infn.it,cms-xrd-transit.cern.ch&triedrc=resel,enoent,enoent,enoent,enoent, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 662nd record. Run 1, Event 3262, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:30.290 CEST
+Begin processing the 663rd record. Run 1, Event 3264, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:34.027 CEST
+Begin processing the 664th record. Run 1, Event 3263, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:37.341 CEST
+Begin processing the 665th record. Run 1, Event 3265, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:41.465 CEST
+Begin processing the 666th record. Run 1, Event 3266, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:44.323 CEST
+Begin processing the 667th record. Run 1, Event 3267, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:47.847 CEST
+Begin processing the 668th record. Run 1, Event 3269, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:51.613 CEST
+Begin processing the 669th record. Run 1, Event 3268, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:55.789 CEST
+Begin processing the 670th record. Run 1, Event 3271, LumiSection 33 on stream 0 at 25-Aug-2023 16:57:59.170 CEST
+Begin processing the 671st record. Run 1, Event 3272, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:02.586 CEST
+Begin processing the 672nd record. Run 1, Event 3270, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:05.479 CEST
+Begin processing the 673rd record. Run 1, Event 3273, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:08.990 CEST
+Begin processing the 674th record. Run 1, Event 3274, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:13.029 CEST
+Begin processing the 675th record. Run 1, Event 3275, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:16.302 CEST
+Begin processing the 676th record. Run 1, Event 3276, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:20.261 CEST
+Begin processing the 677th record. Run 1, Event 3277, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:24.270 CEST
+Begin processing the 678th record. Run 1, Event 3278, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:28.241 CEST
+Begin processing the 679th record. Run 1, Event 3280, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:32.209 CEST
+Begin processing the 680th record. Run 1, Event 3279, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:36.217 CEST
+Begin processing the 681st record. Run 1, Event 3281, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:39.971 CEST
+Begin processing the 682nd record. Run 1, Event 3282, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:43.889 CEST
+Begin processing the 683rd record. Run 1, Event 3283, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:48.086 CEST
+Begin processing the 684th record. Run 1, Event 3284, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:51.599 CEST
+Begin processing the 685th record. Run 1, Event 3285, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:54.531 CEST
+Begin processing the 686th record. Run 1, Event 3286, LumiSection 33 on stream 0 at 25-Aug-2023 16:58:58.558 CEST
+Begin processing the 687th record. Run 1, Event 3287, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:01.151 CEST
+Begin processing the 688th record. Run 1, Event 3289, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:04.794 CEST
+Begin processing the 689th record. Run 1, Event 3290, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:08.384 CEST
+Begin processing the 690th record. Run 1, Event 3288, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:11.987 CEST
+Begin processing the 691st record. Run 1, Event 3291, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:15.966 CEST
+Begin processing the 692nd record. Run 1, Event 3292, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:20.417 CEST
+Begin processing the 693rd record. Run 1, Event 3293, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:23.611 CEST
+Begin processing the 694th record. Run 1, Event 3295, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:27.590 CEST
+Begin processing the 695th record. Run 1, Event 3294, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:30.313 CEST
+Begin processing the 696th record. Run 1, Event 3297, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:33.874 CEST
+Begin processing the 697th record. Run 1, Event 3296, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:36.626 CEST
+Begin processing the 698th record. Run 1, Event 3298, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:40.396 CEST
+Begin processing the 699th record. Run 1, Event 3299, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:43.540 CEST
+Begin processing the 700th record. Run 1, Event 3300, LumiSection 33 on stream 0 at 25-Aug-2023 16:59:47.136 CEST
+[2023-08-25 16:59:48.355598 +0200][Error  ][PostMaster        ][  155] [eoscms-ns-ip563.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 701st record. Run 1, Event 3601, LumiSection 37 on stream 0 at 25-Aug-2023 16:59:50.847 CEST
+Begin processing the 702nd record. Run 1, Event 3602, LumiSection 37 on stream 0 at 25-Aug-2023 16:59:53.720 CEST
+Begin processing the 703rd record. Run 1, Event 3603, LumiSection 37 on stream 0 at 25-Aug-2023 16:59:57.887 CEST
+Begin processing the 704th record. Run 1, Event 3605, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:02.169 CEST
+Begin processing the 705th record. Run 1, Event 3604, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:05.772 CEST
+Begin processing the 706th record. Run 1, Event 3606, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:09.671 CEST
+Begin processing the 707th record. Run 1, Event 3608, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:12.710 CEST
+Begin processing the 708th record. Run 1, Event 3607, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:16.129 CEST
+Begin processing the 709th record. Run 1, Event 3609, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:19.831 CEST
+Begin processing the 710th record. Run 1, Event 3611, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:24.035 CEST
+Begin processing the 711th record. Run 1, Event 3610, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:27.518 CEST
+Begin processing the 712th record. Run 1, Event 3612, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:31.352 CEST
+Begin processing the 713th record. Run 1, Event 3613, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:34.879 CEST
+Begin processing the 714th record. Run 1, Event 3615, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:38.135 CEST
+Begin processing the 715th record. Run 1, Event 3614, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:41.806 CEST
+Begin processing the 716th record. Run 1, Event 3616, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:45.604 CEST
+Begin processing the 717th record. Run 1, Event 3618, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:49.642 CEST
+Begin processing the 718th record. Run 1, Event 3619, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:53.561 CEST
+Begin processing the 719th record. Run 1, Event 3620, LumiSection 37 on stream 0 at 25-Aug-2023 17:00:57.574 CEST
+Begin processing the 720th record. Run 1, Event 3617, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:01.694 CEST
+Begin processing the 721st record. Run 1, Event 3621, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:05.558 CEST
+Begin processing the 722nd record. Run 1, Event 3623, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:09.237 CEST
+Begin processing the 723rd record. Run 1, Event 3622, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:12.926 CEST
+Begin processing the 724th record. Run 1, Event 3625, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:16.109 CEST
+Begin processing the 725th record. Run 1, Event 3624, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:20.563 CEST
+Begin processing the 726th record. Run 1, Event 3627, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:24.835 CEST
+Begin processing the 727th record. Run 1, Event 3626, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:29.009 CEST
+Begin processing the 728th record. Run 1, Event 3629, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:33.183 CEST
+Begin processing the 729th record. Run 1, Event 3630, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:36.498 CEST
+Begin processing the 730th record. Run 1, Event 3628, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:39.964 CEST
+Begin processing the 731st record. Run 1, Event 3632, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:43.503 CEST
+Begin processing the 732nd record. Run 1, Event 3631, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:47.306 CEST
+Begin processing the 733rd record. Run 1, Event 3633, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:51.105 CEST
+Begin processing the 734th record. Run 1, Event 3634, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:55.304 CEST
+Begin processing the 735th record. Run 1, Event 3635, LumiSection 37 on stream 0 at 25-Aug-2023 17:01:59.533 CEST
+Begin processing the 736th record. Run 1, Event 3636, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:03.260 CEST
+Begin processing the 737th record. Run 1, Event 3637, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:06.520 CEST
+Begin processing the 738th record. Run 1, Event 3638, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:10.883 CEST
+Begin processing the 739th record. Run 1, Event 3639, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:14.289 CEST
+Begin processing the 740th record. Run 1, Event 3641, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:18.712 CEST
+[2023-08-25 17:02:21.621520 +0200][Error  ][XRootD            ][  155] [cms-xrd-global.cern.ch:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch,xrootd-cms-uk.gridpp.rl.ac.uk,xrootd-cms-redir-int.cr.cnaf.infn.it,eoscmshlt.cern.ch,eoscmshlt.cern.ch,eoscmshlt-ip565.cern.ch,xrootd-redic.pi.infn.it,eoscmsgsi.cern.ch,eoscmsgsi.cern.ch,eoscmsgsi-ip556.cern.ch,llrxrd-redir.in2p3.fr&triedrc=resel,enoent,enoent,enoent, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 741st record. Run 1, Event 3640, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:21.936 CEST
+Begin processing the 742nd record. Run 1, Event 3642, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:25.641 CEST
+Begin processing the 743rd record. Run 1, Event 3643, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:29.486 CEST
+Begin processing the 744th record. Run 1, Event 3644, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:33.237 CEST
+Begin processing the 745th record. Run 1, Event 3645, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:37.011 CEST
+Begin processing the 746th record. Run 1, Event 3647, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:41.381 CEST
+Begin processing the 747th record. Run 1, Event 3646, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:44.285 CEST
+Begin processing the 748th record. Run 1, Event 3649, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:48.153 CEST
+Begin processing the 749th record. Run 1, Event 3648, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:51.853 CEST
+Begin processing the 750th record. Run 1, Event 3650, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:55.972 CEST
+Begin processing the 751st record. Run 1, Event 3651, LumiSection 37 on stream 0 at 25-Aug-2023 17:02:59.256 CEST
+Begin processing the 752nd record. Run 1, Event 3652, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:02.330 CEST
+Begin processing the 753rd record. Run 1, Event 3653, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:05.352 CEST
+Begin processing the 754th record. Run 1, Event 3655, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:09.515 CEST
+Begin processing the 755th record. Run 1, Event 3654, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:12.946 CEST
+Begin processing the 756th record. Run 1, Event 3657, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:16.207 CEST
+Begin processing the 757th record. Run 1, Event 3656, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:20.404 CEST
+Begin processing the 758th record. Run 1, Event 3658, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:24.066 CEST
+Begin processing the 759th record. Run 1, Event 3659, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:27.371 CEST
+Begin processing the 760th record. Run 1, Event 3661, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:31.006 CEST
+Begin processing the 761st record. Run 1, Event 3660, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:34.119 CEST
+Begin processing the 762nd record. Run 1, Event 3663, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:37.032 CEST
+Begin processing the 763rd record. Run 1, Event 3662, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:39.910 CEST
+Begin processing the 764th record. Run 1, Event 3665, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:43.832 CEST
+Begin processing the 765th record. Run 1, Event 3664, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:47.613 CEST
+Begin processing the 766th record. Run 1, Event 3666, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:51.737 CEST
+Begin processing the 767th record. Run 1, Event 3667, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:55.463 CEST
+Begin processing the 768th record. Run 1, Event 3669, LumiSection 37 on stream 0 at 25-Aug-2023 17:03:59.423 CEST
+Begin processing the 769th record. Run 1, Event 3668, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:02.671 CEST
+Begin processing the 770th record. Run 1, Event 3670, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:06.724 CEST
+Begin processing the 771st record. Run 1, Event 3671, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:11.078 CEST
+Begin processing the 772nd record. Run 1, Event 3672, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:15.226 CEST
+Begin processing the 773rd record. Run 1, Event 3673, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:18.671 CEST
+Begin processing the 774th record. Run 1, Event 3675, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:22.582 CEST
+Begin processing the 775th record. Run 1, Event 3674, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:25.872 CEST
+Begin processing the 776th record. Run 1, Event 3677, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:29.961 CEST
+Begin processing the 777th record. Run 1, Event 3678, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:33.439 CEST
+Begin processing the 778th record. Run 1, Event 3676, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:37.022 CEST
+[2023-08-25 17:04:40.722423 +0200][Error  ][PostMaster        ][  155] [eoscmshlt-ip565.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 779th record. Run 1, Event 3680, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:41.046 CEST
+[2023-08-25 17:04:41.110393 +0200][Error  ][PostMaster        ][  155] [eoscmshlt.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+[2023-08-25 17:04:41.110564 +0200][Error  ][PostMaster        ][  155] [eoscmsgsi-ip556.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+[2023-08-25 17:04:41.110612 +0200][Error  ][PostMaster        ][  155] [eoscmsgsi.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 780th record. Run 1, Event 3679, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:44.560 CEST
+Begin processing the 781st record. Run 1, Event 3683, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:47.747 CEST
+Begin processing the 782nd record. Run 1, Event 3681, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:51.368 CEST
+Begin processing the 783rd record. Run 1, Event 3682, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:55.297 CEST
+Begin processing the 784th record. Run 1, Event 3684, LumiSection 37 on stream 0 at 25-Aug-2023 17:04:58.496 CEST
+Begin processing the 785th record. Run 1, Event 3686, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:02.157 CEST
+Begin processing the 786th record. Run 1, Event 3685, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:05.623 CEST
+Begin processing the 787th record. Run 1, Event 3687, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:10.268 CEST
+Begin processing the 788th record. Run 1, Event 3688, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:14.092 CEST
+Begin processing the 789th record. Run 1, Event 3689, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:17.314 CEST
+Begin processing the 790th record. Run 1, Event 3690, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:21.596 CEST
+Begin processing the 791st record. Run 1, Event 3693, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:25.599 CEST
+Begin processing the 792nd record. Run 1, Event 3691, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:29.315 CEST
+Begin processing the 793rd record. Run 1, Event 3692, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:33.438 CEST
+Begin processing the 794th record. Run 1, Event 3694, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:37.860 CEST
+Begin processing the 795th record. Run 1, Event 3696, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:41.315 CEST
+Begin processing the 796th record. Run 1, Event 3697, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:45.939 CEST
+Begin processing the 797th record. Run 1, Event 3695, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:49.924 CEST
+Begin processing the 798th record. Run 1, Event 3698, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:53.543 CEST
+Begin processing the 799th record. Run 1, Event 3699, LumiSection 37 on stream 0 at 25-Aug-2023 17:05:57.799 CEST
+Begin processing the 800th record. Run 1, Event 3700, LumiSection 37 on stream 0 at 25-Aug-2023 17:06:01.266 CEST
+Begin processing the 801st record. Run 1, Event 3702, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:05.246 CEST
+Begin processing the 802nd record. Run 1, Event 3701, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:09.937 CEST
+Begin processing the 803rd record. Run 1, Event 3703, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:13.395 CEST
+Begin processing the 804th record. Run 1, Event 3704, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:17.624 CEST
+Begin processing the 805th record. Run 1, Event 3706, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:21.503 CEST
+Begin processing the 806th record. Run 1, Event 3705, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:25.599 CEST
+Begin processing the 807th record. Run 1, Event 3707, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:29.055 CEST
+Begin processing the 808th record. Run 1, Event 3708, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:32.983 CEST
+Begin processing the 809th record. Run 1, Event 3709, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:36.897 CEST
+Begin processing the 810th record. Run 1, Event 3711, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:40.834 CEST
+Begin processing the 811th record. Run 1, Event 3710, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:44.333 CEST
+Begin processing the 812th record. Run 1, Event 3712, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:47.788 CEST
+Begin processing the 813th record. Run 1, Event 3714, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:51.400 CEST
+Begin processing the 814th record. Run 1, Event 3713, LumiSection 38 on stream 0 at 25-Aug-2023 17:06:56.520 CEST
+Begin processing the 815th record. Run 1, Event 3716, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:00.441 CEST
+Begin processing the 816th record. Run 1, Event 3715, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:03.664 CEST
+Begin processing the 817th record. Run 1, Event 3718, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:07.119 CEST
+Begin processing the 818th record. Run 1, Event 3717, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:11.232 CEST
+[2023-08-25 17:07:13.891960 +0200][Error  ][XRootD            ][  155] [xrootd-cms-uk.gridpp.rl.ac.uk:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch&triedrc=resel, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 819th record. Run 1, Event 3721, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:14.406 CEST
+Begin processing the 820th record. Run 1, Event 3719, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:18.032 CEST
+Begin processing the 821st record. Run 1, Event 3720, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:21.458 CEST
+Begin processing the 822nd record. Run 1, Event 3722, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:25.430 CEST
+Begin processing the 823rd record. Run 1, Event 3723, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:28.315 CEST
+Begin processing the 824th record. Run 1, Event 3725, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:32.009 CEST
+Begin processing the 825th record. Run 1, Event 3724, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:35.329 CEST
+Begin processing the 826th record. Run 1, Event 3727, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:39.349 CEST
+Begin processing the 827th record. Run 1, Event 3726, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:42.567 CEST
+Begin processing the 828th record. Run 1, Event 3729, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:46.520 CEST
+Begin processing the 829th record. Run 1, Event 3728, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:49.677 CEST
+Begin processing the 830th record. Run 1, Event 3731, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:53.586 CEST
+Begin processing the 831st record. Run 1, Event 3730, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:56.394 CEST
+Begin processing the 832nd record. Run 1, Event 3732, LumiSection 38 on stream 0 at 25-Aug-2023 17:07:59.811 CEST
+Begin processing the 833rd record. Run 1, Event 3733, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:02.608 CEST
+Begin processing the 834th record. Run 1, Event 3734, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:06.179 CEST
+Begin processing the 835th record. Run 1, Event 3735, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:09.614 CEST
+Begin processing the 836th record. Run 1, Event 3736, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:13.263 CEST
+Begin processing the 837th record. Run 1, Event 3737, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:16.745 CEST
+Begin processing the 838th record. Run 1, Event 3738, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:20.425 CEST
+Begin processing the 839th record. Run 1, Event 3739, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:24.028 CEST
+Begin processing the 840th record. Run 1, Event 3740, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:28.492 CEST
+Begin processing the 841st record. Run 1, Event 3742, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:31.861 CEST
+Begin processing the 842nd record. Run 1, Event 3741, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:35.709 CEST
+Begin processing the 843rd record. Run 1, Event 3743, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:38.568 CEST
+Begin processing the 844th record. Run 1, Event 3744, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:41.925 CEST
+Begin processing the 845th record. Run 1, Event 3745, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:45.117 CEST
+Begin processing the 846th record. Run 1, Event 3746, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:48.842 CEST
+Begin processing the 847th record. Run 1, Event 3747, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:52.337 CEST
+Begin processing the 848th record. Run 1, Event 3749, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:56.453 CEST
+Begin processing the 849th record. Run 1, Event 3748, LumiSection 38 on stream 0 at 25-Aug-2023 17:08:59.834 CEST
+Begin processing the 850th record. Run 1, Event 3751, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:03.639 CEST
+Begin processing the 851st record. Run 1, Event 3752, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:07.479 CEST
+Begin processing the 852nd record. Run 1, Event 3750, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:10.781 CEST
+Begin processing the 853rd record. Run 1, Event 3753, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:14.415 CEST
+Begin processing the 854th record. Run 1, Event 3754, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:17.637 CEST
+Begin processing the 855th record. Run 1, Event 3756, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:20.869 CEST
+Begin processing the 856th record. Run 1, Event 3757, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:25.294 CEST
+Begin processing the 857th record. Run 1, Event 3755, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:28.615 CEST
+Begin processing the 858th record. Run 1, Event 3758, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:32.180 CEST
+Begin processing the 859th record. Run 1, Event 3759, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:35.435 CEST
+Begin processing the 860th record. Run 1, Event 3760, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:39.895 CEST
+Begin processing the 861st record. Run 1, Event 3762, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:43.860 CEST
+Begin processing the 862nd record. Run 1, Event 3763, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:48.070 CEST
+Begin processing the 863rd record. Run 1, Event 3764, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:53.025 CEST
+Begin processing the 864th record. Run 1, Event 3761, LumiSection 38 on stream 0 at 25-Aug-2023 17:09:56.329 CEST
+Begin processing the 865th record. Run 1, Event 3765, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:01.032 CEST
+Begin processing the 866th record. Run 1, Event 3766, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:05.312 CEST
+Begin processing the 867th record. Run 1, Event 3767, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:09.146 CEST
+Begin processing the 868th record. Run 1, Event 3768, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:12.489 CEST
+Begin processing the 869th record. Run 1, Event 3769, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:16.172 CEST
+Begin processing the 870th record. Run 1, Event 3770, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:19.888 CEST
+Begin processing the 871st record. Run 1, Event 3772, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:22.792 CEST
+Begin processing the 872nd record. Run 1, Event 3771, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:26.711 CEST
+Begin processing the 873rd record. Run 1, Event 3773, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:30.388 CEST
+Begin processing the 874th record. Run 1, Event 3775, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:34.151 CEST
+Begin processing the 875th record. Run 1, Event 3776, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:38.313 CEST
+Begin processing the 876th record. Run 1, Event 3774, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:42.390 CEST
+Begin processing the 877th record. Run 1, Event 3777, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:46.680 CEST
+Begin processing the 878th record. Run 1, Event 3778, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:50.845 CEST
+Begin processing the 879th record. Run 1, Event 3779, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:54.485 CEST
+Begin processing the 880th record. Run 1, Event 3781, LumiSection 38 on stream 0 at 25-Aug-2023 17:10:59.064 CEST
+Begin processing the 881st record. Run 1, Event 3782, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:01.827 CEST
+Begin processing the 882nd record. Run 1, Event 3783, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:05.693 CEST
+Begin processing the 883rd record. Run 1, Event 3785, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:09.252 CEST
+Begin processing the 884th record. Run 1, Event 3780, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:13.170 CEST
+Begin processing the 885th record. Run 1, Event 3784, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:16.997 CEST
+Begin processing the 886th record. Run 1, Event 3786, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:21.532 CEST
+Begin processing the 887th record. Run 1, Event 3787, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:25.125 CEST
+Begin processing the 888th record. Run 1, Event 3788, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:28.346 CEST
+Begin processing the 889th record. Run 1, Event 3789, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:32.513 CEST
+Begin processing the 890th record. Run 1, Event 3791, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:36.367 CEST
+Begin processing the 891st record. Run 1, Event 3790, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:40.364 CEST
+Begin processing the 892nd record. Run 1, Event 3792, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:43.963 CEST
+Begin processing the 893rd record. Run 1, Event 3793, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:47.760 CEST
+Begin processing the 894th record. Run 1, Event 3794, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:51.655 CEST
+Begin processing the 895th record. Run 1, Event 3796, LumiSection 38 on stream 0 at 25-Aug-2023 17:11:56.254 CEST
+Begin processing the 896th record. Run 1, Event 3797, LumiSection 38 on stream 0 at 25-Aug-2023 17:12:00.190 CEST
+Begin processing the 897th record. Run 1, Event 3795, LumiSection 38 on stream 0 at 25-Aug-2023 17:12:04.568 CEST
+Begin processing the 898th record. Run 1, Event 3798, LumiSection 38 on stream 0 at 25-Aug-2023 17:12:09.240 CEST
+Begin processing the 899th record. Run 1, Event 3799, LumiSection 38 on stream 0 at 25-Aug-2023 17:12:13.242 CEST
+Begin processing the 900th record. Run 1, Event 3800, LumiSection 38 on stream 0 at 25-Aug-2023 17:12:17.598 CEST
+Begin processing the 901st record. Run 1, Event 4001, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:21.253 CEST
+Begin processing the 902nd record. Run 1, Event 4002, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:25.193 CEST
+Begin processing the 903rd record. Run 1, Event 4004, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:28.692 CEST
+Begin processing the 904th record. Run 1, Event 4003, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:33.590 CEST
+Begin processing the 905th record. Run 1, Event 4006, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:37.226 CEST
+Begin processing the 906th record. Run 1, Event 4005, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:40.425 CEST
+Begin processing the 907th record. Run 1, Event 4007, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:44.568 CEST
+Begin processing the 908th record. Run 1, Event 4008, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:48.671 CEST
+Begin processing the 909th record. Run 1, Event 4010, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:53.091 CEST
+Begin processing the 910th record. Run 1, Event 4009, LumiSection 41 on stream 0 at 25-Aug-2023 17:12:56.720 CEST
+Begin processing the 911th record. Run 1, Event 4011, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:00.942 CEST
+Begin processing the 912th record. Run 1, Event 4012, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:04.736 CEST
+Begin processing the 913th record. Run 1, Event 4013, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:07.701 CEST
+Begin processing the 914th record. Run 1, Event 4014, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:12.027 CEST
+Begin processing the 915th record. Run 1, Event 4015, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:16.201 CEST
+Begin processing the 916th record. Run 1, Event 4016, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:19.777 CEST
+Begin processing the 917th record. Run 1, Event 4017, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:24.143 CEST
+Begin processing the 918th record. Run 1, Event 4018, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:28.100 CEST
+Begin processing the 919th record. Run 1, Event 4019, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:32.356 CEST
+Begin processing the 920th record. Run 1, Event 4021, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:35.883 CEST
+Begin processing the 921st record. Run 1, Event 4020, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:39.029 CEST
+Begin processing the 922nd record. Run 1, Event 4022, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:43.440 CEST
+Begin processing the 923rd record. Run 1, Event 4023, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:46.862 CEST
+Begin processing the 924th record. Run 1, Event 4024, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:51.087 CEST
+Begin processing the 925th record. Run 1, Event 4025, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:54.342 CEST
+Begin processing the 926th record. Run 1, Event 4026, LumiSection 41 on stream 0 at 25-Aug-2023 17:13:58.410 CEST
+Begin processing the 927th record. Run 1, Event 4028, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:01.455 CEST
+Begin processing the 928th record. Run 1, Event 4027, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:05.311 CEST
+Begin processing the 929th record. Run 1, Event 4030, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:10.104 CEST
+Begin processing the 930th record. Run 1, Event 4029, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:14.342 CEST
+[2023-08-25 17:14:16.194941 +0200][Error  ][XRootD            ][  155] [cms-xrd-global.cern.ch:1094] Unable to get the response to request kXR_open (file: /store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root?tried=+1213xrootd011213xrootd-cms-uk.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,st-096-gg500o4v.cern.ch,heplnx228.pp.rl.ac.uk,st-096-ii2019d1.cern.ch,xrootd-cms-uk.gridpp.rl.ac.uk,xrootd-cms-redir-int.cr.cnaf.infn.it&triedrc=resel,enoent, mode: 0460, flags: kXR_open_read kXR_async kXR_retstat )
+Begin processing the 931st record. Run 1, Event 4031, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:18.394 CEST
+Begin processing the 932nd record. Run 1, Event 4033, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:22.800 CEST
+Begin processing the 933rd record. Run 1, Event 4032, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:26.474 CEST
+Begin processing the 934th record. Run 1, Event 4034, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:30.191 CEST
+[2023-08-25 17:14:31.473058 +0200][Error  ][PostMaster        ][  155] [eoscmshlt-ip565.cern.ch:1098] Forcing error on disconnect: [ERROR] Operation interrupted.
+[2023-08-25 17:14:32.477997 +0200][Error  ][PostMaster        ][  155] [eoscmshlt.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 935th record. Run 1, Event 4035, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:33.581 CEST
+Begin processing the 936th record. Run 1, Event 4036, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:38.475 CEST
+Begin processing the 937th record. Run 1, Event 4037, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:42.317 CEST
+Begin processing the 938th record. Run 1, Event 4039, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:46.914 CEST
+Begin processing the 939th record. Run 1, Event 4038, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:50.501 CEST
+Begin processing the 940th record. Run 1, Event 4040, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:54.722 CEST
+Begin processing the 941st record. Run 1, Event 4042, LumiSection 41 on stream 0 at 25-Aug-2023 17:14:59.455 CEST
+Begin processing the 942nd record. Run 1, Event 4041, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:04.397 CEST
+Begin processing the 943rd record. Run 1, Event 4044, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:07.603 CEST
+Begin processing the 944th record. Run 1, Event 4043, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:10.764 CEST
+Begin processing the 945th record. Run 1, Event 4046, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:14.088 CEST
+Begin processing the 946th record. Run 1, Event 4045, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:18.291 CEST
+Begin processing the 947th record. Run 1, Event 4047, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:22.368 CEST
+Begin processing the 948th record. Run 1, Event 4049, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:25.507 CEST
+Begin processing the 949th record. Run 1, Event 4048, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:29.412 CEST
+Begin processing the 950th record. Run 1, Event 4051, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:32.781 CEST
+Begin processing the 951st record. Run 1, Event 4050, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:36.515 CEST
+Begin processing the 952nd record. Run 1, Event 4053, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:39.857 CEST
+Begin processing the 953rd record. Run 1, Event 4052, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:43.400 CEST
+Begin processing the 954th record. Run 1, Event 4055, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:47.381 CEST
+Begin processing the 955th record. Run 1, Event 4054, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:50.934 CEST
+Begin processing the 956th record. Run 1, Event 4056, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:54.368 CEST
+Begin processing the 957th record. Run 1, Event 4057, LumiSection 41 on stream 0 at 25-Aug-2023 17:15:58.227 CEST
+Begin processing the 958th record. Run 1, Event 4058, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:02.057 CEST
+Begin processing the 959th record. Run 1, Event 4060, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:05.829 CEST
+Begin processing the 960th record. Run 1, Event 4059, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:09.956 CEST
+Begin processing the 961st record. Run 1, Event 4061, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:13.798 CEST
+Begin processing the 962nd record. Run 1, Event 4062, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:17.665 CEST
+Begin processing the 963rd record. Run 1, Event 4063, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:21.050 CEST
+Begin processing the 964th record. Run 1, Event 4064, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:25.974 CEST
+Begin processing the 965th record. Run 1, Event 4065, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:30.003 CEST
+Begin processing the 966th record. Run 1, Event 4067, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:34.524 CEST
+Begin processing the 967th record. Run 1, Event 4068, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:37.976 CEST
+Begin processing the 968th record. Run 1, Event 4066, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:41.847 CEST
+Begin processing the 969th record. Run 1, Event 4070, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:45.219 CEST
+Begin processing the 970th record. Run 1, Event 4069, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:48.928 CEST
+Begin processing the 971st record. Run 1, Event 4071, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:52.906 CEST
+Begin processing the 972nd record. Run 1, Event 4072, LumiSection 41 on stream 0 at 25-Aug-2023 17:16:56.501 CEST
+Begin processing the 973rd record. Run 1, Event 4073, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:00.069 CEST
+Begin processing the 974th record. Run 1, Event 4074, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:04.810 CEST
+Begin processing the 975th record. Run 1, Event 4075, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:09.168 CEST
+Begin processing the 976th record. Run 1, Event 4076, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:12.496 CEST
+Begin processing the 977th record. Run 1, Event 4078, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:16.310 CEST
+Begin processing the 978th record. Run 1, Event 4077, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:20.228 CEST
+Begin processing the 979th record. Run 1, Event 4079, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:23.779 CEST
+Begin processing the 980th record. Run 1, Event 4080, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:28.290 CEST
+[2023-08-25 17:17:29.353521 +0200][Error  ][PostMaster        ][  155] [cms-xrd-transit.cern.ch:1094] Forcing error on disconnect: [ERROR] Operation interrupted.
+Begin processing the 981st record. Run 1, Event 4082, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:32.286 CEST
+Begin processing the 982nd record. Run 1, Event 4081, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:36.085 CEST
+Begin processing the 983rd record. Run 1, Event 4083, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:40.591 CEST
+Begin processing the 984th record. Run 1, Event 4084, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:44.565 CEST
+Begin processing the 985th record. Run 1, Event 4085, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:48.705 CEST
+Begin processing the 986th record. Run 1, Event 4086, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:52.572 CEST
+Begin processing the 987th record. Run 1, Event 4087, LumiSection 41 on stream 0 at 25-Aug-2023 17:17:56.215 CEST
+Begin processing the 988th record. Run 1, Event 4088, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:00.862 CEST
+Begin processing the 989th record. Run 1, Event 4090, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:04.299 CEST
+Begin processing the 990th record. Run 1, Event 4089, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:08.017 CEST
+Begin processing the 991st record. Run 1, Event 4092, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:11.718 CEST
+Begin processing the 992nd record. Run 1, Event 4091, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:16.481 CEST
+Begin processing the 993rd record. Run 1, Event 4094, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:20.472 CEST
+Begin processing the 994th record. Run 1, Event 4093, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:25.111 CEST
+Begin processing the 995th record. Run 1, Event 4095, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:28.407 CEST
+Begin processing the 996th record. Run 1, Event 4096, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:32.945 CEST
+Begin processing the 997th record. Run 1, Event 4097, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:36.414 CEST
+Begin processing the 998th record. Run 1, Event 4098, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:40.383 CEST
+Begin processing the 999th record. Run 1, Event 4099, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:44.505 CEST
+Begin processing the 1000th record. Run 1, Event 4100, LumiSection 41 on stream 0 at 25-Aug-2023 17:18:48.221 CEST
+25-Aug-2023 17:18:51 CEST  Closed file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root
+[2023-08-25 17:18:51.127117 +0200][Error  ][XRootD            ][  155] [st-096-ii2019d1.cern.ch:1095] Impossible to send message kXR_close (handle: 0x00000000). Trying to recover.
+[2023-08-25 17:18:51.127173 +0200][Error  ][XRootD            ][  155] [st-096-ii2019d1.cern.ch:1095] Unable to get the response to request kXR_close (handle: 0x00000000)
+%MSG-w XrdFileWarning:  (NoModuleName) 25-Aug-2023 17:18:51 CEST pre-events
+Source delayed close failed with error '[ERROR] Socket timeout' (errno=0, code=103, server=st-096-ii2019d1.cern.ch:1095, site=cern.ch)
+%MSG
+                      Tracklet  SUMMARY                      
+number of stubs     per TFP = 401.9872 +- 1.2830
+number of tracks    per TFP =  73.4571 +- 0.2354
+current tracking efficiency =   0.9525 +- 0.0014
+max     tracking efficiency =   0.9580 +- 0.0013
+                  fake rate =   0.1864
+             duplicate rate =   0.5903
+=============================================================
+                        TBout SUMMARY                        
+number of stubs       per TFP = 401.9872 +- 1.2830
+number of tracks      per TFP =  73.4571 +- 0.2354
+number of lost tracks per TFP =   0.0000 +- 0.0000
+     max  tracking efficiency =   0.9580 +- 0.0013
+     lost tracking efficiency =   0.0000 +- 0.0000
+                    fake rate =   0.1864
+               duplicate rate =   0.5903
+=============================================================
+                        DRin  SUMMARY                        
+number of stubs       per TFP = 392.7002 +- 1.2619
+number of tracks      per TFP =  71.6984 +- 0.2313
+number of lost tracks per TFP =   0.0126 +- 0.0014
+  current tracking efficiency =   0.9515 +- 0.0014
+  max     tracking efficiency =   0.9572 +- 0.0014
+     lost tracking efficiency =   0.0000 +- 0.0000
+                    fake rate =   0.1856
+               duplicate rate =   0.5859
+=============================================================
+                         DR  SUMMARY                         
+number of stubs       per TFP = 124.8959 +- 0.4069
+number of tracks      per TFP =  23.8296 +- 0.0809
+number of lost tracks per TFP =   0.0000 +- 0.0000
+  current tracking efficiency =   0.9116 +- 0.0019
+  max     tracking efficiency =   0.9517 +- 0.0014
+     lost tracking efficiency =   0.0000 +- 0.0000
+                    fake rate =   0.2474
+               duplicate rate =   0.0675
+=============================================================
+                        KFin  SUMMARY                        
+number of stubs       per TFP = 124.8959 +- 0.4069
+number of tracks      per TFP =  23.8296 +- 0.0809
+number of lost tracks per TFP =   0.0000 +- 0.0000
+  current tracking efficiency =   0.9116 +- 0.0019
+  max     tracking efficiency =   0.9517 +- 0.0014
+     lost tracking efficiency =   0.0000 +- 0.0000
+                    fake rate =   0.2474
+               duplicate rate =   0.0675
+=============================================================
+                         KF  SUMMARY                         
+number of stubs       per TFP = 116.3626 +- 0.3886
+number of tracks      per TFP =  23.8296 +- 0.0809
+number of lost tracks per TFP =   2.9886 +- 0.0310
+          tracking efficiency =   0.9411 +- 0.0016
+     lost tracking efficiency =   0.0026 +- 0.0003
+                    fake rate =   0.2555
+               duplicate rate =   0.0653
+    state assessment fraction =   0.6846
+=============================================================
+                        KFout SUMMARY                        
+number of tracks      per TFP =  23.8296 +- 0.0809
+number of lost tracks per TFP =   0.0000 +- 0.0000
+          tracking efficiency =   0.9457 +- 0.0015
+     lost tracking efficiency =   0.0000 +- 0.0000
+                    fake rate =   0.2520
+               duplicate rate =   0.0663
+=============================================================
+L1TrackNtupleMaker::endJob
+TimeReport> Time report complete in 3750.38 seconds
+ Time Summary: 
+ - Min event:   2.16802
+ - Max event:   8.71108
+ - Avg event:   3.52241
+ - Total loop:  3715.31
+ - Total init:  35.0443
+ - Total job:   3750.38
+ - EventSetup Lock: 0
+ - EventSetup Get:  0
+ Event Throughput: 0.269157 ev/s
+ CPU Summary: 
+ - Total loop:     3356.59
+ - Total init:     10.3516
+ - Total extra:    0
+ - Total children: 0.140282
+ - Total job:      3366.96
+ Processing Summary: 
+ - Number of Events:  1000
+ - Number of Global Begin Lumi Calls:  10
+ - Number of Global Begin Run Calls: 1
+

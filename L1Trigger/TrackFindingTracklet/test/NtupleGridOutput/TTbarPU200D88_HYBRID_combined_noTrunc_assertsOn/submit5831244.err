@@ -1,0 +1,32 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 125X_mcRun4_realistic_v5.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+04-Sep-2023 10:42:02 CEST  Initiating request to open file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/4bb61a23-467c-4864-9d79-d4dc4801fb93.root
+04-Sep-2023 10:42:15 CEST  Successfully opened file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/4bb61a23-467c-4864-9d79-d4dc4801fb93.root
+%MSG-w XrdAdaptorLvl3:  AfterFile 04-Sep-2023 10:42:31 CEST pre-events
+Deactivating heplnx229.pp.rl.ac.uk from active sources because its quality (839) is higher than 260 and 4 times larger than the other active server heplnx228.pp.rl.ac.uk (20) 
+%MSG
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 2403, LumiSection 25 on stream 0 at 04-Sep-2023 10:42:56.565 CEST
+Begin processing the 2nd record. Run 1, Event 2402, LumiSection 25 on stream 0 at 04-Sep-2023 10:43:02.427 CEST
+Begin processing the 3rd record. Run 1, Event 2401, LumiSection 25 on stream 0 at 04-Sep-2023 10:43:07.963 CEST
+Begin processing the 4th record. Run 1, Event 2404, LumiSection 25 on stream 0 at 04-Sep-2023 10:43:15.051 CEST
+Will break on number of tracklets in TP_L1L2E
+cmsRun: /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/src/TrackletProcessor.cc:345: void trklet::TrackletProcessor::execute(unsigned int, double, double): Assertion `0' failed.
+
+
+A fatal system signal has occurred: abort signal
+The following is the call stack containing the origin of the signal.
+
+
+Current Modules:
+
+Module: L1FPGATrackProducer:l1tTTTracksFromTrackletEmulation (crashed)
+
+A fatal system signal has occurred: abort signal
+condor_exec.exe: line 7:   155 Aborted                 (core dumped) cmsRun L1TrackNtupleMaker_cfg_grid_HYBRID_trkJets.py inputFiles=root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/4bb61a23-467c-4864-9d79-d4dc4801fb93.root outputFile=/eos/user/d/dabraham/L1NtupleTrackExamples/TTbarPU200D88_HYBRID_combined_noTrunc_assertsOn_5.root maxEvents=10000

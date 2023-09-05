@@ -5,17 +5,11 @@
 using namespace std;
 
 int main () {
-    int myArray[3][3];
-    
-    int counter = 0;
-    for (int i = 0; i < 3; i++) {
-        for (int ii = 0; ii < 3; i++) {
-            counter++;
-            myArray[i][ii] = counter;
-        }
-    }
+    unsigned int a = 1;
 
-    cout << sizeof(myArray)/4 << endl;
+    a = a << 7;
+
+    cout << a << endl;
 
     return 0;
 }

@@ -1,0 +1,33 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 125X_mcRun4_realistic_v5.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+03-Sep-2023 13:32:55 CEST  Initiating request to open file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/4bb61a23-467c-4864-9d79-d4dc4801fb93.root
+03-Sep-2023 13:33:04 CEST  Successfully opened file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/4bb61a23-467c-4864-9d79-d4dc4801fb93.root
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 2403, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:28.415 CEST
+Begin processing the 2nd record. Run 1, Event 2402, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:32.110 CEST
+Begin processing the 3rd record. Run 1, Event 2401, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:35.411 CEST
+Begin processing the 4th record. Run 1, Event 2404, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:40.070 CEST
+Begin processing the 5th record. Run 1, Event 2405, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:44.244 CEST
+Begin processing the 6th record. Run 1, Event 2407, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:48.190 CEST
+Begin processing the 7th record. Run 1, Event 2408, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:51.213 CEST
+Begin processing the 8th record. Run 1, Event 2406, LumiSection 25 on stream 0 at 03-Sep-2023 13:33:55.127 CEST
+Will break on number of tracklets in TP_L1L2E
+cmsRun: /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/src/TrackletProcessor.cc:345: void trklet::TrackletProcessor::execute(unsigned int, double, double): Assertion `0' failed.
+
+
+A fatal system signal has occurred: abort signal
+The following is the call stack containing the origin of the signal.
+
+
+Current Modules:
+
+Module: L1FPGATrackProducer:l1tTTTracksFromTrackletEmulation (crashed)
+
+A fatal system signal has occurred: abort signal
+condor_exec.exe: line 7:   155 Aborted                 (core dumped) cmsRun L1TrackNtupleMaker_cfg_grid_NEWKF_trkJets.py inputFiles=root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/4bb61a23-467c-4864-9d79-d4dc4801fb93.root outputFile=/eos/user/d/dabraham/L1NtupleTrackExamples/TTbarPU200D88_NEWKF_combined_noTPTrunc_assertsOn_5.root maxEvents=10000

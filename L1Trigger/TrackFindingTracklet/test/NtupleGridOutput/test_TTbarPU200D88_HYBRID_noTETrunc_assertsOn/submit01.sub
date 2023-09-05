@@ -1,0 +1,8 @@
+universe = vanilla
+arguments = "$(argument)"
+output = NtupleGridOutput/test_TTbarPU200D88_HYBRID_noTETrunc_assertsOn/submit$(ClusterId).out
+error = NtupleGridOutput/test_TTbarPU200D88_HYBRID_noTETrunc_assertsOn/submit$(ClusterId).err
+log = NtupleGridOutput/test_TTbarPU200D88_HYBRID_noTETrunc_assertsOn/submit$(ClusterId).log
++JobFlavour = "tomorrow"
+queue
+

@@ -21,7 +21,7 @@ void overlayHists_eff_allTruncs (){
     // Property you want to plot
     TString prop = "eff_";
     // directory to save plots to
-    TString saveDir = "truncation_examination/";
+    TString saveDir = "truncation_examination_assertsOn/";
 
     /////////////////////// CYCLING THROUGH FILES ////////////////////
     // separate plots for algos
@@ -29,15 +29,20 @@ void overlayHists_eff_allTruncs (){
     // separate plots for params within algos
     vector <TString> params = {"eta", "pt", "phi", "z0"};
     // plot all these on one plot
-    vector <TString> truncs = {"fullTrunc", "noTrunc", "noIRTrunc"}; //, "noVMRTrunc", "noTETrunc",
-    //"noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc", "noTBTrunc", "noDRTrunc"};
-   
+    vector <TString> truncs = {"fullTrunc", "noTrunc", "noMCTrunc"}; //"noTETrunc", "noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"}; // "noMETrunc", "noMCTrunc"}; //"noMETrunc", "noTETrunc",
+    //"noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"};
+
+    // largest effect: PR, ME, MC
+
+    // same as noTrunc no asserts: IR, VMR, DR, TB
+    // same as noTrunc asserts on: IR, VMR, DR, TB
+
     /////////////////////// STYLIN ////////////////////////
     // Labels for plots
     vector <TString> algoLabels = {"Hybrid", "Hybrid_NewKF"};
     // Markers n lines
-    vector <int> colors = {1, 2, 3}; //, "4", "6", "8", "9", "15", "28", "41", "29"};
-    vector <int> markers = {21, 20, 22};
+    vector <int> colors = {1, 2, 30, 9, 6, 15, 28};
+    vector <int> markers = {21, 20, 33, 22, 25, 24, 26};
 
     TCanvas c;
     char ctxt[500];
@@ -47,13 +52,13 @@ void overlayHists_eff_allTruncs (){
       // open all necessary files
       vector <TFile*> files;
       for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
-        files.push_back(new TFile(dir + "output_TTbar_PU200_D88_" + algos[iAlgo] + "_" + truncs[iTrunc] + "_injet_vhighpt.root"));
+        files.push_back(new TFile(dir + "output_TTbar_PU200_D88_" + algos[iAlgo] + "_" + truncs[iTrunc] + "_assertsOn_injet_vhighpt.root"));
       }
 
       // for params (eta, pt, phi, z0)
       for (int iParam = 0; iParam < params.size(); iParam++) {
         vector<TH1*> hists;
-        TLegend* leg = new TLegend(0.6, 0.3, 0.75, 0.4);
+        TLegend* leg = new TLegend(0.65, 0.2, 0.9, 0.45);
 
         // for different truncation settings
         for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
@@ -72,11 +77,13 @@ void overlayHists_eff_allTruncs (){
           }
 
         }
-        sprintf(ctxt, algoLabels[iAlgo]); // Add label saying 
-        mySmallText(0.25, 0.3, 1, ctxt); // which data set it is
+
+
+        sprintf(ctxt, algoLabels[iAlgo] + " (p_{T} Jet>200 GeV)"); // Add label saying 
+        mySmallText(0.2, 0.3, 1, ctxt); // which data set it is
 
         leg->Draw();
-        c.SaveAs(saveDir + "test_truncs_" + algos[iAlgo] + "_" + prop + params[iParam] + ".pdf");
+        c.SaveAs(saveDir + "truncs_MC_" + algos[iAlgo] + "_" + prop + params[iParam] + "_assertsOn.pdf");
 
         delete leg;
         hists.clear();
@@ -137,7 +144,7 @@ void overlayHists_eff_allTruncs (){
 }
 
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text) {
-  Double_t tsize = 0.050;
+  Double_t tsize = 0.045;
   TLatex l;
   l.SetTextSize(tsize);
   l.SetNDC();

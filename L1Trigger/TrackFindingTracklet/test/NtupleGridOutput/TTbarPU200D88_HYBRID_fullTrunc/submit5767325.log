@@ -1,2 +1,66 @@
 000 (5767325.000.000) 08/25 16:13:45 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
 ...
+040 (5767325.000.000) 08/25 16:16:12 Started transferring input files
+	Transferring to host: <128.142.56.165:9618?addrs=128.142.56.165-9618+[2001-1458-301-6--100-a4]-9618&alias=b7s01p3287.cern.ch&noUDP&sock=slot1_9_5394_4f94_147316>
+...
+040 (5767325.000.000) 08/25 16:16:12 Finished transferring input files
+...
+001 (5767325.000.000) 08/25 16:16:13 Job executing on host: <128.142.56.165:9618?addrs=128.142.56.165-9618+[2001-1458-301-6--100-a4]-9618&alias=b7s01p3287.cern.ch&noUDP&sock=startd_4761_3a7d>
+...
+006 (5767325.000.000) 08/25 16:16:23 Image size of job updated: 896800
+	97  -  MemoryUsage of job (MB)
+	98784  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:21:23 Image size of job updated: 2433152
+	991  -  MemoryUsage of job (MB)
+	1014088  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:26:23 Image size of job updated: 2596992
+	1154  -  MemoryUsage of job (MB)
+	1181160  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:31:24 Image size of job updated: 2596992
+	1220  -  MemoryUsage of job (MB)
+	1249256  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:36:25 Image size of job updated: 2793600
+	1316  -  MemoryUsage of job (MB)
+	1346752  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:41:25 Image size of job updated: 2793600
+	1369  -  MemoryUsage of job (MB)
+	1401628  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:46:25 Image size of job updated: 3033216
+	1389  -  MemoryUsage of job (MB)
+	1422140  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 16:51:26 Image size of job updated: 3033216
+	1548  -  MemoryUsage of job (MB)
+	1584672  -  ResidentSetSize of job (KB)
+...
+006 (5767325.000.000) 08/25 17:01:26 Image size of job updated: 3295360
+	1700  -  MemoryUsage of job (MB)
+	1740568  -  ResidentSetSize of job (KB)
+...
+040 (5767325.000.000) 08/25 17:03:07 Started transferring output files
+...
+040 (5767325.000.000) 08/25 17:03:08 Finished transferring output files
+...
+005 (5767325.000.000) 08/25 17:03:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:40:42, Sys 0 00:01:25  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:40:42, Sys 0 00:01:25  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	126338  -  Run Bytes Sent By Job
+	681  -  Run Bytes Received By Job
+	126338  -  Total Bytes Sent By Job
+	681  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.90        1         1 
+	   Disk (KB)            :   145           1   2987281 
+	   Memory (MB)          :  1700        2000      2000 
+
+	Job terminated of its own accord at 2023-08-25T15:03:07Z.
+...

@@ -109,7 +109,7 @@ if GEOMETRY == "D76":
   process.source.inputCommands.append('keep  *_genParticles_*_*')
 
 # Use skipEvents to select particular single events for test vectors
-#process.source.skipEvents = cms.untracked.uint32(11)
+process.source.skipEvents = cms.untracked.uint32(0)
 
 process.TFileService = cms.Service("TFileService", fileName = cms.string(options.outputFile), closeFileFast = cms.untracked.bool(True))
 process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))

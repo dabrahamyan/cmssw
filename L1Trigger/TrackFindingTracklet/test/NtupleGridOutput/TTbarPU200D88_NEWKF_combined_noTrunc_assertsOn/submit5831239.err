@@ -1,0 +1,41 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 125X_mcRun4_realistic_v5.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+04-Sep-2023 10:42:19 CEST  Initiating request to open file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root
+04-Sep-2023 10:42:28 CEST  Successfully opened file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root
+%MSG-w XrdAdaptorLvl3:  AfterFile 04-Sep-2023 10:42:40 CEST pre-events
+Deactivating heplnx229.pp.rl.ac.uk from active sources because its quality (657) is higher than 260 and 4 times larger than the other active server heplnx228.pp.rl.ac.uk (18) 
+%MSG
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 301, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:04.930 CEST
+Begin processing the 2nd record. Run 1, Event 302, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:09.353 CEST
+Begin processing the 3rd record. Run 1, Event 303, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:14.098 CEST
+Begin processing the 4th record. Run 1, Event 304, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:19.607 CEST
+Begin processing the 5th record. Run 1, Event 305, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:23.676 CEST
+Begin processing the 6th record. Run 1, Event 306, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:28.920 CEST
+Begin processing the 7th record. Run 1, Event 307, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:33.410 CEST
+Begin processing the 8th record. Run 1, Event 309, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:37.854 CEST
+Begin processing the 9th record. Run 1, Event 308, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:41.548 CEST
+Begin processing the 10th record. Run 1, Event 311, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:46.132 CEST
+Begin processing the 11th record. Run 1, Event 312, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:50.185 CEST
+Begin processing the 12th record. Run 1, Event 313, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:54.564 CEST
+Begin processing the 13th record. Run 1, Event 310, LumiSection 4 on stream 0 at 04-Sep-2023 10:43:59.406 CEST
+Will break on number of tracklets in TP_L1L2H
+cmsRun: /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/src/TrackletProcessor.cc:345: void trklet::TrackletProcessor::execute(unsigned int, double, double): Assertion `0' failed.
+
+
+A fatal system signal has occurred: abort signal
+The following is the call stack containing the origin of the signal.
+
+
+Current Modules:
+
+Module: L1FPGATrackProducer:l1tTTTracksFromTrackletEmulation (crashed)
+
+A fatal system signal has occurred: abort signal
+condor_exec.exe: line 7:   155 Aborted                 (core dumped) cmsRun L1TrackNtupleMaker_cfg_grid_NEWKF_trkJets.py inputFiles=root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/e64abc80-e96a-4d77-b8d1-64db03ba03a7.root outputFile=/eos/user/d/dabraham/L1NtupleTrackExamples/TTbarPU200D88_NEWKF_combined_noTrunc_assertsOn_11.root maxEvents=10000
