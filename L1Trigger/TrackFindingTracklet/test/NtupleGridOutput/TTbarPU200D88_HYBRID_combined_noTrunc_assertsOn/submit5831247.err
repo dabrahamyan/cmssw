@@ -1,0 +1,51 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 125X_mcRun4_realistic_v5.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+04-Sep-2023 10:47:00 CEST  Initiating request to open file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/76a38363-38fa-4bcd-8cfb-60cda31f6554.root
+04-Sep-2023 10:47:09 CEST  Successfully opened file root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/76a38363-38fa-4bcd-8cfb-60cda31f6554.root
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 202, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:30.494 CEST
+Begin processing the 2nd record. Run 1, Event 201, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:34.148 CEST
+Begin processing the 3rd record. Run 1, Event 203, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:37.764 CEST
+Begin processing the 4th record. Run 1, Event 204, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:42.156 CEST
+Begin processing the 5th record. Run 1, Event 205, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:46.206 CEST
+Begin processing the 6th record. Run 1, Event 206, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:50.318 CEST
+Begin processing the 7th record. Run 1, Event 207, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:53.803 CEST
+Begin processing the 8th record. Run 1, Event 208, LumiSection 3 on stream 0 at 04-Sep-2023 10:47:57.863 CEST
+Begin processing the 9th record. Run 1, Event 209, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:01.343 CEST
+Begin processing the 10th record. Run 1, Event 210, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:05.266 CEST
+Begin processing the 11th record. Run 1, Event 211, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:08.179 CEST
+Begin processing the 12th record. Run 1, Event 212, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:11.762 CEST
+Begin processing the 13th record. Run 1, Event 214, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:14.874 CEST
+Begin processing the 14th record. Run 1, Event 213, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:18.333 CEST
+Begin processing the 15th record. Run 1, Event 215, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:21.294 CEST
+Begin processing the 16th record. Run 1, Event 216, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:25.155 CEST
+Begin processing the 17th record. Run 1, Event 217, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:28.268 CEST
+Begin processing the 18th record. Run 1, Event 218, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:31.731 CEST
+Begin processing the 19th record. Run 1, Event 219, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:34.752 CEST
+Begin processing the 20th record. Run 1, Event 220, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:38.774 CEST
+Begin processing the 21st record. Run 1, Event 221, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:41.795 CEST
+Begin processing the 22nd record. Run 1, Event 222, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:45.468 CEST
+Begin processing the 23rd record. Run 1, Event 223, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:48.483 CEST
+Begin processing the 24th record. Run 1, Event 224, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:52.319 CEST
+Begin processing the 25th record. Run 1, Event 225, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:55.554 CEST
+Begin processing the 26th record. Run 1, Event 226, LumiSection 3 on stream 0 at 04-Sep-2023 10:48:59.177 CEST
+Will break on number of tracklets in TP_L1L2E
+cmsRun: /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/src/TrackletProcessor.cc:345: void trklet::TrackletProcessor::execute(unsigned int, double, double): Assertion `0' failed.
+
+
+A fatal system signal has occurred: abort signal
+The following is the call stack containing the origin of the signal.
+
+
+Current Modules:
+
+Module: L1FPGATrackProducer:l1tTTTracksFromTrackletEmulation (crashed)
+
+A fatal system signal has occurred: abort signal
+condor_exec.exe: line 7:   155 Aborted                 (core dumped) cmsRun L1TrackNtupleMaker_cfg_grid_HYBRID_trkJets.py inputFiles=root://cms-xrd-global.cern.ch///store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/76a38363-38fa-4bcd-8cfb-60cda31f6554.root outputFile=/eos/user/d/dabraham/L1NtupleTrackExamples/TTbarPU200D88_HYBRID_combined_noTrunc_assertsOn_8.root maxEvents=10000

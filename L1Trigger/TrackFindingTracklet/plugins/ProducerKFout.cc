@@ -180,8 +180,7 @@ namespace trklet {
         TrackKFOutSAPtrCollections temp_collection;
         for (int iLink = 0; iLink < setup_->tfpNumChannel(); iLink++) {
           TrackKFOutSAPtrCollection temp;
-          // for (int iTrack = 0; iTrack < setup_->numFramesIO(); iTrack++) // CHANGED TO GIVE MORE SPACE TO OUTTRACKSTREAMS
-          for (int iTrack = 0; iTrack < (setup_->numFramesIO()) * 3; iTrack++) // ADDED * 3 to make it longer
+          for (int iTrack = 0; iTrack < setup_->numFramesIO(); iTrack++) // ADDED * 3 to make it longer
             temp.emplace_back(std::make_shared<TrackKFOut>());
           temp_collection.push_back(temp);
         }

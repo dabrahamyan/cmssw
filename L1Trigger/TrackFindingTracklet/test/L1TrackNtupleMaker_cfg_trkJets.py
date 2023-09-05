@@ -85,7 +85,7 @@ elif GEOMETRY == "D88":
   #inputMC=getCMSdata(dataName)
 
   # Read specified .root file:
-  inputMC = ["/store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/0959f326-3f52-48d8-9fcf-65fc41de4e27.root"]
+  inputMC = ["/store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/de3299ef-1399-4acb-a2f2-40676219dd8b.root"]
 
 else:
 
@@ -104,9 +104,9 @@ if GEOMETRY == "D76":
   process.source.inputCommands.append('keep  *_genParticles_*_*')
 
 # Use skipEvents to select particular single events for test vectors
-process.source.skipEvents = cms.untracked.uint32(0)
+process.source.skipEvents = cms.untracked.uint32(213)
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string("/eos/user/d/dabraham/L1NtupleTrackExamples/TTbar_PU200_"+GEOMETRY+"_test_HYBRID_1_noIRTrunc.root"), closeFileFast = cms.untracked.bool(True))
+process.TFileService = cms.Service("TFileService", fileName = cms.string("/eos/user/d/dabraham/L1NtupleTrackExamples/TTbar_PU200_"+GEOMETRY+"_test_HYBRID_10_noTETrunc_assertsOn.root"), closeFileFast = cms.untracked.bool(True))
 process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))
 
 

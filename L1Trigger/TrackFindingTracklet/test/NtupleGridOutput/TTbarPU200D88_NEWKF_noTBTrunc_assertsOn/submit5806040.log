@@ -1,0 +1,82 @@
+000 (5806040.000.000) 08/31 15:09:31 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
+...
+022 (5806040.000.000) 08/31 15:16:10 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_8@b7s01p5227.cern.ch <128.142.56.81:9618?addrs=128.142.56.81-9618+[2001-1458-301-6--100-50]-9618&alias=b7s01p5227.cern.ch&noUDP&sock=startd_2898_5d8c>
+...
+024 (5806040.000.000) 08/31 15:16:10 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_8@b7s01p5227.cern.ch, rescheduling job
+...
+022 (5806040.000.000) 08/31 15:25:41 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_7@b7g19p1003.cern.ch <128.142.137.122:9618?addrs=128.142.137.122-9618+[2001-1458-301-5e--100-6e]-9618&alias=b7g19p1003.cern.ch&noUDP&sock=startd_6315_24a9>
+...
+024 (5806040.000.000) 08/31 15:25:41 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_7@b7g19p1003.cern.ch, rescheduling job
+...
+022 (5806040.000.000) 08/31 15:31:57 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_6@b7s04p9314.cern.ch <128.142.59.146:9618?addrs=128.142.59.146-9618+[2001-1458-301-21--100-91]-9618&alias=b7s04p9314.cern.ch&noUDP&sock=startd_3049_f059>
+...
+024 (5806040.000.000) 08/31 15:32:05 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_6@b7s04p9314.cern.ch, rescheduling job
+...
+040 (5806040.000.000) 08/31 15:37:32 Started transferring input files
+	Transferring to host: <188.184.162.173:9618?addrs=188.184.162.173-9618&alias=b7s11p9645.cern.ch&noUDP&sock=slot1_1_3461_5666_177868>
+...
+040 (5806040.000.000) 08/31 15:37:32 Finished transferring input files
+...
+001 (5806040.000.000) 08/31 15:37:33 Job executing on host: <188.184.162.173:9618?addrs=188.184.162.173-9618&alias=b7s11p9645.cern.ch&noUDP&sock=startd_2928_f164>
+...
+006 (5806040.000.000) 08/31 15:37:42 Image size of job updated: 137312
+	82  -  MemoryUsage of job (MB)
+	83716  -  ResidentSetSize of job (KB)
+...
+006 (5806040.000.000) 08/31 15:42:43 Image size of job updated: 2427284
+	999  -  MemoryUsage of job (MB)
+	1022260  -  ResidentSetSize of job (KB)
+...
+006 (5806040.000.000) 08/31 15:47:44 Image size of job updated: 2427284
+	1026  -  MemoryUsage of job (MB)
+	1049812  -  ResidentSetSize of job (KB)
+...
+006 (5806040.000.000) 08/31 15:52:44 Image size of job updated: 2591124
+	1026  -  MemoryUsage of job (MB)
+	1049812  -  ResidentSetSize of job (KB)
+...
+006 (5806040.000.000) 08/31 16:02:46 Image size of job updated: 2599752
+	1033  -  MemoryUsage of job (MB)
+	1057632  -  ResidentSetSize of job (KB)
+...
+006 (5806040.000.000) 08/31 16:12:46 Image size of job updated: 2599752
+	1038  -  MemoryUsage of job (MB)
+	1062192  -  ResidentSetSize of job (KB)
+...
+006 (5806040.000.000) 08/31 16:22:47 Image size of job updated: 2599752
+	1042  -  MemoryUsage of job (MB)
+	1066852  -  ResidentSetSize of job (KB)
+...
+040 (5806040.000.000) 08/31 17:05:29 Started transferring output files
+...
+040 (5806040.000.000) 08/31 17:05:29 Finished transferring output files
+...
+005 (5806040.000.000) 08/31 17:05:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:20:08, Sys 0 00:02:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:20:08, Sys 0 00:02:24  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	124288  -  Run Bytes Sent By Job
+	689  -  Run Bytes Received By Job
+	124288  -  Total Bytes Sent By Job
+	689  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :   143           1   2981732 
+	   Memory (MB)          :  1042        2000      2000 
+
+	Job terminated of its own accord at 2023-08-31T15:05:29Z.
+...

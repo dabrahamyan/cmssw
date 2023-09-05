@@ -1,0 +1,150 @@
+000 (5814750.000.000) 09/01 16:43:48 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
+...
+022 (5814750.000.000) 09/01 16:47:58 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_15@b7g12p9111.cern.ch <128.142.132.172:9618?addrs=128.142.132.172-9618+[2001-1458-301-5a--100-a0]-9618&alias=b7g12p9111.cern.ch&noUDP&sock=startd_7336_76db>
+...
+024 (5814750.000.000) 09/01 16:47:58 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_15@b7g12p9111.cern.ch, rescheduling job
+...
+040 (5814750.000.000) 09/01 16:50:11 Started transferring input files
+	Transferring to host: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=slot1_4_123805_9284_179164>
+...
+040 (5814750.000.000) 09/01 16:50:11 Finished transferring input files
+...
+001 (5814750.000.000) 09/01 16:50:12 Job executing on host: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+...
+006 (5814750.000.000) 09/01 16:50:21 Image size of job updated: 288504
+	182  -  MemoryUsage of job (MB)
+	185732  -  ResidentSetSize of job (KB)
+...
+006 (5814750.000.000) 09/01 16:55:22 Image size of job updated: 2452120
+	1029  -  MemoryUsage of job (MB)
+	1052888  -  ResidentSetSize of job (KB)
+...
+006 (5814750.000.000) 09/01 17:05:23 Image size of job updated: 2452120
+	1032  -  MemoryUsage of job (MB)
+	1056160  -  ResidentSetSize of job (KB)
+...
+006 (5814750.000.000) 09/01 17:10:24 Image size of job updated: 2452120
+	1032  -  MemoryUsage of job (MB)
+	1056180  -  ResidentSetSize of job (KB)
+...
+006 (5814750.000.000) 09/01 17:15:25 Image size of job updated: 2460720
+	1032  -  MemoryUsage of job (MB)
+	1056180  -  ResidentSetSize of job (KB)
+...
+006 (5814750.000.000) 09/01 17:50:27 Image size of job updated: 2460748
+	1032  -  MemoryUsage of job (MB)
+	1056180  -  ResidentSetSize of job (KB)
+...
+040 (5814750.000.000) 09/01 18:22:46 Entered queue to transfer output files
+...
+022 (5814750.000.000) 09/01 18:24:31 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@b7s09p9375.cern.ch <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+...
+023 (5814750.000.000) 09/01 18:24:31 Job reconnected to slot1_4@b7s09p9375.cern.ch
+    startd address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+    starter address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=slot1_4_123805_9284_179164>
+...
+040 (5814750.000.000) 09/01 18:24:31 Finished transferring output files
+...
+040 (5814750.000.000) 09/01 18:29:31 Entered queue to transfer output files
+...
+022 (5814750.000.000) 09/01 18:31:16 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@b7s09p9375.cern.ch <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+...
+023 (5814750.000.000) 09/01 18:31:16 Job reconnected to slot1_4@b7s09p9375.cern.ch
+    startd address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+    starter address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=slot1_4_123805_9284_179164>
+...
+040 (5814750.000.000) 09/01 18:31:16 Finished transferring output files
+...
+040 (5814750.000.000) 09/01 18:33:05 Entered queue to transfer output files
+...
+022 (5814750.000.000) 09/01 18:34:48 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@b7s09p9375.cern.ch <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+...
+023 (5814750.000.000) 09/01 18:34:48 Job reconnected to slot1_4@b7s09p9375.cern.ch
+    startd address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+    starter address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=slot1_4_123805_9284_179164>
+...
+040 (5814750.000.000) 09/01 18:34:48 Finished transferring output files
+...
+040 (5814750.000.000) 09/01 18:36:38 Entered queue to transfer output files
+...
+022 (5814750.000.000) 09/01 18:38:21 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@b7s09p9375.cern.ch <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+...
+023 (5814750.000.000) 09/01 18:38:21 Job reconnected to slot1_4@b7s09p9375.cern.ch
+    startd address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=startd_28752_0f19>
+    starter address: <188.184.160.175:9618?addrs=188.184.160.175-9618+[2001-1458-301-48--100-a9]-9618&alias=b7s09p9375.cern.ch&noUDP&sock=slot1_4_123805_9284_179164>
+...
+040 (5814750.000.000) 09/01 18:38:21 Finished transferring output files
+...
+040 (5814750.000.000) 09/01 18:42:22 Entered queue to transfer output files
+...
+040 (5814750.000.000) 09/01 18:47:57 Finished transferring output files
+...
+007 (5814750.000.000) 09/01 18:49:42 Shadow exception!
+	Error from slot1_4@b7s09p9375.cern.ch: Repeated attempts to transfer output failed for unknown reasons
+	0  -  Run Bytes Sent By Job
+	698  -  Run Bytes Received By Job
+...
+022 (5814750.000.000) 09/01 20:50:53 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@b7g19p7018.cern.ch <128.142.137.100:9618?addrs=128.142.137.100-9618+[2001-1458-301-5e--100-58]-9618&alias=b7g19p7018.cern.ch&noUDP&sock=startd_4555_edfa>
+...
+024 (5814750.000.000) 09/01 20:51:01 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@b7g19p7018.cern.ch, rescheduling job
+...
+022 (5814750.000.000) 09/01 20:56:57 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_33@b7g19p7996.cern.ch <128.142.137.108:9618?addrs=128.142.137.108-9618+[2001-1458-301-5e--100-60]-9618&alias=b7g19p7996.cern.ch&noUDP&sock=startd_4595_5dc4>
+...
+024 (5814750.000.000) 09/01 20:57:05 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_33@b7g19p7996.cern.ch, rescheduling job
+...
+022 (5814750.000.000) 09/01 21:02:35 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_4@b7s12p2212.cern.ch <188.184.163.180:9618?addrs=188.184.163.180-9618+[2001-1458-301-4d--100-ae]-9618&alias=b7s12p2212.cern.ch&noUDP&sock=startd_997_7003>
+...
+024 (5814750.000.000) 09/01 21:02:35 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_4@b7s12p2212.cern.ch, rescheduling job
+...
+040 (5814750.000.000) 09/01 21:38:20 Started transferring input files
+	Transferring to host: <128.142.137.166:9618?addrs=128.142.137.166-9618+[2001-1458-301-5e--100-9a]-9618&alias=b7g19p6855.cern.ch&noUDP&sock=slot1_13_3494_96c7_58442>
+...
+040 (5814750.000.000) 09/01 21:38:20 Finished transferring input files
+...
+001 (5814750.000.000) 09/01 21:38:21 Job executing on host: <128.142.137.166:9618?addrs=128.142.137.166-9618+[2001-1458-301-5e--100-9a]-9618&alias=b7g19p6855.cern.ch&noUDP&sock=startd_2971_6ff6>
+...
+040 (5814750.000.000) 09/01 22:31:22 Started transferring output files
+...
+040 (5814750.000.000) 09/01 22:31:22 Finished transferring output files
+...
+005 (5814750.000.000) 09/01 22:31:22 Job terminated.
+	(1) Normal termination (return value 65)
+		Usr 0 00:47:04, Sys 0 00:01:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:35:25, Sys 0 00:02:43  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	54965  -  Run Bytes Sent By Job
+	698  -  Run Bytes Received By Job
+	54965  -  Total Bytes Sent By Job
+	1396  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.97        1         1 
+	   Disk (KB)            :    77         100   1551715 
+	   Memory (MB)          :  1221        2000      2000 
+
+	Job terminated of its own accord at 2023-09-01T20:31:22Z.
+...
