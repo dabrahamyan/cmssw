@@ -1,0 +1,54 @@
+000 (5849834.000.000) 09/07 15:50:04 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
+...
+040 (5849834.000.000) 09/07 16:02:23 Started transferring input files
+	Transferring to host: <128.142.137.104:9618?addrs=128.142.137.104-9618+[2001-1458-301-5e--100-5c]-9618&alias=b7g19p1547.cern.ch&noUDP&sock=slot1_13_9329_dfd4_155838>
+...
+040 (5849834.000.000) 09/07 16:02:23 Finished transferring input files
+...
+001 (5849834.000.000) 09/07 16:02:24 Job executing on host: <128.142.137.104:9618?addrs=128.142.137.104-9618+[2001-1458-301-5e--100-5c]-9618&alias=b7g19p1547.cern.ch&noUDP&sock=startd_8398_e870>
+...
+006 (5849834.000.000) 09/07 16:02:33 Image size of job updated: 161040
+	23  -  MemoryUsage of job (MB)
+	23088  -  ResidentSetSize of job (KB)
+...
+006 (5849834.000.000) 09/07 16:07:34 Image size of job updated: 2435740
+	986  -  MemoryUsage of job (MB)
+	1008896  -  ResidentSetSize of job (KB)
+...
+006 (5849834.000.000) 09/07 16:12:34 Image size of job updated: 2435740
+	1010  -  MemoryUsage of job (MB)
+	1034088  -  ResidentSetSize of job (KB)
+...
+006 (5849834.000.000) 09/07 16:22:35 Image size of job updated: 2599580
+	1010  -  MemoryUsage of job (MB)
+	1034088  -  ResidentSetSize of job (KB)
+...
+006 (5849834.000.000) 09/07 16:27:35 Image size of job updated: 2599580
+	1049  -  MemoryUsage of job (MB)
+	1073952  -  ResidentSetSize of job (KB)
+...
+040 (5849834.000.000) 09/07 17:46:04 Entered queue to transfer output files
+...
+022 (5849834.000.000) 09/07 18:22:19 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_13@b7g19p1547.cern.ch <128.142.137.104:9618?addrs=128.142.137.104-9618+[2001-1458-301-5e--100-5c]-9618&alias=b7g19p1547.cern.ch&noUDP&sock=startd_8398_e870>
+...
+023 (5849834.000.000) 09/07 18:22:58 Job reconnected to slot1_13@b7g19p1547.cern.ch
+    startd address: <128.142.137.104:9618?addrs=128.142.137.104-9618+[2001-1458-301-5e--100-5c]-9618&alias=b7g19p1547.cern.ch&noUDP&sock=startd_8398_e870>
+    starter address: <128.142.137.104:9618?addrs=128.142.137.104-9618+[2001-1458-301-5e--100-5c]-9618&alias=b7g19p1547.cern.ch&noUDP&sock=slot1_13_9329_dfd4_155838>
+...
+005 (5849834.000.000) 09/07 18:22:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:30:18, Sys 0 00:02:59  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:52:06, Sys 0 00:03:43  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	127178  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	127178  -  Total Bytes Sent By Job
+	696  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :      146      146   1642775 
+	   Memory (MB)          :     1221     2000      2000 
+...

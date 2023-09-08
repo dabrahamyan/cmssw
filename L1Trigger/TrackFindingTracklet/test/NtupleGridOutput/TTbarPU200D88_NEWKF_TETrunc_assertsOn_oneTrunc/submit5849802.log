@@ -1,0 +1,42 @@
+000 (5849802.000.000) 09/07 14:08:13 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
+...
+040 (5849802.000.000) 09/07 14:15:22 Started transferring input files
+	Transferring to host: <128.142.61.29:9618?addrs=128.142.61.29-9618+[2001-1458-301-23--100-1c]-9618&alias=b7s06p7938.cern.ch&noUDP&sock=slot1_15_37119_717f_49135>
+...
+040 (5849802.000.000) 09/07 14:15:22 Finished transferring input files
+...
+001 (5849802.000.000) 09/07 14:15:23 Job executing on host: <128.142.61.29:9618?addrs=128.142.61.29-9618+[2001-1458-301-23--100-1c]-9618&alias=b7s06p7938.cern.ch&noUDP&sock=startd_52362_8e21>
+...
+006 (5849802.000.000) 09/07 14:15:31 Image size of job updated: 767532
+	123  -  MemoryUsage of job (MB)
+	125012  -  ResidentSetSize of job (KB)
+...
+006 (5849802.000.000) 09/07 14:20:31 Image size of job updated: 2427288
+	1030  -  MemoryUsage of job (MB)
+	1054652  -  ResidentSetSize of job (KB)
+...
+006 (5849802.000.000) 09/07 14:29:38 Image size of job updated: 2591128
+	1030  -  MemoryUsage of job (MB)
+	1054652  -  ResidentSetSize of job (KB)
+...
+040 (5849802.000.000) 09/07 14:29:38 Started transferring output files
+...
+040 (5849802.000.000) 09/07 14:29:38 Finished transferring output files
+...
+005 (5849802.000.000) 09/07 14:29:38 Job terminated.
+	(1) Normal termination (return value 65)
+		Usr 0 00:11:05, Sys 0 00:00:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:11:05, Sys 0 00:00:24  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	32673  -  Run Bytes Sent By Job
+	696  -  Run Bytes Received By Job
+	32673  -  Total Bytes Sent By Job
+	696  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :    54           1   2971356 
+	   Memory (MB)          :  1030        2000      2000 
+
+	Job terminated of its own accord at 2023-09-07T12:29:38Z.
+...

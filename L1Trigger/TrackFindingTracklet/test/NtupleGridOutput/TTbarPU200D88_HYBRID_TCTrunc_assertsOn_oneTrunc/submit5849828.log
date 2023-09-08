@@ -1,0 +1,141 @@
+000 (5849828.000.000) 09/07 15:49:36 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
+...
+040 (5849828.000.000) 09/07 16:02:26 Started transferring input files
+	Transferring to host: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=slot1_15_5335_bd72_160784>
+...
+040 (5849828.000.000) 09/07 16:02:26 Finished transferring input files
+...
+001 (5849828.000.000) 09/07 16:02:27 Job executing on host: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+...
+006 (5849828.000.000) 09/07 16:02:36 Image size of job updated: 577912
+	23  -  MemoryUsage of job (MB)
+	23084  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:07:36 Image size of job updated: 2426604
+	988  -  MemoryUsage of job (MB)
+	1010908  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:12:37 Image size of job updated: 2590444
+	1093  -  MemoryUsage of job (MB)
+	1118336  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:17:38 Image size of job updated: 2590444
+	1103  -  MemoryUsage of job (MB)
+	1128860  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:22:38 Image size of job updated: 2599072
+	1170  -  MemoryUsage of job (MB)
+	1197700  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:27:38 Image size of job updated: 2599072
+	1185  -  MemoryUsage of job (MB)
+	1212740  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:32:39 Image size of job updated: 2795680
+	1190  -  MemoryUsage of job (MB)
+	1217772  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:37:39 Image size of job updated: 2795680
+	1335  -  MemoryUsage of job (MB)
+	1366560  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:42:39 Image size of job updated: 2795680
+	1400  -  MemoryUsage of job (MB)
+	1432660  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 16:51:19 Image size of job updated: 3035296
+	1439  -  MemoryUsage of job (MB)
+	1473516  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 17:02:14 Image size of job updated: 3035296
+	1617  -  MemoryUsage of job (MB)
+	1654816  -  ResidentSetSize of job (KB)
+...
+006 (5849828.000.000) 09/07 17:10:59 Image size of job updated: 3297440
+	1710  -  MemoryUsage of job (MB)
+	1750528  -  ResidentSetSize of job (KB)
+...
+040 (5849828.000.000) 09/07 17:15:16 Entered queue to transfer output files
+...
+022 (5849828.000.000) 09/07 17:17:07 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_15@b7g19p7775.cern.ch <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+...
+023 (5849828.000.000) 09/07 17:17:07 Job reconnected to slot1_15@b7g19p7775.cern.ch
+    startd address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+    starter address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=slot1_15_5335_bd72_160784>
+...
+040 (5849828.000.000) 09/07 17:17:07 Finished transferring output files
+...
+040 (5849828.000.000) 09/07 17:19:11 Entered queue to transfer output files
+...
+022 (5849828.000.000) 09/07 17:20:57 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_15@b7g19p7775.cern.ch <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+...
+023 (5849828.000.000) 09/07 17:20:57 Job reconnected to slot1_15@b7g19p7775.cern.ch
+    startd address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+    starter address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=slot1_15_5335_bd72_160784>
+...
+040 (5849828.000.000) 09/07 17:20:57 Finished transferring output files
+...
+040 (5849828.000.000) 09/07 17:25:25 Entered queue to transfer output files
+...
+022 (5849828.000.000) 09/07 17:27:09 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_15@b7g19p7775.cern.ch <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+...
+023 (5849828.000.000) 09/07 17:27:09 Job reconnected to slot1_15@b7g19p7775.cern.ch
+    startd address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+    starter address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=slot1_15_5335_bd72_160784>
+...
+040 (5849828.000.000) 09/07 17:27:09 Finished transferring output files
+...
+040 (5849828.000.000) 09/07 17:31:04 Entered queue to transfer output files
+...
+022 (5849828.000.000) 09/07 17:32:48 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_15@b7g19p7775.cern.ch <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+...
+023 (5849828.000.000) 09/07 17:32:48 Job reconnected to slot1_15@b7g19p7775.cern.ch
+    startd address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+    starter address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=slot1_15_5335_bd72_160784>
+...
+040 (5849828.000.000) 09/07 17:32:48 Finished transferring output files
+...
+040 (5849828.000.000) 09/07 17:34:38 Entered queue to transfer output files
+...
+040 (5849828.000.000) 09/07 17:38:15 Finished transferring output files
+...
+007 (5849828.000.000) 09/07 17:42:07 Shadow exception!
+	Error from slot1_15@b7g19p7775.cern.ch: Repeated attempts to transfer output failed for unknown reasons
+	0  -  Run Bytes Sent By Job
+	698  -  Run Bytes Received By Job
+...
+022 (5849828.000.000) 09/07 18:22:17 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_15@b7g19p7775.cern.ch <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+...
+023 (5849828.000.000) 09/07 18:22:48 Job reconnected to slot1_15@b7g19p7775.cern.ch
+    startd address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=startd_4613_b678>
+    starter address: <128.142.137.152:9618?addrs=128.142.137.152-9618+[2001-1458-301-5e--100-8c]-9618&alias=b7g19p7775.cern.ch&noUDP&sock=slot1_15_5335_bd72_160784>
+...
+006 (5849828.000.000) 09/07 18:22:48 Image size of job updated: 3297440
+	1710  -  MemoryUsage of job (MB)
+	1750528  -  ResidentSetSize of job (KB)
+...
+005 (5849828.000.000) 09/07 18:22:48 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:02:09, Sys 0 00:02:16  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:23:01, Sys 0 00:03:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	127305  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	127305  -  Total Bytes Sent By Job
+	698  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :      146      146   1529328 
+	   Memory (MB)          :     1710     2000      2000 
+...

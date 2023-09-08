@@ -1,0 +1,98 @@
+000 (5848844.000.000) 09/06 10:42:06 Job submitted from host: <137.138.44.55:9618?addrs=137.138.44.55-9618+[2001-1458-d00-1a--48]-9618&alias=bigbird17.cern.ch&noUDP&sock=schedd_7840_2a97>
+...
+040 (5848844.000.000) 09/06 11:06:21 Started transferring input files
+	Transferring to host: <188.184.163.102:9618?addrs=188.184.163.102-9618&alias=b7s12p7352.cern.ch&noUDP&sock=slot1_35_4850_037e_191866>
+...
+040 (5848844.000.000) 09/06 11:06:21 Finished transferring input files
+...
+001 (5848844.000.000) 09/06 11:06:22 Job executing on host: <188.184.163.102:9618?addrs=188.184.163.102-9618&alias=b7s12p7352.cern.ch&noUDP&sock=startd_3362_a17e>
+...
+006 (5848844.000.000) 09/06 11:06:32 Image size of job updated: 269260
+	23  -  MemoryUsage of job (MB)
+	23088  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:11:32 Image size of job updated: 2426604
+	1026  -  MemoryUsage of job (MB)
+	1050452  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:16:32 Image size of job updated: 2590444
+	1056  -  MemoryUsage of job (MB)
+	1081280  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:21:33 Image size of job updated: 2590444
+	1129  -  MemoryUsage of job (MB)
+	1156012  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:26:34 Image size of job updated: 2590444
+	1176  -  MemoryUsage of job (MB)
+	1204004  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:31:34 Image size of job updated: 2590444
+	1206  -  MemoryUsage of job (MB)
+	1234268  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:36:35 Image size of job updated: 2787052
+	1206  -  MemoryUsage of job (MB)
+	1234268  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:41:36 Image size of job updated: 2787052
+	1319  -  MemoryUsage of job (MB)
+	1350180  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:46:36 Image size of job updated: 2787052
+	1329  -  MemoryUsage of job (MB)
+	1360384  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:51:37 Image size of job updated: 2787052
+	1403  -  MemoryUsage of job (MB)
+	1436232  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 11:56:38 Image size of job updated: 3026668
+	1403  -  MemoryUsage of job (MB)
+	1436232  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 12:01:38 Image size of job updated: 3026668
+	1522  -  MemoryUsage of job (MB)
+	1558124  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 12:06:38 Image size of job updated: 3026668
+	1537  -  MemoryUsage of job (MB)
+	1573584  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 12:11:39 Image size of job updated: 3026668
+	1558  -  MemoryUsage of job (MB)
+	1594804  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 12:16:39 Image size of job updated: 3035268
+	1596  -  MemoryUsage of job (MB)
+	1633400  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 12:21:40 Image size of job updated: 3035268
+	1673  -  MemoryUsage of job (MB)
+	1712816  -  ResidentSetSize of job (KB)
+...
+006 (5848844.000.000) 09/06 12:26:41 Image size of job updated: 3297440
+	1725  -  MemoryUsage of job (MB)
+	1765452  -  ResidentSetSize of job (KB)
+...
+040 (5848844.000.000) 09/06 12:28:19 Started transferring output files
+...
+040 (5848844.000.000) 09/06 12:28:19 Finished transferring output files
+...
+005 (5848844.000.000) 09/06 12:28:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:07:19, Sys 0 00:02:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:07:19, Sys 0 00:02:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	127070  -  Run Bytes Sent By Job
+	699  -  Run Bytes Received By Job
+	127070  -  Total Bytes Sent By Job
+	699  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.84        1         1 
+	   Disk (KB)            :   145           1   2942560 
+	   Memory (MB)          :  1725        2000      2000 
+
+	Job terminated of its own accord at 2023-09-06T10:28:18Z.
+...
