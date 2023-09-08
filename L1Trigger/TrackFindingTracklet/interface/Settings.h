@@ -882,15 +882,15 @@ namespace trklet {
         {"TE", 10000}, //  107
         {"TC", 10000}, //  108
         {"PR", 10000}, //  108
-        {"ME", 10000}, //  108
+        {"ME", 108}, //  108
         //NOTE: The MC is set to 108, but `mergedepth`
         //removes 3 iterations to emulate the delay
         //due to the HLS priority encoder
         {"MC", 10000}, //  108
         {"TB", 10000}, //  108
-        {"MP", 10000}, //  108
-        {"TP", 10000}, //  108
-        {"TRE", 10000}, // 108
+        {"MP", 108}, //  108
+        {"TP", 108}, //  108
+        {"TRE", 108}, // 108
         {"DR", 10000}}; // 108 //Specifies how many tracks allowed per bin in DR
 
     // If set to true this will generate debub printout in text files
@@ -1027,7 +1027,7 @@ namespace trklet {
     bool inventStubs_{true};     // invent seeding stub coordinates based on tracklet traj
 
     // Use combined TP (TE+TC) and MP (PR+ME+MC) configuration (with prompt tracking)
-    bool combined_{true};
+    bool combined_{false};
     // N.B. To use combined modules with extended tracking, edit
     // Tracklet_cfi.py to refer to *_hourglassExtendedCombined.dat,
     // but leave combined_=false.

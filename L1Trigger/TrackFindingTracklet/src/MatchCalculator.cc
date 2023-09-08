@@ -364,7 +364,7 @@ void MatchCalculator::execute(unsigned int iSector, double phioffset) {
 
       if (settings_.useapprox()) {
         double dphi = reco::reduceRange(phi - fpgastub->phiapprox(0.0, 0.0));
-        //assert(std::abs(dphi) < 0.001);
+        assert(std::abs(dphi) < 0.001);
         phi = fpgastub->phiapprox(0.0, 0.0);
         z = fpgastub->zapprox();
         r = fpgastub->rapprox();
