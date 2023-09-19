@@ -342,7 +342,7 @@ void TrackletProcessor::execute(unsigned int iSector, double phimin, double phim
 
       if (trackletpars_->nTracklets() >= settings_.ntrackletmax()) {
         edm::LogVerbatim("Tracklet") << "Will break on number of tracklets in " << getName();
-        assert(0);
+        //assert(0);
         break;
       }
 

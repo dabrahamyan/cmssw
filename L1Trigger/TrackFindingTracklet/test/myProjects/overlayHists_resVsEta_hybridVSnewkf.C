@@ -76,9 +76,9 @@ void overlayHists_resVsEta_hybridVSnewkf (){
 
             // make legend
             TLegend* leg = new TLegend(0.2, 0.65, 0.45, 0.85);
-            leg->AddEntry(hybridHist68, "Hybrid, Res=68%");
+            leg->AddEntry(hybridHist68, "Hybrid, Res=68%"); 
             leg->AddEntry(newkfHist68, "NewKF, Res=68%");
-            leg->AddEntry(hybridHist90, "Hybrid, Res=90%");
+            leg->AddEntry(hybridHist90, "Hybrid, Res=90%");  
             leg->AddEntry(newkfHist90, "NewKF, Res=90%");
             
             // Draw and save histos
