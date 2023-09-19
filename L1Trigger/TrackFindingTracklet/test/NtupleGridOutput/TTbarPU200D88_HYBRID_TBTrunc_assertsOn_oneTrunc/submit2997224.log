@@ -1,0 +1,94 @@
+000 (2997224.000.000) 09/11 17:09:03 Job submitted from host: <188.185.121.235:9618?addrs=188.185.121.235-9618+[2001-1458-d00-49--100-36e]-9618&alias=bigbird22.cern.ch&noUDP&sock=schedd_159281_1896>
+...
+040 (2997224.000.000) 09/11 17:09:40 Started transferring input files
+	Transferring to host: <128.142.137.179:9618?addrs=128.142.137.179-9618+[2001-1458-301-5e--100-a7]-9618&alias=b7g19p9664.cern.ch&noUDP&sock=slot1_22_3802_9a54_174088>
+...
+040 (2997224.000.000) 09/11 17:09:40 Finished transferring input files
+...
+001 (2997224.000.000) 09/11 17:09:41 Job executing on host: <128.142.137.179:9618?addrs=128.142.137.179-9618+[2001-1458-301-5e--100-a7]-9618&alias=b7g19p9664.cern.ch&noUDP&sock=startd_3752_236e>
+...
+006 (2997224.000.000) 09/11 17:09:49 Image size of job updated: 266888
+	37  -  MemoryUsage of job (MB)
+	36932  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:14:49 Image size of job updated: 2426860
+	999  -  MemoryUsage of job (MB)
+	1022504  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:19:50 Image size of job updated: 2426860
+	1024  -  MemoryUsage of job (MB)
+	1048504  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:24:50 Image size of job updated: 2590700
+	1051  -  MemoryUsage of job (MB)
+	1076032  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:29:50 Image size of job updated: 2590700
+	1082  -  MemoryUsage of job (MB)
+	1107360  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:34:51 Image size of job updated: 2599328
+	1181  -  MemoryUsage of job (MB)
+	1208880  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:39:52 Image size of job updated: 2795936
+	1184  -  MemoryUsage of job (MB)
+	1211784  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:44:52 Image size of job updated: 2795936
+	1289  -  MemoryUsage of job (MB)
+	1319024  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:49:53 Image size of job updated: 2795936
+	1326  -  MemoryUsage of job (MB)
+	1357148  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:54:54 Image size of job updated: 2795936
+	1342  -  MemoryUsage of job (MB)
+	1373508  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 17:59:54 Image size of job updated: 3025312
+	1464  -  MemoryUsage of job (MB)
+	1498464  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 18:04:55 Image size of job updated: 3025312
+	1539  -  MemoryUsage of job (MB)
+	1575664  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 18:09:56 Image size of job updated: 3035552
+	1539  -  MemoryUsage of job (MB)
+	1575664  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 18:14:56 Image size of job updated: 3035552
+	1642  -  MemoryUsage of job (MB)
+	1681296  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 18:19:56 Image size of job updated: 3297696
+	1685  -  MemoryUsage of job (MB)
+	1725184  -  ResidentSetSize of job (KB)
+...
+006 (2997224.000.000) 09/11 18:24:57 Image size of job updated: 3297696
+	1728  -  MemoryUsage of job (MB)
+	1769380  -  ResidentSetSize of job (KB)
+...
+040 (2997224.000.000) 09/11 18:25:01 Started transferring output files
+...
+040 (2997224.000.000) 09/11 18:25:01 Finished transferring output files
+...
+005 (2997224.000.000) 09/11 18:25:01 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:03:15, Sys 0 00:02:36  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:03:15, Sys 0 00:02:36  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	128563  -  Run Bytes Sent By Job
+	696  -  Run Bytes Received By Job
+	128563  -  Total Bytes Sent By Job
+	696  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.86        1         1 
+	   Disk (KB)            :   147           1   1619202 
+	   Memory (MB)          :  1728        2000      2000 
+
+	Job terminated of its own accord at 2023-09-11T16:25:01Z.
+...

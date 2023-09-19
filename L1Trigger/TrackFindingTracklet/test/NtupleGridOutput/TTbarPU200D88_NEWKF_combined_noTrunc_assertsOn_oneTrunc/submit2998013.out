@@ -1,0 +1,71 @@
+using geometry D88 (tilted)
+Tue Sep 12 13:51:12 CEST 2023
+Thread 7 (Thread 0x2b23fc404700 (LWP 184) "cmsRun"):
+#0  0x00002b23c8ee0b3b in do_futex_wait.constprop () from /lib64/libpthread.so.0
+#1  0x00002b23c8ee0bcf in __new_sem_wait_slow.constprop.0 () from /lib64/libpthread.so.0
+#2  0x00002b23c8ee0c6b in sem_wait@@GLIBC_2.2.5 () from /lib64/libpthread.so.0
+#3  0x00002b23cf33c576 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#4  0x00002b23cf33c639 in RunRunnerThread () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#5  0x00002b23c8edaea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b23c91edb0d in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x2b23fc203700 (LWP 183) "cmsRun"):
+#0  0x00002b23c8ee0b3b in do_futex_wait.constprop () from /lib64/libpthread.so.0
+#1  0x00002b23c8ee0bcf in __new_sem_wait_slow.constprop.0 () from /lib64/libpthread.so.0
+#2  0x00002b23c8ee0c6b in sem_wait@@GLIBC_2.2.5 () from /lib64/libpthread.so.0
+#3  0x00002b23cf33c576 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#4  0x00002b23cf33c639 in RunRunnerThread () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#5  0x00002b23c8edaea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b23c91edb0d in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x2b23fc002700 (LWP 182) "cmsRun"):
+#0  0x00002b23c8ee0b3b in do_futex_wait.constprop () from /lib64/libpthread.so.0
+#1  0x00002b23c8ee0bcf in __new_sem_wait_slow.constprop.0 () from /lib64/libpthread.so.0
+#2  0x00002b23c8ee0c6b in sem_wait@@GLIBC_2.2.5 () from /lib64/libpthread.so.0
+#3  0x00002b23cf33c576 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#4  0x00002b23cf33c639 in RunRunnerThread () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#5  0x00002b23c8edaea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b23c91edb0d in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x2b23fbe01700 (LWP 181) "cmsRun"):
+#0  0x00002b23c8ee1e9d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002b23cf07910f in XrdSysTimer::Wait(int) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdUtils.so.3
+#2  0x00002b23cf2aa2d3 in XrdCl::TaskManager::RunTasks() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#3  0x00002b23cf2aa429 in RunRunnerThread () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdCl.so.3
+#4  0x00002b23c8edaea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b23c91edb0d in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x2b23fbc00700 (LWP 180) "cmsRun"):
+#0  0x00002b23c91ee0e3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b23cf0735c2 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdUtils.so.3
+#2  0x00002b23cf06fd4d in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdUtils.so.3
+#3  0x00002b23cf078818 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/external/slc7_amd64_gcc10/lib/libXrdUtils.so.3
+#4  0x00002b23c8edaea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b23c91edb0d in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x2b23ec326700 (LWP 173) "cmsRun"):
+#0  0x00002b23c8ee21d9 in waitpid () from /lib64/libpthread.so.0
+#1  0x00002b23cf90dad7 in edm::service::cmssw_stacktrace_fork() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/pluginFWCoreServicesPlugins.so
+#2  0x00002b23cf90e6ca in edm::service::InitRootHandlers::stacktraceHelperThread() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/pluginFWCoreServicesPlugins.so
+#3  0x00002b23c8ab6f90 in std::execute_native_thread_routine (__p=0x2b23d7f8e060) at ../../../../../libstdc++-v3/src/c++11/thread.cc:80
+#4  0x00002b23c8edaea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b23c91edb0d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x2b23cb270e40 (LWP 155) "cmsRun"):
+#0  0x00002b23c91e2ddd in poll () from /lib64/libc.so.6
+#1  0x00002b23cf90ddcf in full_read.constprop () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/pluginFWCoreServicesPlugins.so
+#2  0x00002b23cf90e79c in edm::service::InitRootHandlers::stacktraceFromThread() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/pluginFWCoreServicesPlugins.so
+#3  0x00002b23cf91124b in sig_dostack_then_abort () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/pluginFWCoreServicesPlugins.so
+#4  <signal handler called>
+#5  0x00002b23f96443b5 in std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() () from /afs/cern.ch/user/d/dabraham/private/test/tempCMSSWs/one/lib/slc7_amd64_gcc10/pluginTrackFindingTrackletPlugins.so
+#6  0x00002b23f9675386 in trklet::ProducerKFout::produce(edm::Event&, edm::EventSetup const&) () from /afs/cern.ch/user/d/dabraham/private/test/tempCMSSWs/one/lib/slc7_amd64_gcc10/pluginTrackFindingTrackletPlugins.so
+#7  0x00002b23c6b031e3 in edm::stream::EDProducerAdaptorBase::doEvent(edm::EventTransitionInfo const&, edm::ActivityRegistry*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#8  0x00002b23c6ae5c3f in edm::WorkerT<edm::stream::EDProducerAdaptorBase>::implDo(edm::EventTransitionInfo const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#9  0x00002b23c6a35b25 in decltype ({parm#1}()) edm::convertException::wrap<edm::Worker::runModule<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*)::{lambda()#1}>(edm::Worker::runModule<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*)::{lambda()#1}) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#10 0x00002b23c6a35e13 in std::__exception_ptr::exception_ptr edm::Worker::runModuleAfterAsyncPrefetch<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(std::__exception_ptr::exception_ptr, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#11 0x00002b23c6a38546 in edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#12 0x00002b23c67d1879 in tbb::detail::d1::function_task<edm::WaitingTaskList::announce()::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreConcurrency.so
+#13 0x00002b23c82cbbec in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::external_waiter> (waiter=..., t=0x2b23cca39f00, this=0x2b23cca67700) at /data/cmsbld/jenkins/workspace/auto-builds/CMSSW_12_6_0_pre3-slc7_amd64_gcc10/build/CMSSW_12_6_0_pre3-build/BUILD/slc7_amd64_gcc10/external/tbb/v2021.5.0-36aff7df349e0716374b1668ccd18e17/tbb-v2021.5.0/src/tbb/task_dispatcher.h:322
+#14 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::external_waiter> (waiter=..., t=<optimized out>, this=0x2b23cca67700) at /data/cmsbld/jenkins/workspace/auto-builds/CMSSW_12_6_0_pre3-slc7_amd64_gcc10/build/CMSSW_12_6_0_pre3-build/BUILD/slc7_amd64_gcc10/external/tbb/v2021.5.0-36aff7df349e0716374b1668ccd18e17/tbb-v2021.5.0/src/tbb/task_dispatcher.h:463
+#15 tbb::detail::r1::task_dispatcher::execute_and_wait (t=<optimized out>, wait_ctx=..., w_ctx=...) at /data/cmsbld/jenkins/workspace/auto-builds/CMSSW_12_6_0_pre3-slc7_amd64_gcc10/build/CMSSW_12_6_0_pre3-build/BUILD/slc7_amd64_gcc10/external/tbb/v2021.5.0-36aff7df349e0716374b1668ccd18e17/tbb-v2021.5.0/src/tbb/task_dispatcher.cpp:168
+#16 0x00002b23c69b022d in edm::FinalWaitingTask::wait() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#17 0x00002b23c6998310 in edm::EventProcessor::processRuns() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#18 0x00002b23c69a4da1 in edm::EventProcessor::runToCompletion() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_6_0_pre5/lib/slc7_amd64_gcc10/libFWCoreFramework.so
+#19 0x000000000040a266 in tbb::detail::d1::task_arena_function<main::{lambda()#1}::operator()() const::{lambda()#1}, void>::operator()() const ()
+#20 0x00002b23c82ba0eb in tbb::detail::r1::task_arena_impl::execute (ta=..., d=...) at /data/cmsbld/jenkins/workspace/auto-builds/CMSSW_12_6_0_pre3-slc7_amd64_gcc10/build/CMSSW_12_6_0_pre3-build/BUILD/slc7_amd64_gcc10/external/tbb/v2021.5.0-36aff7df349e0716374b1668ccd18e17/tbb-v2021.5.0/src/tbb/arena.cpp:698
+#21 0x000000000040b094 in main::{lambda()#1}::operator()() const ()
+#22 0x000000000040971c in main ()
