@@ -3,14 +3,13 @@ import sys
 from itertools import islice
 
 ############## Things to Change ###################
-dataName = 'TTbarPU200D88_HYBRID_combined_fullTrunc_TEST_assertsOn_oneTrunc' # what submit files and output files are named (no ".root")
-filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
-cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID_trkJets.py' # cfg file used to run each job
+# dataName = 'TTbarPU200D88_HYBRID_TCTrunc_assertsOn_oneTrunc' # what submit files and output files are named (no ".root")
+# filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
+# cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID_trkJets.py' # cfg file used to run each job
 
-# dataName = 'TTbarPU200D88_NEWKF_combined_TPTrunc_assertsOn_oneTrunc' # what submit files and output files are named (no ".root")
-# filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samplefs
-# cfgFile = 'L1TrackNtupleMaker_cfg_grid_NEWKF_trkJets.py' # cfg file used to run each job
-
+dataName = 'TTbarPU200D88_NEWKF_TCTrunc_assertsOn_oneTrunc' # what submit files and output files are named (no ".root")
+filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samplefs
+cfgFile = 'L1TrackNtupleMaker_cfg_grid_NEWKF_trkJets.py' # cfg file used to run each job
 ######################### Change to CMSSW you are using #########################
 
 newCMSSW = 'tempCMSSWs/one'  # tempCMSSWs/two  tempCMSSWs/one  CMSSW_12_6_0_pre5

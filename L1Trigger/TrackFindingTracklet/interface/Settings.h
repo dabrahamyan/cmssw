@@ -874,24 +874,24 @@ namespace trklet {
 
     //IR should be set to 108 to match the FW for the summer chain, but ultimately should be at 156
     std::unordered_map<std::string, unsigned int> maxstep_{
-        {"IR", 156},  // 156 //IR will run at a higher clock speed to handle
+        {"IR", 10000},  // 156 //IR will run at a higher clock speed to handle
                       //input links running at 25 Gbits/s
         //Set to 108 to match firmware project 240 MHz clock
 
-        {"VMR", 107}, // 107
-        {"TE", 107}, //  107
-        {"TC", 108}, //  108
-        {"PR", 108}, //  108
+        {"VMR", 10000}, // 107
+        {"TE", 10000}, //  107
+        {"TC", 10000}, //  108
+        {"PR", 10000}, //  108
         {"ME", 108}, //  108
         //NOTE: The MC is set to 108, but `mergedepth`
         //removes 3 iterations to emulate the delay
         //due to the HLS priority encoder
-        {"MC", 108}, //  108
-        {"TB", 108}, //  108
-        {"MP", 108}, //  108
-        {"TP", 108}, //  108
-        {"TRE", 108}, // 108
-        {"DR", 108}}; // 108 //Specifies how many tracks allowed per bin in DR
+        {"MC", 10000}, //  108
+        {"TB", 10000}, //  108
+        {"MP", 10000}, //  108
+        {"TP", 10000}, //  108
+        {"TRE", 10000}, // 108
+        {"DR", 10000}}; // 108 //Specifies how many tracks allowed per bin in DR
 
     // If set to true this will generate debub printout in text files
     std::unordered_map<std::string, bool> writeMonitorData_{{"IL", false},
@@ -1027,7 +1027,7 @@ namespace trklet {
     bool inventStubs_{true};     // invent seeding stub coordinates based on tracklet traj
 
     // Use combined TP (TE+TC) and MP (PR+ME+MC) configuration (with prompt tracking)
-    bool combined_{true};
+    bool combined_{false};
     // N.B. To use combined modules with extended tracking, edit
     // Tracklet_cfi.py to refer to *_hourglassExtendedCombined.dat,
     // but leave combined_=false.

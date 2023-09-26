@@ -56,8 +56,8 @@ void overlayHists_oneParam_hybridVSnewkf (){
 
 
             // Set colors, markers, etc.
-            newkfHist->SetMarkerColor(kGreen);
-            newkfHist->SetLineColor(kGreen);
+            newkfHist->SetMarkerColor(kRed-3);
+            newkfHist->SetLineColor(kRed-3);
             newkfHist->SetMarkerStyle(kFullTriangleUp);
 
 
@@ -80,6 +80,11 @@ void overlayHists_oneParam_hybridVSnewkf (){
             mySmallText(0.47, 0.25, 1, ctxt); // which data set it is
             leg->Draw();
             c.SaveAs(saveDir + "HYBRIDvsNEWKF" + "_" + prop + params[iParam] + "_" + dataSets[iDataSet] + ".pdf");
+
+            /////////////////////// DEBUG CODE ////////////////////////////////////
+            cout << "Entries in Old KF " + labels[iDataSet] + ": " << hybridHist->GetEntries() << endl;
+            cout << "Entries in New KF " + labels[iDataSet] + ": " << newkfHist->GetEntries() << endl;
+            ////////////////////////////////////////////////////////////////////////
 
             // delete pointers you want to remake
             delete hybridHist, newkfHist, leg;

@@ -1,33 +1,6 @@
 #ifndef SETPLOTSTYLE_H
 #define SETPLOTSTYLE_H
 
-// #include "TROOT.h"
-// #include "TStyle.h"
-// #include "TLatex.h"
-// #include "TFile.h"
-// #include "TTree.h"
-// #include "TChain.h"
-// #include "TBranch.h"
-// #include "TLeaf.h"
-// #include "TCanvas.h"
-// #include "TLegend.h"
-// #include "TH1.h"
-// #include "TH2.h"
-// #include "TF1.h"
-// #include "TProfile.h"
-// #include "TProfile2D.h"
-// #include "TMath.h"
-// #include <TError.h>
-// #include "TSystem.h"
-
-// #include <iostream>
-// #include <string>
-// #include <vector>
-// #include <algorithm>
-
-// using namespace std;
-
-
 void SetPlotStyle() {
   // from ATLAS plot style macro
 
