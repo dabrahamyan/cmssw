@@ -59,13 +59,13 @@ void overlayHists_resVsEta_hybridVSnewkf (){
             TH1F *newkfHist90= (TH1F*)newkfFile->Get(prop + params[iParam] + "_90");
 
             // Set colors, markers, etc.
-            newkfHist68->SetMarkerColor(kGreen);
-            newkfHist68->SetLineColor(kGreen);
-            newkfHist68->SetMarkerStyle(kFullTriangleUp);
+            newkfHist68->SetMarkerColor(kRed-3);
+            newkfHist68->SetLineColor(kRed-3);
+            newkfHist68->SetMarkerStyle(kFullDiamond);
 
-            newkfHist90->SetMarkerColor(kGreen);
-            newkfHist90->SetLineColor(kGreen);
-            newkfHist90->SetMarkerStyle(kOpenTriangleUp);
+            newkfHist90->SetMarkerColor(kRed-3);
+            newkfHist90->SetLineColor(kRed-3);
+            newkfHist90->SetMarkerStyle(kOpenDiamond);
             hybridHist90->SetMarkerStyle(kOpenCircle);
 
             // Set max height done manually bc max of resVsEta is being weird
@@ -89,7 +89,16 @@ void overlayHists_resVsEta_hybridVSnewkf (){
             sprintf(ctxt, labels[iDataSet]); // Add label saying 
             mySmallText(0.47, 0.85, 1, ctxt); // which data set it is
             leg->Draw();
+            gStyle->SetOptStat(1);
             c.SaveAs(saveDir + "HYBRIDvsNEWKF" + "_" + prop + params[iParam] + "_" + dataSets[iDataSet] + ".pdf");
+            gStyle->SetOptStat(0);
+
+            /////////////////////// DEBUG CODE ////////////////////////////////////
+            cout << "Entries in Old KF " + labels[iDataSet] + " 68%: " << hybridHist68->GetEntries() << endl;
+            cout << "Entries in New KF " + labels[iDataSet] + " 68%: " << newkfHist68->GetEntries() << endl;
+            cout << "Entries in Old KF " + labels[iDataSet] + " 90%: " << hybridHist90->GetEntries() << endl;
+            cout << "Entries in New KF " + labels[iDataSet] + " 90%: " << newkfHist90->GetEntries() << endl;
+            ////////////////////////////////////////////////////////////////////////
 
             // delete pointers you want to remake
             delete hybridHist68, newkfHist68, hybridHist90, newkfHist90, leg;

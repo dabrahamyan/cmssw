@@ -390,7 +390,7 @@ namespace trklet {
           for (auto& it : ttTrackRefMap) {  //Iterate through ttTrackRefMap to find TTTrackRef Key by a TTTrack Value
             if (it.second == outputStreamsTracks[iLink][(int)(iTrack - 1) / 3].first)
               trackRef = it.first;
-          }
+          } // testing for git diff
           if ((int)iTrack / 3 <=
               setup_->numFramesIO() * ((double)TTBV::S_ / TTTrack_TrackWord::TrackBitWidths::kTrackWordSize))
             accepted[iLink].emplace_back(

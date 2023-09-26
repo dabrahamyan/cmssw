@@ -23,7 +23,7 @@ void overlayHists_eff_allTruncs (){
     // directory to save plots to
     TString saveDir = "truncation_examination_assertsOn_oneTrunc/";
     // What jet pT??
-    TString pTJet = "injet_vhighpt";
+    vector <TString> pTJet = {"", "_injet", "_injet_highpt", "_injet_vhighpt"};
 
     /////////////////////// CYCLING THROUGH FILES ////////////////////
     // separate plots for algos
@@ -42,8 +42,12 @@ void overlayHists_eff_allTruncs (){
     /////////////////////// STYLIN ////////////////////////
     // Labels for plots
     vector <TString> algoLabels = {"Hybrid", "Hybrid_NewKF"};
+    // Labels for plots
+    vector <TString> algoLabels = {"Hybrid", "Hybrid_NewKF"};
+    vector <TString> truncLabels = {"None", "All", "placeholder"};
+    vector <TString> jetLabels = {"All Particles", "In Jets with p_{T} > 30 GeV", "In Jets with p_{T} > 100 GeV", "In Jets with p_{T} > 200 GeV"};
     // Markers n lines
-    vector <short> colors = {kAzure+7, kBlack,kOrange-3};  //{1, 2, 38, 9, 6, 15, 28};
+    vector <short> colors = {kAzure+7, kBlack, kOrange-3, };  //{1, 2, 38, 9, 6, 15, 28};
     vector <short> markers = {kFullCircle, kFullSquare, kFullDiamond}; //, 22, 25, 24, 26};
 
     TCanvas c;
@@ -85,7 +89,7 @@ void overlayHists_eff_allTruncs (){
         mySmallText(0.2, 0.3, 1, ctxt); // which data set it is
 
         leg->Draw();
-        c.SaveAs(saveDir + "truncs_TE_" + algos[iAlgo] + "_" + prop + params[iParam] + "_" + pTJet + ".pdf");
+        c.SaveAs(saveDir + "truncs_combined_MPTP_" + algos[iAlgo] + "_" + prop + params[iParam] + "_" + pTJet + ".pdf");
 
         delete leg;
         hists.clear();

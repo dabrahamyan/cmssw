@@ -50,11 +50,12 @@ void overlayHists_eff_hybridVSnewkf (){
             TH1F *newkfHist= (TH1F*)newkfFile->Get(prop + params[iParam]);
 
             // Set colors, markers, etc.
-            hybridHist->SetMarkerColor(1);
-            hybridHist->SetLineColor(1);
-            newkfHist->SetMarkerColor(kGreen);
-            newkfHist->SetLineColor(kGreen);
-            newkfHist->SetMarkerStyle(kFullTriangleUp);
+            hybridHist->SetMarkerColor(kBlack);
+            hybridHist->SetLineColor(kBlack);
+    
+            newkfHist->SetMarkerColor(kRed-3);
+            newkfHist->SetLineColor(kRed-3);
+            newkfHist->SetMarkerStyle(kFullDiamond);
 
             // Set max height as a bit higher to fit in label
             hybridHist->GetYaxis()->SetRangeUser(0,1.3);
