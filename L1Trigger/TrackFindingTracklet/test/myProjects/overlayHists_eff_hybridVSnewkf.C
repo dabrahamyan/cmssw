@@ -36,12 +36,11 @@ void overlayHists_eff_hybridVSnewkf (){
     TCanvas c;
     char ctxt[500];
 
-
     // For data sets like SingleMuon, SingleElectron
     for (int iDataSet = 0; iDataSet < dataSets.size(); iDataSet++) {
         // Load hybrid and newkf root files
         TFile *hybridFile= new TFile(dir + "output_" + dataSets[iDataSet] + "_HYBRID.root");
-        TFile *newkfFile= new TFile(dir + "output_" + dataSets[iDataSet] + "_NEWKF.root");
+        TFile *newkfFile= new TFile(dir + "output_hybridvsnewkf_" + dataSets[iDataSet] + "_NEWKF.root");
 
         // For parameters like eta, phi, ...
         for (int iParam = 0; iParam < params.size(); iParam++) {
@@ -72,7 +71,7 @@ void overlayHists_eff_hybridVSnewkf (){
             sprintf(ctxt, labels[iDataSet]); // Add label saying 
             mySmallText(0.47, 0.83, 1, ctxt); // which data set it is
             leg->Draw();
-            c.SaveAs(saveDir + "HYBRIDvsNEWKF" + "_" + prop + params[iParam] + "_" + dataSets[iDataSet] + ".pdf");
+            c.SaveAs(saveDir + "rerun_HYBRIDvsNEWKF" + "_" + prop + params[iParam] + "_" + dataSets[iDataSet] + ".pdf");
 
             // delete pointers you want to remake
             delete hybridHist, newkfHist, leg;

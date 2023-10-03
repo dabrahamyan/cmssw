@@ -47,26 +47,28 @@ void overlayHists_resVsEta_hybridVSnewkf (){
     // For data sets like SingleMuon, SingleElectron
     for (int iDataSet = 0; iDataSet < dataSets.size(); iDataSet++) {
         // Load hybrid and newkf root files
-        TFile *hybridFile= new TFile(dir + "output_" + dataSets[iDataSet] + "_HYBRID.root");
-        TFile *newkfFile= new TFile(dir + "output_" + dataSets[iDataSet] + "_NEWKF.root");
+        TFile *hybridFile= new TFile(dir + "output_hybridvsnewkf_" + dataSets[iDataSet] + "_HYBRID.root");
+        TFile *newkfFile= new TFile(dir + "output_hybridvsnewkf_" + dataSets[iDataSet] + "_NEWKF.root");
 
         // For parameters like eta, phi, ...
         for (int iParam = 0; iParam < params.size(); iParam++) {
             // copy hybrid and newkf hists for param
             TH1F *hybridHist68= (TH1F*)hybridFile->Get(prop + params[iParam] + "_68");
-            TH1F *newkfHist68= (TH1F*)newkfFile->Get(prop + params[iParam] + "_68");
             TH1F *hybridHist90= (TH1F*)hybridFile->Get(prop + params[iParam] + "_90");
+            TH1F *newkfHist68= (TH1F*)newkfFile->Get(prop + params[iParam] + "_68");
             TH1F *newkfHist90= (TH1F*)newkfFile->Get(prop + params[iParam] + "_90");
 
             // Set colors, markers, etc.
-            newkfHist68->SetMarkerColor(kRed-3);
-            newkfHist68->SetLineColor(kRed-3);
-            newkfHist68->SetMarkerStyle(kFullDiamond);
+            newkfHist68->SetMarkerStyle(kOpenSquare);
 
-            newkfHist90->SetMarkerColor(kRed-3);
-            newkfHist90->SetLineColor(kRed-3);
-            newkfHist90->SetMarkerStyle(kOpenDiamond);
-            hybridHist90->SetMarkerStyle(kOpenCircle);
+            newkfHist90->SetMarkerStyle(kOpenCircle);
+
+            hybridHist90->SetMarkerStyle(kFullCircle);
+            hybridHist90->SetMarkerColor(kRed-3);
+
+            hybridHist68->SetMarkerColor(kRed-3);
+            hybridHist68->SetMarkerStyle(kFullSquare);
+
 
             // Set max height done manually bc max of resVsEta is being weird
             //vector<TH1*> histList {hybridHist68, newkfHist68, hybridHist90, newkfHist90};
@@ -76,28 +78,28 @@ void overlayHists_resVsEta_hybridVSnewkf (){
 
             // make legend
             TLegend* leg = new TLegend(0.2, 0.65, 0.45, 0.85);
-            leg->AddEntry(hybridHist68, "Hybrid, Res=68%"); 
-            leg->AddEntry(newkfHist68, "NewKF, Res=68%");
-            leg->AddEntry(hybridHist90, "Hybrid, Res=90%");  
-            leg->AddEntry(newkfHist90, "NewKF, Res=90%");
+            leg->AddEntry(hybridHist68, "Hybrid, Res=68%", "p"); 
+            leg->AddEntry(newkfHist68, "NewKF, Res=68%", "p");
+            leg->AddEntry(hybridHist90, "Hybrid, Res=90%", "p");  
+            leg->AddEntry(newkfHist90, "NewKF, Res=90%", "p");
             
             // Draw and save histos
             hybridHist68->Draw("p");
-            newkfHist68->Draw("p same");
             hybridHist90->Draw("p same");
+            newkfHist68->Draw("p same");
             newkfHist90->Draw("p same");
             sprintf(ctxt, labels[iDataSet]); // Add label saying 
             mySmallText(0.47, 0.85, 1, ctxt); // which data set it is
             leg->Draw();
             gStyle->SetOptStat(1);
-            c.SaveAs(saveDir + "HYBRIDvsNEWKF" + "_" + prop + params[iParam] + "_" + dataSets[iDataSet] + ".pdf");
+            c.SaveAs(saveDir + "rerun2_HYBRIDvsNEWKF" + "_" + prop + params[iParam] + "_" + dataSets[iDataSet] + ".pdf");
             gStyle->SetOptStat(0);
 
             /////////////////////// DEBUG CODE ////////////////////////////////////
-            cout << "Entries in Old KF " + labels[iDataSet] + " 68%: " << hybridHist68->GetEntries() << endl;
-            cout << "Entries in New KF " + labels[iDataSet] + " 68%: " << newkfHist68->GetEntries() << endl;
-            cout << "Entries in Old KF " + labels[iDataSet] + " 90%: " << hybridHist90->GetEntries() << endl;
-            cout << "Entries in New KF " + labels[iDataSet] + " 90%: " << newkfHist90->GetEntries() << endl;
+            // cout << "Entries in Old KF " + labels[iDataSet] + " 68%: " << hybridHist68->GetEntries() << endl;
+            // cout << "Entries in New KF " + labels[iDataSet] + " 68%: " << newkfHist68->GetEntries() << endl;
+            // cout << "Entries in Old KF " + labels[iDataSet] + " 90%: " << hybridHist90->GetEntries() << endl;
+            // cout << "Entries in New KF " + labels[iDataSet] + " 90%: " << newkfHist90->GetEntries() << endl;
             ////////////////////////////////////////////////////////////////////////
 
             // delete pointers you want to remake

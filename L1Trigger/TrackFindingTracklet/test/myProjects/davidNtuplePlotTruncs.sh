@@ -14,7 +14,7 @@ numbers=('0' '1' '2' '3')
 algos=("HYBRID" "NEWKF")
 
 # different truncation 
-truncs=("full" "no" "TP" "MP") # "full" "no" "IR" "VMR" "TE" "TC" "PR" "ME" "MC" "TB" "DR"
+truncs=("TC" "ME") # "full" "no" "IR" "VMR" "TE" "TC" "PR" "ME" "MC" "TB" "DR"
 
 # Where to get the NtupleRoot files from 
 dirName="/eos/user/d/dabraham/L1NtupleTrackExamples/"
@@ -30,7 +30,7 @@ do
         do
             let counter++
             # The root file you'll operate on (w/o ".root")
-            fileName="TTbar_PU200_D88_${algo}_combined_${trunc}Trunc_assertsOn_oneTrunc"
+            fileName="TTbar_PU200_D88_${algo}_${trunc}Trunc_assertsOn_oneTrunc"
             # Open root, run davidNtuplePlot, quit root
             root -l -b -q "davidNtuplePlot.C(\"${fileName}\", \"${dirName}\", \"\", ${number})" | tail -n 19 > NtuplePlotOutput/${fileName}_${number}.out 
             #cat NtuplePlotOutput/${fileName}.out

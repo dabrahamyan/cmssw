@@ -31,7 +31,7 @@ void overlayHists_eff_allTruncs (){
     // separate plots for params within algos
     vector <TString> params = {"eta", "pt"};
     // plot all these on one plot
-    vector <TString> truncs = {"fullTrunc", "noTrunc", "TETrunc"}; //, "VMRTrunc", "TETrunc", "TCTrunc", "PRTrunc"}; //"noTETrunc", "noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"}; // "noMETrunc", "noMCTrunc"}; //"noMETrunc", "noTETrunc",
+    vector <TString> truncs = {"fullTrunc", "noTrunc", "MPTrunc", "TPTrunc"}; //, "VMRTrunc", "TETrunc", "TCTrunc", "PRTrunc"}; //"noTETrunc", "noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"}; // "noMETrunc", "noMCTrunc"}; //"noMETrunc", "noTETrunc",
     //"noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"};
 
     // largest effect: PR, ME, MC
@@ -42,67 +42,67 @@ void overlayHists_eff_allTruncs (){
     /////////////////////// STYLIN ////////////////////////
     // Labels for plots
     vector <TString> algoLabels = {"Hybrid", "Hybrid_NewKF"};
-    // Labels for plots
-    vector <TString> algoLabels = {"Hybrid", "Hybrid_NewKF"};
-    vector <TString> truncLabels = {"None", "All", "placeholder"};
+    vector <TString> truncLabels = {"All", "None", "MP", "TP"};
     vector <TString> jetLabels = {"All Particles", "In Jets with p_{T} > 30 GeV", "In Jets with p_{T} > 100 GeV", "In Jets with p_{T} > 200 GeV"};
     // Markers n lines
-    vector <short> colors = {kAzure+7, kBlack, kOrange-3, };  //{1, 2, 38, 9, 6, 15, 28};
-    vector <short> markers = {kFullCircle, kFullSquare, kFullDiamond}; //, 22, 25, 24, 26};
+    vector <short> colors = {kAzure+7, kBlack, kOrange-3, kGreen-2};  //{1, 2, 38, 9, 6, 15, 28};
+    vector <short> markers = {kFullCircle, kFullSquare, kFullDiamond, kFullDiamond}; //, 22, 25, 24, 26};
 
     TCanvas c;
     char ctxt[500];
 
-    // For two alogrithms (HYBRID and NEWKF)
-    for (int iAlgo = 0; iAlgo < algos.size(); iAlgo++) {
-      // open all necessary files
-      vector <TFile*> files;
-      for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
-        files.push_back(new TFile(dir + "output_TTbar_PU200_D88_" + algos[iAlgo] + "_" + truncs[iTrunc] + "_assertsOn_oneTrunc_" + pTJet + ".root"));
-      }
-
-      // for params (eta, pt, phi, z0)
-      for (int iParam = 0; iParam < params.size(); iParam++) {
-        vector<TH1*> hists;
-        TLegend* leg = new TLegend(0.65, 0.2, 0.8, 0.35);
-
-        // for different truncation settings
+    for (int iJetPt = 0; iJetPt < pTJet.size(); iJetPt++) {
+      // For two alogrithms (HYBRID and NEWKF)
+      for (int iAlgo = 0; iAlgo < algos.size(); iAlgo++) {
+        // open all necessary files
+        vector <TFile*> files;
         for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
-          hists.push_back((TH1F*)files[iTrunc]->Get(prop + params[iParam]));
-          hists[iTrunc]->SetMarkerColor(colors[iTrunc]);
-          hists[iTrunc]->SetLineColor(colors[iTrunc]);
-          hists[iTrunc]->SetMarkerStyle(markers[iTrunc]);
-
-          leg->AddEntry(hists[iTrunc], truncs[iTrunc]);
-
-          if (iTrunc == 0) {
-            hists[iTrunc]->Draw();
-          }
-          else {
-            hists[iTrunc]->Draw("same");
-          }
-
+          files.push_back(new TFile(dir + "output_TTbar_PU200_D88_" + algos[iAlgo] + "_combined_" + truncs[iTrunc] + "_assertsOn_oneTrunc" + pTJet[iJetPt] + ".root"));
         }
 
+        // for params (eta, pt, phi, z0)
+        for (int iParam = 0; iParam < params.size(); iParam++) {
+          vector<TH1*> hists;
+          TLegend* leg = new TLegend(0.73, 0.19, 0.88, 0.46);
 
-        sprintf(ctxt, algoLabels[iAlgo] + " (p_{T} Jet>200 GeV)"); // Add label saying 
-        mySmallText(0.2, 0.3, 1, ctxt); // which data set it is
+          // for different truncation settings
+          for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
+            hists.push_back((TH1F*)files[iTrunc]->Get(prop + params[iParam]));
+            hists[iTrunc]->SetMarkerColor(colors[iTrunc]);
+            hists[iTrunc]->SetLineColor(colors[iTrunc]);
+            hists[iTrunc]->SetMarkerStyle(markers[iTrunc]);
 
-        leg->Draw();
-        c.SaveAs(saveDir + "truncs_combined_MPTP_" + algos[iAlgo] + "_" + prop + params[iParam] + "_" + pTJet + ".pdf");
+            leg->AddEntry(hists[iTrunc], truncLabels[iTrunc]);
 
-        delete leg;
-        hists.clear();
+            if (iTrunc == 0) {
+              hists[iTrunc]->Draw();
+            }
+            else {
+              hists[iTrunc]->Draw("same");
+            }
+
+          }
+
+
+          sprintf(ctxt, algoLabels[iAlgo] + " (" + jetLabels[iJetPt] + ")"); // Add label saying 
+          mySmallText(0.2, 0.3, 1, ctxt); // which data set it is
+          
+          leg->SetTextSize(0.032);
+          leg->SetHeader("#splitline{Modules}{Truncated}", "C");
+          leg->Draw();
+          c.SaveAs(saveDir + "truncs_combined_MPTP_" + algos[iAlgo] + "_" + prop + params[iParam] + "_" + pTJet[iJetPt] + ".pdf");
+
+          delete leg;
+          hists.clear();
+        }
+
+        // delete dynamically allocated memory
+        for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
+          delete files[iTrunc];
+        }
+        files.clear();
       }
-
-      // delete dynamically allocated memory
-      for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
-        delete files[iTrunc];
-      }
-      files.clear();
     }
-
-
     // // For data sets like SingleMuon, SingleElectron
     // for (int iDataSet = 0; iDataSet < dataSets.size(); iDataSet++) {
     //     // Load hybrid and newkf root files
@@ -150,7 +150,7 @@ void overlayHists_eff_allTruncs (){
 }
 
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text) {
-  Double_t tsize = 0.045;
+  Double_t tsize = 0.042;
   TLatex l;
   l.SetTextSize(tsize);
   l.SetNDC();
