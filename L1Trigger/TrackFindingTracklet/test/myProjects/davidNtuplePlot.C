@@ -53,7 +53,7 @@ void makeResidualIntervalPlot(
 void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_D88  TTbar_PU0_D88  SingleElectronPU0D88
                        TString type_dir,//  /eos/user/d/dabraham/L1NtupleTrackExamples/
                        TString treeName,
-                       int TP_select_injet,
+                       int TP_select_injet = 0,
                        int TP_select_pdgid = 0,
                        int TP_select_eventid = 0,
                        bool useTightCuts = false,

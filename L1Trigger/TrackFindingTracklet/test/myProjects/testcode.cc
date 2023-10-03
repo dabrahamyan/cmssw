@@ -5,7 +5,7 @@
 using namespace std;
 
 int main () {
-    unsigned int a = 1;
+    bool a = "false";
 
     a = a << 7;
 

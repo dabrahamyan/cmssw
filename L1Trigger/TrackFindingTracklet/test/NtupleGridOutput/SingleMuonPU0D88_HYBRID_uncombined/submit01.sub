@@ -1,0 +1,8 @@
+universe = vanilla
+arguments = "$(argument)"
+output = /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/test/NtupleGridOutput/SingleMuonPU0D88_HYBRID_uncombined/submit$(ClusterId).out
+error = /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/test/NtupleGridOutput/SingleMuonPU0D88_HYBRID_uncombined/submit$(ClusterId).err
+log = /afs/cern.ch/user/d/dabraham/private/test/CMSSW_12_6_0_pre5/src/L1Trigger/TrackFindingTracklet/test/NtupleGridOutput/SingleMuonPU0D88_HYBRID_uncombined/submit$(ClusterId).log
++JobFlavour = "tomorrow"
+queue
+

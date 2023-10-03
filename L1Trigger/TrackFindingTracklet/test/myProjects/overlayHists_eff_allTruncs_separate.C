@@ -33,7 +33,7 @@ void overlayHists_eff_allTruncs_separate (){
     // plot all these on one plot
     vector <TString> truncs = {"no", "full", "placeholder"}; //, "VMRTrunc", "TETrunc", "TCTrunc", "PRTrunc"}; //"noTETrunc", "noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"}; // "noMETrunc", "noMCTrunc"}; //"noMETrunc", "noTETrunc",
     //"noTCTrunc", "noPRTrunc", "noMETrunc", "noMCTrunc"};
-    vector <TString> truncsToTest = {"TP", "MP"}; // "VMR", "TE", "TC", "PR", "ME", "MC"
+    vector <TString> truncsToTest = {"TC"}; // "VMR", "TE", "TC", "PR", "ME", "MC"
     // What jet pT??
     vector <TString> pTJet = {"", "_injet", "_injet_highpt", "_injet_vhighpt"};
 
@@ -63,7 +63,7 @@ void overlayHists_eff_allTruncs_separate (){
                 // open all necessary files
                 vector <TFile*> files;
                 for (int iTrunc = 0; iTrunc < truncs.size(); iTrunc++) {
-                    files.push_back(new TFile(dir + "output_TTbar_PU200_D88_" + algos[iAlgo] + "_combined_" + truncs[iTrunc] + "Trunc_assertsOn_oneTrunc" + pTJet[iJetPt] + ".root"));
+                    files.push_back(new TFile(dir + "output_TTbar_PU200_D88_" + algos[iAlgo] + "_" + truncs[iTrunc] + "Trunc_assertsOn_oneTrunc" + pTJet[iJetPt] + ".root"));
                 }
 
                 // for params (eta, pt, phi, z0)
@@ -97,7 +97,7 @@ void overlayHists_eff_allTruncs_separate (){
                     leg->SetTextSize(0.032);
                     leg->SetHeader("#splitline{Modules}{Truncated}", "C");
                     leg->Draw();
-                    c.SaveAs(saveDir + "truncs_combined_" + truncsToTest[iTruncsToTest] + "_" + algos[iAlgo] + "_" + prop + params[iParam] + pTJet[iJetPt] + ".pdf");
+                    c.SaveAs(saveDir + "truncs_" + truncsToTest[iTruncsToTest] + "_" + algos[iAlgo] + "_" + prop + params[iParam] + pTJet[iJetPt] + ".pdf");
 
                     delete leg;
                     hists.clear();

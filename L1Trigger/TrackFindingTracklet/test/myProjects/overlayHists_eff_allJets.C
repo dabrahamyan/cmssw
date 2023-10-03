@@ -21,10 +21,10 @@ void overlayHists_eff_allJets (){
     // Property you want to plot
     TString prop = "eff_";
     // directory to save plots to
-    TString saveDir = "truncation_examination_assertsOn/";
+    TString saveDir = "truncation_examination_assertsOn_oneTrunc/";
 
     /////////////// Which trunc do you want to test? ////////////////////
-    TString trunc = "noTrunc";
+    TString trunc = "fullTrunc";
 
     /////////////////////// CYCLING THROUGH FILES ////////////////////
     // separate plots for algos
@@ -37,7 +37,7 @@ void overlayHists_eff_allJets (){
     /////////////////////// STYLIN ////////////////////////
     // Labels for plots
     vector <TString> algoLabels = {"Hybrid", "Hybrid_NewKF"};
-    vector <TString> jetLabels = {"In Jet All Tracks", "In Jet (H_{T} jet>30 GeV)", "In Jet (H_{T} jet>100 GeV)", "In Jet (H_{T} jet>200 GeV)"};
+    vector <TString> jetLabels = {"In Jet All Tracks", "In Jet (p_{T} jet>30 GeV)", "In Jet (p_{T} jet>100 GeV)", "In Jet (p_{T} jet>200 GeV)"};
     // Markers n lines
     vector <int> colors = {1, 2, 3, 9};
     vector <int> markers = {21, 20, 22, 33};
@@ -79,7 +79,7 @@ void overlayHists_eff_allJets (){
         mySmallText(0.25, 0.3, 1, ctxt); // which data set it is
 
         leg->Draw();
-        c.SaveAs(saveDir + "test_jets_" + algos[iAlgo] + "_" + trunc + "_" + prop + params[iParam] + ".pdf");
+        c.SaveAs(saveDir + "jets_" + algos[iAlgo] + "_" + trunc + "_" + prop + params[iParam] + ".pdf");
 
         delete leg;
         hists.clear();
