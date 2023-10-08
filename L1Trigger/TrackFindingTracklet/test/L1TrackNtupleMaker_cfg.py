@@ -20,7 +20,7 @@ GEOMETRY = "D88"
 # 'HYBRID_NEWKF' (baseline, 4par fit, with bit-accurate KF emulation),
 # 'HYBRID_REDUCED' to use the "Summer Chain" configuration with reduced inputs.
 # (Or legacy algos 'TMTT' or 'TRACKLET').
-L1TRKALGO = 'HYBRID'
+L1TRKALGO = 'HYBRID_NEWKF'
 
 WRITE_DATA = False
 
@@ -57,7 +57,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase2_realistic', '')
 # input and output
 ############################################################
 
-process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(10))
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(10000))
 
 #--- To use MCsamples scripts, defining functions get*data*() for easy MC access,
 #--- follow instructions in https://github.com/cms-L1TK/MCsamples
@@ -68,7 +68,7 @@ process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(10))
 if GEOMETRY == "D76":
 
   # Read specified .root file:
-  inputMC = ["/store/relval/CMSSW_11_3_0_pre6/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_113X_mcRun4_realistic_v6_2026D76PU200-v1/00000/00026541-6200-4eed-b6f8-d3a1fd720e9c.root"]
+  inputMC = ["/store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/0959f326-3f52-48d8-9fcf-65fc41de4e27.root"]
 
 elif GEOMETRY == "D88":
 
@@ -106,8 +106,8 @@ if GEOMETRY == "D76":
 # Use skipEvents to select particular single events for test vectors
 #process.source.skipEvents = cms.untracked.uint32(11)
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string('TTbar_PU200_'+GEOMETRY+'.root'), closeFileFast = cms.untracked.bool(True))
-process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))
+process.TFileService = cms.Service("TFileService", fileName = cms.string('/eos/user/d/dabraham/L1NtupleTrackExamples/hybridvsnewkf_test1_TTbar_PU200_'+GEOMETRY+'_NEWKF.root'), closeFileFast = cms.untracked.bool(True))
+process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))              
 
 
 ############################################################
