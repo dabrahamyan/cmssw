@@ -1,6 +1,6 @@
 #!/bin/bash
 
-fileName="combinedDebug_SingleMuon_set1_HYBRID_Aug8commit"
+fileName="combinedDebug_SingleMuon_set1_HYBRID_Aug8commit_1_numEvent10000"
 dirName="/eos/user/d/dabraham/L1NtupleTrackExamples/"
 numbers='0'
 
