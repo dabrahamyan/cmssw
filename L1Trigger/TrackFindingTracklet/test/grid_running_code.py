@@ -3,9 +3,9 @@ import sys
 from itertools import islice
 
 ############## Things to Change ###################
-dataName = 'combined_justtobesure' # what submit files and output files are named (no ".root")
+dataName = 'combinedDebug_SingleMuon_set1_HYBRID_Aug8commit' # what submit files and output files are named (no ".root")
 filename = 'SingleMuonPU0_set1.txt' ## location of the txt file used to help locate samples
-cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID_trkJets.py' # cfg file used to run each job
+cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID.py' # cfg file used to run each job
 
 # dataName = 'combined_justtobesure' # what submit files and output files are named (no ".root")
 # filename = 'SingleMuonPU0_set1.txt' ## location of the txt file used to help locate samplefs
