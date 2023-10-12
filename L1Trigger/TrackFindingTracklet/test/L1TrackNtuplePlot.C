@@ -1898,6 +1898,10 @@ void L1TrackNtuplePlot(TString type,
     h2_resVsPt_d0_L_99->SetBinContent(i + 1, getIntervalContainingFractionOfEntries(h_absResVsPt_d0_L[i], 0.99));
   }
 
+  // nstubs vs eta
+  TH1F* h2_nstubs_eta =
+      new TH1F("nstubs_eta", ";# of stubs; #eta");
+
   // resolution vs. eta histograms
   TH1F* h2_resVsEta_eta =
       new TH1F("resVsEta_eta", ";Tracking particle |#eta|; #eta resolution", nETARANGE, 0, eta_resmax);
