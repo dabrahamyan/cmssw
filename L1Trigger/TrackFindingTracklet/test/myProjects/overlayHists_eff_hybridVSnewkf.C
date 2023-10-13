@@ -39,7 +39,7 @@ void overlayHists_eff_hybridVSnewkf (){
     // For data sets like SingleMuon, SingleElectron
     for (int iDataSet = 0; iDataSet < dataSets.size(); iDataSet++) {
         // Load hybrid and newkf root files
-        TFile *hybridFile= new TFile(dir + "output_" + dataSets[iDataSet] + "_HYBRID.root");
+        TFile *hybridFile= new TFile(dir + "output_hybridvsnewkf_" + dataSets[iDataSet] + "_HYBRID.root");
         TFile *newkfFile= new TFile(dir + "output_hybridvsnewkf_" + dataSets[iDataSet] + "_NEWKF.root");
 
         // For parameters like eta, phi, ...
