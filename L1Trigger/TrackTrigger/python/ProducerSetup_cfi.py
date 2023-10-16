@@ -207,10 +207,10 @@ TrackTrigger_params = cms.PSet (
     RangeFactor     = cms.double(  2.0 ), # search window of each track parameter in initial uncertainties
     MinLayers       = cms.int32 (  4   ), # required number of stub layers to form a track
     MaxLayers       = cms.int32 (  7   ), # maximum number of  layers added to a track
-    ShiftInitialC00 = cms.int32 (  0   ), #
-    ShiftInitialC11 = cms.int32 ( -2   ), #
-    ShiftInitialC22 = cms.int32 (  0   ), #
-    ShiftInitialC33 = cms.int32 (  0   )  #
+    ShiftInitialC00 = cms.int32 (  10  ), #
+    ShiftInitialC11 = cms.int32 (  10  ), #
+    ShiftInitialC22 = cms.int32 (  10  ), #
+    ShiftInitialC33 = cms.int32 (  10  )  #
   ),
 
   # Parmeter specifying KalmanFilter Output Formatter
