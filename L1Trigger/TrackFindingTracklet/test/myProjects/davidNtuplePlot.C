@@ -434,6 +434,7 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
 
   TH1F* h_tp_pt = new TH1F("tp_pt", ";Tracking particle p_{T} [GeV]; Tracking particles / 1.0 GeV", 100, 0, 100.0);
   TH1F* h_tp_pt_L = new TH1F("tp_pt_L", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 80, 0, 8.0);
+  TH1F* h_tp_pt_superLow = new TH1F("tp_pt_superLow", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 240, 1.5, 3.0);
   TH1F* h_tp_pt_LC = new TH1F("tp_pt_LC", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 80, 0, 8.0);
   TH1F* h_tp_pt_H = new TH1F("tp_pt_H", ";Tracking particle p_{T} [GeV]; Tracking particles / 1.0 GeV", 92, 8.0, 100.0);
   TH1F* h_tp_eta = new TH1F("tp_eta", ";Tracking particle #eta; Tracking particles / 0.1", 50, -2.5, 2.5);
@@ -449,6 +450,8 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
       new TH1F("match_tp_pt_L", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 80, 0, 8.0);
   TH1F* h_match_tp_pt_LC =
       new TH1F("match_tp_pt_LC", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 80, 0, 8.0);
+  TH1F* h_match_tp_pt_superLow =
+      new TH1F("match_tp_pt_superLow", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 240, 1.5, 3.0);
   TH1F* h_match_tp_pt_H =
       new TH1F("match_tp_pt_H", ";Tracking particle p_{T} [GeV]; Tracking particles / 0.1 GeV", 92, 8.0, 100.0);
   TH1F* h_match_tp_eta = new TH1F("match_tp_eta", ";Tracking particle #eta; Tracking particles / 0.1", 50, -2.5, 2.5);
@@ -1340,6 +1343,9 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
       if (tp_pt->at(it) < 8.0 && std::abs(tp_eta->at(it)) < 1.0)
         h_tp_pt_LC->Fill(tp_pt->at(it));
 
+      if (tp_pt->at(it) < 4.0)
+        h_tp_pt_superLow->Fill(tp_pt->at(it));
+
       if (tp_pt->at(it) > TP_minPt) {
         if (std::abs(tp_eta->at(it)) < 1.0)
           n_all_eta1p0++;
@@ -1499,6 +1505,9 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
         h_match_tp_pt_H->Fill(tp_pt->at(it));
       if (tp_pt->at(it) < 8.0 && std::abs(tp_eta->at(it)) < 1.0)
         h_match_tp_pt_LC->Fill(tp_pt->at(it));
+
+      if (tp_pt->at(it) < 4.0)
+        h_match_tp_pt_superLow->Fill(tp_pt->at(it));
 
       if (tp_pt->at(it) > TP_minPt) {
         h_match_tp_eta->Fill(tp_eta->at(it));
@@ -3001,6 +3010,13 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
   h_eff_pt_L->GetYaxis()->SetTitle("Efficiency");
   h_eff_pt_L->Divide(h_match_tp_pt_L, h_tp_pt_L, 1.0, 1.0, "B");
 
+  h_match_tp_pt_superLow->Sumw2();
+  h_tp_pt_superLow->Sumw2();
+  TH1F* h_eff_pt_superLow = (TH1F*)h_match_tp_pt_superLow->Clone();
+  h_eff_pt_superLow->SetName("eff_pt_superLow");
+  h_eff_pt_superLow->GetYaxis()->SetTitle("Efficiency");
+  h_eff_pt_superLow->Divide(h_match_tp_pt_superLow, h_tp_pt_superLow, 1.0, 1.0, "B");
+
   h_match_tp_pt_LC->Sumw2();
   h_tp_pt_LC->Sumw2();
   TH1F* h_eff_pt_LC = (TH1F*)h_match_tp_pt_LC->Clone();
@@ -3117,6 +3133,7 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
   h_eff_pt->SetAxisRange(0, 1.1, "Y");
   h_eff_pt_L->SetAxisRange(0, 1.1, "Y");
   h_eff_pt_LC->SetAxisRange(0, 1.1, "Y");
+  h_eff_pt_superLow->SetAxisRange(0, 1.1, "Y");
   h_eff_pt_H->SetAxisRange(0, 1.1, "Y");
   h_eff_eta->SetAxisRange(0, 1.1, "Y");
   h_eff_eta_L->SetAxisRange(0, 1.1, "Y");
@@ -3152,6 +3169,12 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
   sprintf(ctxt, "p_{T} < 8 GeV");
   mySmallText(0.45, 0.5, 1, ctxt);
   c.SaveAs(DIR + type + "_eff_pt_L.pdf");
+
+  h_eff_pt_superLow->Draw();
+  h_eff_pt_superLow->Write();
+  sprintf(ctxt, "p_{T} < 4 GeV");
+  mySmallText(0.45, 0.5, 1, ctxt);
+  c.SaveAs(DIR + type + "_eff_pt_superLow.pdf");
 
   if (doDetailedPlots) {
     h_eff_pt_LC->Draw();
