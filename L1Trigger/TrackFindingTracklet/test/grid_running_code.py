@@ -3,13 +3,13 @@ import sys
 from itertools import islice
 
 ############## Things to Change ###################
-# dataName = 'TTbar_PU200_D88_HYBRID_LatestDev_2023_10_20' # what submit files and output files are named (no ".root")
-# filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
-# cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID.py' # cfg file used to run each job
+dataName = 'TTbar_PU200_D88_HYBRID_LatestDev_2023_10_24' # what submit files and output files are named (no ".root")
+filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
+cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID.py' # cfg file used to run each job
 
-dataName = 'DisplacedMuon_PU200_D88_DISPLACED_LatestDev_2023_10_20' # what submit files and output files are named (no ".root")
-filename = 'Muon_Displaced_all.txt' ## location of the txt file used to help locate samples
-cfgFile = 'L1TrackNtupleMaker_cfg_grid_DISPLACED.py' # cfg file used to run each job
+# dataName = 'DisplacedMuon_PU200_D88_DISPLACED_LatestDev_2023_10_20' # what submit files and output files are named (no ".root")
+# filename = 'Muon_Displaced_all.txt' ## location of the txt file used to help locate samples
+# cfgFile = 'L1TrackNtupleMaker_cfg_grid_DISPLACED.py' # cfg file used to run each job
 ######################### Change to CMSSW you are using #########################
 
 newCMSSW = 'CMSSW_13_3_0_pre2'  # tempCMSSWs/two  tempCMSSWs/one  CMSSW_12_6_0_pre5
