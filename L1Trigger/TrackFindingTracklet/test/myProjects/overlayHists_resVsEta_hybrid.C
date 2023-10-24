@@ -20,7 +20,7 @@ void overlayHists_resVsEta_hybrid (){
     
     SetPlotStyle();
 
-    TString fileName = "output_TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_20";
+    TString fileName = "output_TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_24";
 
     // Load in directory where the root files containing histograms are stored
     TString dir = "/eos/user/d/dabraham/L1NtupleTrackExamples/";
@@ -29,7 +29,7 @@ void overlayHists_resVsEta_hybrid (){
     TString prop = "resVsEta_";
 
     // directory to save plots to
-    TString saveDir = "latestDev_2023_10_20/";
+    TString saveDir = "latestDev_2023_10_24/";
 
     // data set to compare
     vector <TString> dataSets = {""};
@@ -80,7 +80,7 @@ void overlayHists_resVsEta_hybrid (){
             sprintf(ctxt2, label2); // Add label saying 
             mySmallText(0.47, 0.85, 1, ctxt2); // which data set it is
             leg->Draw();
-            c.SaveAs(saveDir + "TTbar_PU200_D88_HYBRID_Comb_resVsEta_" + params[iParam] + ".pdf");
+            c.SaveAs(saveDir + "TTbar_PU200_D88_HYBRID_Comb_eff_2023_10_24_" + params[iParam] + ".pdf");
 
             // delete pointers you want to remake
             delete newkfHist68, newkfHist90, leg;

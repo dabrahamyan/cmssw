@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename='retryTest_TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_20'
+filename='TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_24'
 
 filedir='/eos/user/d/dabraham/L1NtupleTrackExamples/'
 

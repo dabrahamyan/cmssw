@@ -18,7 +18,7 @@ void label_plots_eff_hybrid (){
     SetPlotStyle();
 
     // filename
-    TString fileName = "output_retryTest_TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_20";
+    TString fileName = "output_retryTest_TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_24";
     // Load in directory where the root files containing histograms are stored
     TString dir = "/eos/user/d/dabraham/L1NtupleTrackExamples/";
     // Property you want to plot
@@ -51,7 +51,7 @@ void label_plots_eff_hybrid (){
         sprintf(ctxt2, "Hybrid Prompt Tracking"); // Add label saying 
         mySmallText(0.5, 0.36, 1, ctxt2); // which data set it is
 
-        c.SaveAs(saveDir + "retryTest_TTbar_PU200_D88_HYBRID_Comb_eff_" + params[iParam] + ".pdf");
+        c.SaveAs(saveDir + "TTbar_PU200_D88_HYBRID_Comb_eff_2023_10_24_" + params[iParam] + ".pdf");
 
         delete hist;
     }
