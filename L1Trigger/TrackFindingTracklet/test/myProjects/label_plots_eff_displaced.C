@@ -18,24 +18,28 @@ void label_plots_eff_displaced (){
     SetPlotStyle();
 
     // filename
-    TString fileName = "output_DisplacedMuon_PU0_D88_DISPLACED_LatestDev_2023_10_20";
+    TString fileName = "output_DisplacedMuon_PU0_D88_DISPLACED_Comb_LatestDev_2023_10_24";
     // Load in directory where the root files containing histograms are stored
     TString dir = "/eos/user/d/dabraham/L1NtupleTrackExamples/";
     // Property you want to plot
     TString prop = "eff_";
     // directory to save plots to
-    TString saveDir = "latestDev_2023_10_20/";
+    TString saveDir = "latestDev_2023_10_24/";
     
 
     /////////////////////// CYCLING THROUGH FILES ////////////////////
     // separate plots for params within algos
-    // vector <TString> params = {"eta", "pt", "phi", "z0", "d0", "absd0"};
-    vector <TString> params = {"z0", "d0"};
+    vector <TString> params = {"eta", "pt", "phi", "z0"};
+    // vector <TString> params = {"z0", "d0"};
     
 
     TCanvas c;
     char ctxt[500];
     char ctxt2[500];
+    char ctxt3[500];
+
+    gPad->SetGridx();
+    gPad->SetGridy();
 
     TFile *file = new TFile(dir + fileName + ".root");
 
@@ -50,7 +54,10 @@ void label_plots_eff_displaced (){
         sprintf(ctxt2, "Hybrid Displaced Tracking"); // Add label saying 
         mySmallText(0.2, 0.85, 1, ctxt2); // which data set it is
 
-        c.SaveAs(saveDir + "DisplacedMuon_PU0_D88_" + params[iParam] + ".pdf");
+        sprintf(ctxt2, "|#eta| < 2.4"); // Add label saying 
+        mySmallText(0.2, 0.75, 1, ctxt2); // which data set it is
+
+        c.SaveAs(saveDir + "DisplacedMuon_PU0_D88_" + prop + params[iParam] + ".pdf");
 
         delete hist;
     }

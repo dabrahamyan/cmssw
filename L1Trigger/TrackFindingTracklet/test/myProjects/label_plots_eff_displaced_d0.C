@@ -13,12 +13,12 @@
 
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text);
 
-void label_plots_eff_hybrid (){
+void label_plots_eff_displaced_d0 (){
     
     SetPlotStyle();
 
     // filename
-    TString fileName = "output_TTbar_PU200_D88_HYBRID_Comb_LatestDev_2023_10_24";
+    TString fileName = "output_DisplacedMuon_PU0_D88_DISPLACED_Comb_LatestDev_2023_10_24_etaLessThan2";
     // Load in directory where the root files containing histograms are stored
     TString dir = "/eos/user/d/dabraham/L1NtupleTrackExamples/";
     // Property you want to plot
@@ -29,29 +29,36 @@ void label_plots_eff_hybrid (){
 
     /////////////////////// CYCLING THROUGH FILES ////////////////////
     // separate plots for params within algos
-    vector <TString> params = {"eta", "pt", "phi", "z0"};
+    //vector <TString> params = {"eta", "pt", "phi", "z0", "d0", "absd0"};
+    // vector <TString> params = {"z0", "d0"};
+    vector <TString> params = {"absd0"};
     
+
     TCanvas c;
     char ctxt[500];
     char ctxt2[500];
+    char ctxt3[500];
+
+    gPad->SetGridx();
+    gPad->SetGridy();
 
     TFile *file = new TFile(dir + fileName + ".root");
 
     for (int iParam = 0; iParam < params.size(); iParam++) {
         TH1F *hist= (TH1F*)file->Get(prop + params[iParam]);
 
-        gPad->SetGridx();
-        gPad->SetGridy();
-
         hist->Draw();
 
-        sprintf(ctxt, "TTbar PU=200"); // Add label saying 
-        mySmallText(0.5, 0.31, 1, ctxt); // which data set it is
+        sprintf(ctxt, "Displaced Muon PU=0"); // Add label saying 
+        mySmallText(0.4, 0.8, 1, ctxt); // which data set it is
 
-        sprintf(ctxt2, "Hybrid Prompt Tracking"); // Add label saying 
-        mySmallText(0.5, 0.36, 1, ctxt2); // which data set it is
+        sprintf(ctxt2, "Hybrid Displaced Tracking"); // Add label saying 
+        mySmallText(0.4, 0.85, 1, ctxt2); // which data set it is
 
-        c.SaveAs(saveDir + "TTbar_PU200_D88_HYBRID_Comb_2023_10_24_" + prop + params[iParam] + ".pdf");
+        sprintf(ctxt2, "|#eta| < 2"); // Add label saying 
+        mySmallText(0.4, 0.75, 1, ctxt2); // which data set it is
+
+        c.SaveAs(saveDir + "DisplacedMuon_PU0_D88_" + prop + params[iParam] + ".pdf");
 
         delete hist;
     }

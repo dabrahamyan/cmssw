@@ -80,7 +80,7 @@ void overlayHists_resVsEta_hybrid (){
             sprintf(ctxt2, label2); // Add label saying 
             mySmallText(0.47, 0.85, 1, ctxt2); // which data set it is
             leg->Draw();
-            c.SaveAs(saveDir + "TTbar_PU200_D88_HYBRID_Comb_eff_2023_10_24_" + params[iParam] + ".pdf");
+            c.SaveAs(saveDir + "TTbar_PU200_D88_HYBRID_Comb_2023_10_24_" + prop + params[iParam] + ".pdf");
 
             // delete pointers you want to remake
             delete newkfHist68, newkfHist90, leg;
