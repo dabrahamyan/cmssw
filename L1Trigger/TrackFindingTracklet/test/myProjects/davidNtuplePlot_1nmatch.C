@@ -50,7 +50,7 @@ void makeResidualIntervalPlot(
 // Main script
 // ----------------------------------------------------------------------------------------------------------------
 
-void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_D88  TTbar_PU0_D88  SingleElectronPU0D88
+void davidNtuplePlot_1nmatch(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_D88  TTbar_PU0_D88  SingleElectronPU0D88
                        TString type_dir,//  /eos/user/d/dabraham/L1NtupleTrackExamples/
                        TString treeName,
                        int TP_select_injet = 0,
@@ -209,6 +209,8 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
   vector<int>* trk_fake;
   vector<int>* trk_genuine;
   vector<int>* trk_loose;
+
+  int counterEntryResVsEta_eta = 0;
 
   TBranch* b_tp_pt;
   TBranch* b_tp_eta;
@@ -1055,8 +1057,8 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
   cout << "number of events = " << nevt << endl;
 
 
-    // CODE ADDED BY ME, DAVID ABRAHAMYAN
-    int max_ntrkevt_tot = 0;
+  // CODE ADDED BY ME, DAVID ABRAHAMYAN
+  int max_ntrkevt_tot = 0;
 
   
   vector<float> sortedZ0diffs;
@@ -1283,6 +1285,11 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
     // ----------------------------------------------------------------------------------------------------------------
     // tracking particle loop
     for (int it = 0; it < (int)tp_pt->size(); it++) {
+
+      // was the tracking particle matched to more than one L1 Track?
+      if (tp_nmatch->at(it) > 1)
+         continue;
+
       // only look at TPs in (ttbar) jets ?
       if (TP_select_injet > 0) {
         if (TP_select_injet == 1 && tp_injet->at(it) == 0)
@@ -1396,6 +1403,7 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
       // was the tracking particle matched to a L1 track?
       if (tp_nmatch->at(it) < 1)
         continue;
+
 
       // ----------------------------------------------------------------------------------------------------------------
       // use only tracks with min X stubs
@@ -1680,12 +1688,15 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
 
       // ----------------------------------------------------------------------------------------------------------------
       // fill resolution vs. eta histograms
+      //cout << "tp_nmatch: " << tp_nmatch->at(it) << endl;
       for (int im = 0; im < nETARANGE; im++) {
         if ((std::abs(tp_eta->at(it)) > (float)im * 0.1) && (std::abs(tp_eta->at(it)) < (float)(im + 1) * 0.1)) {
           h_resVsEta_ptRel[im]->Fill((matchtrk_pt->at(it) - tp_pt->at(it)) / tp_pt->at(it));
           h_resVsEta_eta[im]->Fill(matchtrk_eta->at(it) - tp_eta->at(it));
           h_resVsEta_phi[im]->Fill(matchtrk_phi->at(it) - tp_phi->at(it));
           h_resVsEta_z0[im]->Fill(matchtrk_z0->at(it) - tp_z0->at(it));
+
+          counterEntryResVsEta_eta++;
 
           h_absResVsEta_ptRel[im]->Fill(std::abs((matchtrk_pt->at(it) - tp_pt->at(it))) / tp_pt->at(it));
           h_absResVsEta_eta[im]->Fill(std::abs(matchtrk_eta->at(it) - tp_eta->at(it)));
@@ -3820,6 +3831,9 @@ void davidNtuplePlot(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_
 
   cout << "size of sortedZ0diffs vector = " << sortedZ0diffs.size() << endl;
   cout << "first few values of sortedZ0diffs: " << sortedZ0diffs[0] << " " << sortedZ0diffs[1] << " " << sortedZ0diffs[2] << " " << sortedZ0diffs[0] << " " << sortedZ0diffs[3] << " " << sortedZ0diffs[4] << endl;
+
+  cout << "entries in h_absResVsEta_eta: " << counterEntryResVsEta_eta << endl;
+
 }
 
 // void SetPlotStyle() {
