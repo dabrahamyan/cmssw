@@ -81,7 +81,7 @@ elif GEOMETRY == "D76":
   #inputMC=getCMSdata(dataName)
 
   # Or read specified .root file:
-  inputMC = ["/store/relval/CMSSW_12_6_0/RelValSingleMuDisplacedPt2p0to100p0/GEN-SIM-DIGI-RAW/125X_mcRun4_realistic_v5_2026D88noPURV183-v1/2590000/1a8ddf99-dbda-4a5f-9fe3-b58e04826cf9.root"]
+  inputMC = ["/store/relval/CMSSW_11_3_0_pre6/RelValDisplacedMuPt2To100Dxy100/GEN-SIM-DIGI-RAW/113X_mcRun4_realistic_v6_2026D49noPU-v1/00000/0203c9f6-76c3-4ab1-bb66-fd0a2a164906.root"]
 
 else:
 
