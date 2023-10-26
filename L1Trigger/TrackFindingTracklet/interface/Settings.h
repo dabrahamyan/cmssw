@@ -945,7 +945,7 @@ namespace trklet {
     bool extended_{false};       // turn on displaced tracking
     bool reduced_{false};        // use reduced (Summer Chain) config
 
-    bool combined_{false};  // use combined TP (TE+TC) and MP (PR+ME+MC) configuration
+    bool combined_{true};  // use combined TP (TE+TC) and MP (PR+ME+MC) configuration
 
     std::string skimfile_{""};  //if not empty events will be written out in ascii format to this file
 
