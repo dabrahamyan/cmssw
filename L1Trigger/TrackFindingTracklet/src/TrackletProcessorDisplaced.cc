@@ -419,14 +419,7 @@ void TrackletProcessorDisplaced::execute(unsigned int iSector, double phimin, do
                             << "TrackletCalculatorDisplaced execute " << getName() << "[" << iSector_ << "]";
                       }
 
-                      if (innerFPGAStub->layerdisk() < N_LAYER && middleFPGAStub->layerdisk() < N_LAYER &&
-                          outerFPGAStub->layerdisk() < N_LAYER) {
-                        bool accept =
-                            LLLSeeding(outerFPGAStub, outerStub, innerFPGAStub, innerStub, middleFPGAStub, middleStub);
-
-                        if (accept)
-                          countsel++;
-                      } else if (innerFPGAStub->layerdisk() >= N_LAYER && middleFPGAStub->layerdisk() >= N_LAYER &&
+                      if (innerFPGAStub->layerdisk() >= N_LAYER && middleFPGAStub->layerdisk() >= N_LAYER &&
                                  outerFPGAStub->layerdisk() >= N_LAYER) {
                         throw cms::Exception("LogicError") << __FILE__ << " " << __LINE__ << " Invalid seeding!";
                       }
