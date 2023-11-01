@@ -8,10 +8,10 @@
 ########################################################################################################
 
 # Where to get the NtupleRoot files from 
-dirName="../GitCheckoutChecks/"
+dirName="../LocalChecks/"
 
 # File name to process (without .root)
-fileName="newkfDeug_1nmatch_SingleMuon_thomasRecs_10-16-2023_1"
+fileName="newkfDebug_SingleMuon_DR_off"
 
 # Open root, run davidNtuplePlot, quit root
-root -l -b -q "davidNtuplePlot_1nmatch.C(\"${fileName}\", \"${dirName}\", \"\", 0)" | tail -n 22 > NtuplePlotOutput/${fileName}_1nmatch.out 
+root -l -b -q "davidNtuplePlot_etaMatching.C(\"${fileName}\", \"${dirName}\", \"\", 0)" | tail -n 22 > NtuplePlotOutput/${fileName}.out 

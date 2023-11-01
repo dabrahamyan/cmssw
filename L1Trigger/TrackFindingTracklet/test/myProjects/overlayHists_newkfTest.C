@@ -21,7 +21,7 @@ void overlayHists_newkfTest (){
     SetPlotStyle();
 
     // Load in directory where the root files containing histograms are stored
-    TString dir = "../";
+    TString dir = "../LocalChecks/";
     
     // Property you want to plot
     TString prop = "resVsEta_";
@@ -30,7 +30,7 @@ void overlayHists_newkfTest (){
     TString saveDir = "hybrid_vs_newkf_plots/";
 
     // output file name (without .root)
-    TString fileName = "output_newkfDeug_SingleMuon_thomasRecs_10-16-2023_1"; 
+    TString fileName = "output_newkfDebug_SingleMuon_DR_off_myOwnDR_on"; 
 
     // data set to compare
     vector <TString> dataSets = {""};

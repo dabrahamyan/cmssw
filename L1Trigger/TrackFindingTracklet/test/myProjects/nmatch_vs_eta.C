@@ -17,11 +17,12 @@ void nmatch_vs_eta() {
         SetPlotStyle();
 
         // File and directory to get Ntuple from -------------------------------------------------------------------------
-        TString file = "hybridvsnewkf_SingleMuonPU0D88_NEWKF_1_numEvent10000"; // without ".root"
-        TString fileDir = "/eos/user/d/dabraham/L1NtupleTrackExamples/";
+        TString file = "newkfDebug_SingleMuon_DR_off"; // without ".root"
+        TString fileDir = "../LocalChecks/";
 
         // Folder to save to
         TString saveDir = "hybrid_vs_newkf_plots/";
+        TString saveFile = "newkf_nmatch_eta_DR_off_Mean.pdf";
 
         // read ntuples ---------------------------------------------------------------------------------------------------
         TChain* tree = new TChain("L1TrackNtuple/eventTree");
@@ -126,28 +127,28 @@ void nmatch_vs_eta() {
 
         TCanvas c;
         TH1F* h_nmatchVsEta =
-                new TH1F("nmatchVsEta", ";Tracking particle |#eta|; tp n_{match} RMS", nETARANGE, 0, eta_max);
+                new TH1F("nmatchVsEta", ";Tracking particle |#eta|; tp n_{match} Mean", nETARANGE, 0, eta_max);
 
         // take averages of each nmatchEta[i] list
         float squaredSum;
         for (int i = 0; i < nETARANGE; i++) {
                 // Mean
-                // binContentList[i] = std::accumulate(nmatchEta[i].begin(), nmatchEta[i].end(),0) / float(nmatchEta[i].size());
-                // h_nmatchVsEta->SetBinContent(i+1, binContentList[i]);
+                binContentList[i] = std::accumulate(nmatchEta[i].begin(), nmatchEta[i].end(),0) / float(nmatchEta[i].size());
+                h_nmatchVsEta->SetBinContent(i+1, binContentList[i]);
 
                 //RMS
-                squaredSum = 0;
-                for (int ii = 0; ii < nmatchEta[i].size(); ii++) {
-                        squaredSum = squaredSum + pow((nmatchEta[i][ii]), 2);
-                }
-                binContentList[i] = sqrt(squaredSum / float(nmatchEta[i].size())); 
-                h_nmatchVsEta->SetBinContent(i+1, binContentList[i]);
+                // squaredSum = 0;
+                // for (int ii = 0; ii < nmatchEta[i].size(); ii++) {
+                //         squaredSum = squaredSum + pow((nmatchEta[i][ii]), 2);
+                // }
+                // binContentList[i] = sqrt(squaredSum / float(nmatchEta[i].size())); 
+                // h_nmatchVsEta->SetBinContent(i+1, binContentList[i]);
         }
 
         h_nmatchVsEta->SetMinimum(0.9);
         h_nmatchVsEta->Draw("p");
 
-        c.SaveAs(saveDir + "newkf_nmatch_eta_RMS.pdf");
+        c.SaveAs(saveDir + saveFile);
 }
 
 
