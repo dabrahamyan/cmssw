@@ -52,7 +52,7 @@ void overlayHists_twoFiles_eff (){
         // for params (eta, pt)
         for (int iParam = 0; iParam < params.size(); iParam++) {
           vector<TH1*> hists;
-          TLegend* leg = new TLegend(0.72, 0.19, 0.89, 0.37);
+          TLegend* leg = new TLegend(0.72, 0.74, 0.89, 0.92);
 
           // for different files
           for (int iFile = 0; iFile < fileNames.size(); iFile++) {
@@ -72,12 +72,16 @@ void overlayHists_twoFiles_eff (){
           }
 
           sprintf(ctxt, algoLabel); // Add label
-          mySmallText(0.2, 0.3, 1, ctxt);
+          mySmallText(0.33, 0.3, 1, ctxt);
           sprintf(ctxt2, dataLabel); // Add label
-          mySmallText(0.2, 0.35, 1, ctxt2);
+          mySmallText(0.33, 0.35, 1, ctxt2);
           if (params[iParam] == "absd0_eta2") {
-            sprintf(ctxt3, "#eta < 2.0"); // Add label
-            mySmallText(0.2, 0.25, 1, ctxt3);
+            sprintf(ctxt3, "|#eta| < 2.0"); // Add label
+            mySmallText(0.33, 0.25, 1, ctxt3);
+          }
+          else {
+            sprintf(ctxt3, "|#eta| < 2.4"); // Add label
+            mySmallText(0.33, 0.25, 1, ctxt3);
           }
 
           leg->SetTextSize(0.032);
