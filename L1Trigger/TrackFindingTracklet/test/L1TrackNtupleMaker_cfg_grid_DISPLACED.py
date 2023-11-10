@@ -5,6 +5,7 @@
 import FWCore.ParameterSet.Config as cms
 import FWCore.Utilities.FileUtils as FileUtils
 import os
+import FWCore.ParameterSet.VarParsing as VarParsing ##parsing argument
 process = cms.Process("L1TrackNtuple")
 
 ############################################################
@@ -14,6 +15,10 @@ process = cms.Process("L1TrackNtuple")
 # D76 used for old CMSSW_11_3 MC datasets. D88 used for CMSSW_12_6 datasets.
 #GEOMETRY = "D76"  
 GEOMETRY = "D88"
+
+options = VarParsing.VarParsing ('analysis')
+# get and parse the command line arguments
+options.parseArguments()
 
 # Set L1 tracking algorithm:
 # 'HYBRID' (baseline, 4par fit) or 'HYBRID_DISPLACED' (extended, 5par fit).
@@ -57,7 +62,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase2_realistic', '')
 # input and output
 ############################################################
 
-process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(10000))
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(options.maxEvents))
 
 #--- To use MCsamples scripts, defining functions get*data*() for easy MC access,
 #--- follow instructions in https://github.com/cms-L1TK/MCsamples
@@ -85,13 +90,13 @@ elif GEOMETRY == "D88":
   #inputMC=getCMSdata(dataName)
 
   # Read specified .root file:
-  inputMC = ["/store/relval/CMSSW_12_6_0/RelValSingleMuDisplacedPt2p0to100p0/GEN-SIM-DIGI-RAW/125X_mcRun4_realistic_v5_2026D88noPURV183-v1/2590000/1a8ddf99-dbda-4a5f-9fe3-b58e04826cf9.root"]
+  inputMC = [""]
 
 else:
 
   print("this is not a valid geometry!!!")
 
-process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring(*inputMC))
+process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring(options.inputFiles))
 
 if GEOMETRY == "D76":
   # If reading old MC dataset, drop incompatible EDProducts.
@@ -106,7 +111,7 @@ if GEOMETRY == "D76":
 # Use skipEvents to select particular single events for test vectors
 #process.source.skipEvents = cms.untracked.uint32(11)
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string('SingleMuon_PU0_D88_Displaced_Combined_DataSet1_BugFix_2023-11-8.root'), closeFileFast = cms.untracked.bool(True))
+process.TFileService = cms.Service("TFileService", fileName = cms.string(options.outputFile), closeFileFast = cms.untracked.bool(True))
 process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))
 
 
@@ -293,6 +298,3 @@ if (WRITE_DATA):
 
   process.pd = cms.EndPath(process.writeDataset)
   process.schedule.append(process.pd)
-
-
-

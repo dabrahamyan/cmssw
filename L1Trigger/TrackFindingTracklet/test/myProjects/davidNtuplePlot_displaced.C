@@ -4,6 +4,11 @@
 // e.g. in ROOT do: .L L1TrackNtuplePlot.C++, L1TrackNtuplePlot("TTbar_PU200_hybrid")
 //
 // By Louise Skinnari, June 2013
+//
+// EDIT: David Abrahamyan changed this to include more stuff. August 2023
+// for diff inJet # saving do:
+// .L davidNtuplePlot.C
+// davidNtuplePlot("TTbar_PU200_D88_HYBRID_noTrunc", "/eos/user/d/dabraham/L1NtupleTrackExamples/", "", 0)
 // ----------------------------------------------------------------------------------------------------------------
 
 #include "TROOT.h"
@@ -24,6 +29,7 @@
 #include "TMath.h"
 #include <TError.h>
 #include "TSystem.h"
+#include "plotstyle.h"
 
 #include <iostream>
 #include <string>
@@ -32,7 +38,8 @@
 
 using namespace std;
 
-void SetPlotStyle();
+// void SetPlotStyle();
+
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text);
 
 double getIntervalContainingFractionOfEntries(TH1* histogram, double interval, int minEntries = 5);
@@ -43,9 +50,9 @@ void makeResidualIntervalPlot(
 // Main script
 // ----------------------------------------------------------------------------------------------------------------
 
-void L1TrackNtuplePlot(TString type,
-                       TString type_dir = "",
-                       TString treeName = "",
+void davidNtuplePlot_displaced(TString type, // SingleMuon_PU0_D88_NEWKF //SingleMuon_PU0_D88  TTbar_PU0_D88  SingleElectronPU0D88
+                       TString type_dir,//  /eos/user/d/dabraham/L1NtupleTrackExamples/
+                       TString treeName,
                        int TP_select_injet = 0,
                        int TP_select_pdgid = 0,
                        int TP_select_eventid = 0,
@@ -175,17 +182,21 @@ void L1TrackNtuplePlot(TString type,
   vector<int>* matchtrk_injet;
   vector<int>* matchtrk_injet_highpt;
   vector<int>* matchtrk_injet_vhighpt;
-
+                       
   // all L1 tracks
   vector<float>* trk_pt;
   vector<float>* trk_eta;
   vector<float>* trk_phi;
+  vector<float>* trk_z0;
   vector<float>* trk_chi2;
   vector<float>* trk_chi2_dof;
   vector<float>* trk_chi2rphi;
   vector<float>* trk_chi2rphi_dof;
   vector<float>* trk_chi2rz;
   vector<float>* trk_chi2rz_dof;
+  //ADDED BY ME, DAVID ABRAHAMYAN
+  vector<float>* trk_bendchi2;
+  //////////////////////////
   vector<int>* trk_nstub;
   vector<int>* trk_lhits;
   vector<int>* trk_dhits;
@@ -236,12 +247,14 @@ void L1TrackNtuplePlot(TString type,
   TBranch* b_trk_pt;
   TBranch* b_trk_eta;
   TBranch* b_trk_phi;
+  TBranch* b_trk_z0;
   TBranch* b_trk_chi2;
   TBranch* b_trk_chi2_dof;
   TBranch* b_trk_chi2rphi;
   TBranch* b_trk_chi2rphi_dof;
   TBranch* b_trk_chi2rz;
   TBranch* b_trk_chi2rz_dof;
+  TBranch* b_trk_bendchi2;
   TBranch* b_trk_nstub;
   TBranch* b_trk_lhits;
   TBranch* b_trk_dhits;
@@ -292,12 +305,14 @@ void L1TrackNtuplePlot(TString type,
   trk_pt = 0;
   trk_eta = 0;
   trk_phi = 0;
+  trk_z0 = 0;
   trk_chi2 = 0;
   trk_chi2_dof = 0;
   trk_chi2rphi = 0;
   trk_chi2rphi_dof = 0;
   trk_chi2rz = 0;
   trk_chi2rz_dof = 0;
+  trk_bendchi2 = 0;
   trk_nstub = 0;
   trk_lhits = 0;
   trk_dhits = 0;
@@ -377,12 +392,14 @@ void L1TrackNtuplePlot(TString type,
   tree->SetBranchAddress("trk_pt", &trk_pt, &b_trk_pt);
   tree->SetBranchAddress("trk_eta", &trk_eta, &b_trk_eta);
   tree->SetBranchAddress("trk_phi", &trk_phi, &b_trk_phi);
+  tree->SetBranchAddress("trk_z0", &trk_z0, &b_trk_z0);
   tree->SetBranchAddress("trk_chi2", &trk_chi2, &b_trk_chi2);
   tree->SetBranchAddress("trk_chi2_dof", &trk_chi2_dof, &b_trk_chi2_dof);
   tree->SetBranchAddress("trk_chi2rphi", &trk_chi2rphi, &b_trk_chi2rphi);
   tree->SetBranchAddress("trk_chi2rphi_dof", &trk_chi2rphi_dof, &b_trk_chi2rphi_dof);
   tree->SetBranchAddress("trk_chi2rz", &trk_chi2rz, &b_trk_chi2rz);
   tree->SetBranchAddress("trk_chi2rz_dof", &trk_chi2rz_dof, &b_trk_chi2rz_dof);
+  tree->SetBranchAddress("trk_bendchi2", &trk_bendchi2, &b_trk_bendchi2);
   tree->SetBranchAddress("trk_nstub", &trk_nstub, &b_trk_nstub);
   tree->SetBranchAddress("trk_lhits", &trk_lhits, &b_trk_lhits);
   tree->SetBranchAddress("trk_dhits", &trk_dhits, &b_trk_dhits);
@@ -684,21 +701,23 @@ void L1TrackNtuplePlot(TString type,
   // chi2 histograms (last bin is an overflow bin)
 
   TH1F* h_trk_chi2 = new TH1F("trk_chi2", ";#chi^{2}; L1 tracks / 1.0", 100, 0, 100);
-  TH1F* h_trk_chi2_dof = new TH1F("trk_chi2_dof", ";#chi^{2} / D.O.F.; L1 tracks / 0.2", 100, 0, 20);
+  TH1F* h_trk_chi2_dof = new TH1F("trk_chi2_dof", ";#chi^{2} / D.O.F.; L1 tracks / 0.2", 48, 0, 12);
   TH1F* h_match_trk_chi2 = new TH1F("match_trk_chi2", ";#chi^{2}; L1 tracks / 1.0", 100, 0, 100);
   TH1F* h_match_trk_chi2_dof = new TH1F("match_trk_chi2_dof", ";#chi^{2} / D.O.F.; L1 tracks / 0.2", 100, 0, 20);
 
   TH1F* h_trk_chi2rphi = new TH1F("trk_chi2rphi", ";#chi^{2}_{r-#phi}; L1 tracks / 1.0", 100, 0, 100);
-  TH1F* h_trk_chi2rphi_dof = new TH1F("trk_chi2rphi_dof", ";#chi^{2}_{r-#phi} / D.O.F.; L1 tracks / 0.2", 100, 0, 20);
+  TH1F* h_trk_chi2rphi_dof = new TH1F("trk_chi2rphi_dof", ";#chi^{2}_{r-#phi} / D.O.F.; L1 tracks / 0.2", 48, 0, 12);
   TH1F* h_match_trk_chi2rphi = new TH1F("match_trk_chi2rphi", ";#chi^{2}_{r-#phi}; L1 tracks / 1.0", 100, 0, 100);
   TH1F* h_match_trk_chi2rphi_dof =
       new TH1F("match_trk_chi2rphi_dof", ";#chi^{2}_{r-#phi} / D.O.F.; L1 tracks / 0.2", 100, 0, 20);
 
   TH1F* h_trk_chi2rz = new TH1F("trk_chi2rz", ";#chi^{2}_{r-z}; L1 tracks / 1.0", 100, 0, 100);
-  TH1F* h_trk_chi2rz_dof = new TH1F("trk_chi2rz_dof", ";#chi^{2}_{r-z} / D.O.F.; L1 tracks / 0.2", 100, 0, 20);
+  TH1F* h_trk_chi2rz_dof = new TH1F("trk_chi2rz_dof", ";#chi^{2}_{r-z} / D.O.F.; L1 tracks / 0.2", 48, 0, 12);
   TH1F* h_match_trk_chi2rz = new TH1F("match_trk_chi2rz", ";#chi^{2}_{r-z}; L1 tracks / 1.0", 100, 0, 100);
   TH1F* h_match_trk_chi2rz_dof =
       new TH1F("match_trk_chi2rz_dof", ";#chi^{2}_{r-z} / D.O.F.; L1 tracks / 0.2", 100, 0, 20);
+
+  TH1F* h_trk_bendchi2 = new TH1F("trk_bendchi2", ";#chi^{2}_{bend} / D.O.F.;L1 tracks / 0.5", 48, 0 , 12);
 
   // ----------------------------------------------------------------------------------------------------------------
   // total track rates
@@ -736,6 +755,9 @@ void L1TrackNtuplePlot(TString type,
   // ----------------------------------------------------------------------------------------------------------------
 
   const float maxD0plot = TP_maxD0;
+
+  // ADDED BY ME, DAVID ABRHAHAMYAN
+  TH1F* h_trk_nstub = new TH1F("trk_nstub", ";Number of stubs; L1 tracks / 1.0", 15, 0, 15);
 
   TH1F* h_tp_phi = new TH1F("tp_phi", ";Tracking particle #phi [rad]; Tracking particles / 0.1", 64, -3.2, 3.2);
   TH1F* h_tp_d0 =
@@ -993,6 +1015,9 @@ void L1TrackNtuplePlot(TString type,
   TH1F* h_ntrk_pt2 = new TH1F("ntrk_pt2", ";# tracks (p_{T} > 2 GeV) / event; Events", 400, 0, 400.0);
   TH1F* h_ntrk_pt3 = new TH1F("ntrk_pt3", ";# tracks (p_{T} > 3 GeV) / event; Events", 300, 0, 300.0);
   TH1F* h_ntrk_pt10 = new TH1F("ntrk_pt10", ";# tracks (p_{T} > 10 GeV) / event; Events", 100, 0, 100.0);
+  // HIST ADDED BY ME, DAVID ABRAHAMYAN
+  TH1F* h_ntrk_tot = new TH1F("ntrk_tot", ";# tracks / event; Events", 25, 0, 25);
+
 
   // tracks flagged as genuine (this would include duplicates (?))
   TH1F* h_ntrk_genuine_pt2 =
@@ -1015,6 +1040,9 @@ void L1TrackNtuplePlot(TString type,
   // number of tracks vs. efficiency (eta, pT)
   TH1F* h_trk_pt = new TH1F("trk_pt", Form(";Track p_{T} (GeV);Tracks / 0.5 GeV"), 200, 0., 100.);
   TH1F* h_trk_eta = new TH1F("trk_eta", Form(";Track #eta;Tracks / 0.026"), 200, -2.6, 2.6);
+  // ADDED BY ME, DAVID ABRAHAMYAN
+  TH1F* h_trk_phi = new TH1F("trk_phi", Form(";Track #phi (rad);Tracks / 0.0314"), 200, -3.14, 3.14);
+  TH1F* h_trk_z0 = new TH1F("trk_z0", Form(";Track z_{0} (cm);Tracks / 0.35"), 200, -35, 35);
 
   // ----------------------------------------------------------------------------------------------------------------
   //        * * * * *     S T A R T   O F   A C T U A L   R U N N I N G   O N   E V E N T S     * * * * *
@@ -1022,6 +1050,10 @@ void L1TrackNtuplePlot(TString type,
 
   int nevt = tree->GetEntries();
   cout << "number of events = " << nevt << endl;
+
+
+    // CODE ADDED BY ME, DAVID ABRAHAMYAN
+    int max_ntrkevt_tot = 0;
 
   // ----------------------------------------------------------------------------------------------------------------
   // event loop
@@ -1058,6 +1090,7 @@ void L1TrackNtuplePlot(TString type,
     int ntrkevt_pt2 = 0;
     int ntrkevt_pt3 = 0;
     int ntrkevt_pt10 = 0;
+    int ntrkevt_tot = 0;
 
     int ntrkevt_genuine_pt2 = 0;
     int ntrkevt_genuine_pt3 = 0;
@@ -1068,6 +1101,8 @@ void L1TrackNtuplePlot(TString type,
     vector<unsigned int> nTrksPerSector_pt3(9, 0);
     vector<unsigned int> nTrksPerSector_pt4(9, 0);
 
+
+
     for (int it = 0; it < (int)trk_pt->size(); it++) {
       // ----------------------------------------------------------------------------------------------------------------
       // track properties
@@ -1076,18 +1111,25 @@ void L1TrackNtuplePlot(TString type,
       // Fill number of tracks vs track param
       h_trk_pt->Fill(trk_pt->at(it));
       h_trk_eta->Fill(trk_eta->at(it));
+      // ADDED BY ME, DAVID ABRAHAMYAN
+      h_trk_phi->Fill(trk_phi->at(it));
+      h_trk_z0->Fill(trk_z0->at(it));
 
-      // fill all trk chi2 & chi2/dof histograms, including for chi2 r-phi and chi2 r-z
+      // fill track nstub histogram
+      h_trk_nstub->Fill(trk_nstub->at(it));
+
+      // fill all trk chi2 & chi2/dof histograms, including for chi2 r-phi and chi2 r-z AND BEND - DAVID ABRAHAMYAN :)
       float chi2 = trk_chi2->at(it);
       float chi2dof = trk_chi2_dof->at(it);
       float chi2rphi = trk_chi2rphi->at(it);
       float chi2rphidof = trk_chi2rphi_dof->at(it);
       float chi2rz = trk_chi2rz->at(it);
       float chi2rzdof = trk_chi2rz_dof->at(it);
+      float bendchi2 = trk_bendchi2->at(it);
 
       // create overflow bins by restricting range of chi2
       int chi2Overflow = 100;
-      int chi2DOFOverflow = 20;  //apprx chi2Overflow / avg. nstubs
+      int chi2DOFOverflow = 12;  //apprx chi2Overflow / avg. nstubs
       double buffer = 0.1;
 
       if (chi2 > chi2Overflow)
@@ -1102,6 +1144,8 @@ void L1TrackNtuplePlot(TString type,
         chi2rz = chi2Overflow - buffer;
       if (chi2rzdof > chi2DOFOverflow)
         chi2rzdof = chi2DOFOverflow - buffer;
+      if (bendchi2 > chi2DOFOverflow)
+        bendchi2 = chi2DOFOverflow - buffer;
 
       if (trk_pt->at(it) > TP_minPt) {  //TRK pt > TP_minPt
 
@@ -1113,6 +1157,8 @@ void L1TrackNtuplePlot(TString type,
 
         h_trk_chi2rz->Fill(chi2rz);
         h_trk_chi2rz_dof->Fill(chi2rzdof);
+
+        h_trk_bendchi2->Fill(bendchi2);
 
       }  //end TRK pt > TP_minPt
 
@@ -1177,6 +1223,9 @@ void L1TrackNtuplePlot(TString type,
           ntrkevt_genuine_pt10++;
       }
 
+      // ADDED BY ME, DAVID ABRAHAMYAN
+      ntrkevt_tot++;
+
       // ----------------------------------------------------------------------------------------------------------------
       // Fill tracklet propogation efficiency histo
 
@@ -1203,9 +1252,18 @@ void L1TrackNtuplePlot(TString type,
       }
     }
 
+    // CODE ADDED BY ME, DAVID ABRAHAMYAN
+    // Checking what the highest # of trks per event is
+    if (ntrkevt_tot > max_ntrkevt_tot) {
+      max_ntrkevt_tot = ntrkevt_tot;
+    }
+    //////////////////////////////////////////
+
     h_ntrk_pt2->Fill(ntrkevt_pt2);
     h_ntrk_pt3->Fill(ntrkevt_pt3);
     h_ntrk_pt10->Fill(ntrkevt_pt10);
+    // CODE ADDED BY ME, DAVID ABRAHAMYAN
+    h_ntrk_tot->Fill(ntrkevt_tot);
 
     h_ntrk_genuine_pt2->Fill(ntrkevt_genuine_pt2);
     h_ntrk_genuine_pt3->Fill(ntrkevt_genuine_pt3);
@@ -1353,7 +1411,7 @@ void L1TrackNtuplePlot(TString type,
 
       // create overflow bins by restricting range of chi2
       int chi2Overflow = 100;
-      int chi2DOFOverflow = 20;  //apprx chi2Overflow / avg. nstubs
+      int chi2DOFOverflow = 12;  //apprx chi2Overflow / avg. nstubs
       double buffer = 0.1;
 
       if (chi2 > chi2Overflow)
@@ -1368,6 +1426,8 @@ void L1TrackNtuplePlot(TString type,
         chi2rz = chi2Overflow - buffer;
       if (chi2rzdof > chi2DOFOverflow)
         chi2rzdof = chi2DOFOverflow - buffer;
+      //if (bendchi2 > chi2DOFOverflow)
+      //  bendchi2 = chi2DOFOverflow - buffer;
 
       if (tp_pt->at(it) > TP_minPt) {  //TP pt > TP_minPt
 
@@ -1487,7 +1547,7 @@ void L1TrackNtuplePlot(TString type,
       if (tp_pt->at(it) < TP_minPt)
         continue;
 
-      // fill nstub histograms
+      // fill match track nstub histograms
       h_match_trk_nstub->Fill(matchtrk_nstub->at(it));
       if (std::abs(tp_eta->at(it)) < 0.8)
         h_match_trk_nstub_C->Fill(matchtrk_nstub->at(it));
@@ -1602,6 +1662,9 @@ void L1TrackNtuplePlot(TString type,
         }
       }
 
+
+      vector<float> maxZ0diffVals;
+      int diffValsCounter = 0;
       // ----------------------------------------------------------------------------------------------------------------
       // fill resolution vs. eta histograms
       for (int im = 0; im < nETARANGE; im++) {
@@ -1615,6 +1678,8 @@ void L1TrackNtuplePlot(TString type,
           h_absResVsEta_eta[im]->Fill(std::abs(matchtrk_eta->at(it) - tp_eta->at(it)));
           h_absResVsEta_phi[im]->Fill(std::abs(matchtrk_phi->at(it) - tp_phi->at(it)));
           h_absResVsEta_z0[im]->Fill(std::abs(matchtrk_z0->at(it) - tp_z0->at(it)));
+
+          
 
           if (tp_pt->at(it) < 8.0) {
             h_resVsEta_ptRel_L[im]->Fill((matchtrk_pt->at(it) - tp_pt->at(it)) / tp_pt->at(it));
@@ -2836,6 +2901,8 @@ void L1TrackNtuplePlot(TString type,
     h_match_trk_nstub_F->Write();
   }
 
+  h_trk_nstub->Write();
+
   h_trk_chi2->Draw();
   sprintf(ctxt, "|eta| < 2.4");
   mySmallText(0.52, 0.82, 1, ctxt);
@@ -2866,9 +2933,20 @@ void L1TrackNtuplePlot(TString type,
   mySmallText(0.52, 0.82, 1, ctxt);
   c.SaveAs(DIR + type + "_trk_chi2rz_dof.pdf");
 
+  h_trk_bendchi2->Draw();
+  sprintf(ctxt, "|eta| < 2.4");
+  mySmallText(0.52, 0.82, 1, ctxt);
+  c.SaveAs(DIR + type + "_trk_bendchi2.pdf");
+
+  h_trk_chi2_dof->Write();
+  h_trk_chi2rz_dof->Write();
+  h_trk_chi2rphi_dof->Write();
+
   h_trk_chi2->Write();
   h_trk_chi2rphi->Write();
   h_trk_chi2rz->Write();
+  h_trk_bendchi2->Write();
+
   h_match_trk_chi2->Write();
   h_match_trk_chi2rphi->Write();
   h_match_trk_chi2rz->Write();
@@ -3066,6 +3144,7 @@ void L1TrackNtuplePlot(TString type,
   // draw and save plots
   h_eff_pt->Draw();
   h_eff_pt->Write();
+  // c.SaveAs("SrcCode/" + type + "_eff_pt.C");
   c.SaveAs(DIR + type + "_eff_pt.pdf");
 
   if (type.Contains("Mu")) {
@@ -3094,6 +3173,7 @@ void L1TrackNtuplePlot(TString type,
 
   h_eff_eta->Draw();
   h_eff_eta->Write();
+  // c.SaveAs("SrcCode/" + type + "_eff_eta.C");
   c.SaveAs(DIR + type + "_eff_eta.pdf");
 
   if (type.Contains("Mu")) {
@@ -3135,6 +3215,7 @@ void L1TrackNtuplePlot(TString type,
 
     h_eff_z0->Draw();
     h_eff_z0->Write();
+    // c.SaveAs("SrcCode/" + type + "_eff_z0.C");
     c.SaveAs(DIR + type + "_eff_z0.pdf");
 
     h_eff_z0_L->Write();
@@ -3142,6 +3223,7 @@ void L1TrackNtuplePlot(TString type,
 
     h_eff_phi->Draw();
     h_eff_phi->Write();
+    // c.SaveAs("SrcCode/" + type + "_eff_phi.C");
     c.SaveAs(DIR + type + "_eff_phi.pdf");
 
     if (type.Contains("Mu")) {
@@ -3563,6 +3645,7 @@ void L1TrackNtuplePlot(TString type,
   h_ntrk_pt2->Write();
   h_ntrk_pt3->Write();
   h_ntrk_pt10->Write();
+  h_ntrk_tot->Write();
 
   h_ntrkPerSector_all->Write();
   h_ntrkPerSector_pt2->Write();
@@ -3619,18 +3702,29 @@ void L1TrackNtuplePlot(TString type,
 
     h_ntrk_pt10->Draw();
     c.SaveAs(DIR + type + "_trackrate_pt10_perevt.pdf");
+
+    h_ntrk_tot->Draw();
+    c.SaveAs(DIR + type + "_trackrate_tot_perevt.pdf");
   }
 
   // number of tracks vs. eta, pT (trk_eta/trk_pt)
+  // DAVID ABRAHAMYAN ADDED phi AND z0
 
   if (doDetailedPlots) {
     h_trk_eta->Write();
     h_trk_pt->Write();
+    h_trk_phi->Write();
+    h_trk_z0->Write();
 
     h_trk_eta->Draw();
     c.SaveAs(DIR + type + "_trk_eta.pdf");
     h_trk_pt->Draw();
     c.SaveAs(DIR + type + "_trk_pt.pdf");
+    h_trk_phi->Draw();
+    c.SaveAs(DIR + type + "_trk_phi.pdf");
+    h_trk_z0->Draw();
+    c.SaveAs(DIR + type + "_trk_z0.pdf");
+    
   }
 
   fout->Close();
@@ -3640,6 +3734,9 @@ void L1TrackNtuplePlot(TString type,
 
   float k = (float)n_match_eta1p0;
   float N = (float)n_all_eta1p0;
+
+  cout << "number of events = " << nevt << endl;
+
   if (std::abs(N) > 0)
     cout << endl
          << "efficiency for |eta| < 1.0 = " << k / N * 100.0 << " +- " << 1.0 / N * sqrt(k * (1.0 - k / N)) * 100.0
@@ -3692,68 +3789,72 @@ void L1TrackNtuplePlot(TString type,
   cout << "# tracks/event (pt > " << std::max(TP_minPt, 2.0f) << ") = " << (float)ntrk_pt2 / nevt << endl;
   cout << "# tracks/event (pt > 3.0) = " << (float)ntrk_pt3 / nevt << endl;
   cout << "# tracks/event (pt > 10.0) = " << (float)ntrk_pt10 / nevt << endl;
+
+  // CODE ADDED BY ME, DAVID ABRAHAMYAN
+  // Checking the highest # of tracks per event
+  cout << "max # tracks/event total = " << max_ntrkevt_tot << endl;
 }
 
-void SetPlotStyle() {
-  // from ATLAS plot style macro
+// void SetPlotStyle() {
+//   // from ATLAS plot style macro
 
-  // use plain black on white colors
-  gStyle->SetFrameBorderMode(0);
-  gStyle->SetFrameFillColor(0);
-  gStyle->SetCanvasBorderMode(0);
-  gStyle->SetCanvasColor(0);
-  gStyle->SetPadBorderMode(0);
-  gStyle->SetPadColor(0);
-  gStyle->SetStatColor(0);
-  gStyle->SetHistLineColor(1);
+//   // use plain black on white colors
+//   gStyle->SetFrameBorderMode(0);
+//   gStyle->SetFrameFillColor(0);
+//   gStyle->SetCanvasBorderMode(0);
+//   gStyle->SetCanvasColor(0);
+//   gStyle->SetPadBorderMode(0);
+//   gStyle->SetPadColor(0);
+//   gStyle->SetStatColor(0);
+//   gStyle->SetHistLineColor(1);
 
-  gStyle->SetPalette(1);
+//   gStyle->SetPalette(1);
 
-  // set the paper & margin sizes
-  gStyle->SetPaperSize(20, 26);
-  gStyle->SetPadTopMargin(0.05);
-  gStyle->SetPadRightMargin(0.05);
-  gStyle->SetPadBottomMargin(0.16);
-  gStyle->SetPadLeftMargin(0.16);
+//   // set the paper & margin sizes
+//   gStyle->SetPaperSize(20, 26);
+//   gStyle->SetPadTopMargin(0.05);
+//   gStyle->SetPadRightMargin(0.05);
+//   gStyle->SetPadBottomMargin(0.16);
+//   gStyle->SetPadLeftMargin(0.16);
 
-  // set title offsets (for axis label)
-  gStyle->SetTitleXOffset(1.4);
-  gStyle->SetTitleYOffset(1.4);
+//   // set title offsets (for axis label)
+//   gStyle->SetTitleXOffset(1.4);
+//   gStyle->SetTitleYOffset(1.4);
 
-  // use large fonts
-  gStyle->SetTextFont(42);
-  gStyle->SetTextSize(0.05);
-  gStyle->SetLabelFont(42, "x");
-  gStyle->SetTitleFont(42, "x");
-  gStyle->SetLabelFont(42, "y");
-  gStyle->SetTitleFont(42, "y");
-  gStyle->SetLabelFont(42, "z");
-  gStyle->SetTitleFont(42, "z");
-  gStyle->SetLabelSize(0.05, "x");
-  gStyle->SetTitleSize(0.05, "x");
-  gStyle->SetLabelSize(0.05, "y");
-  gStyle->SetTitleSize(0.05, "y");
-  gStyle->SetLabelSize(0.05, "z");
-  gStyle->SetTitleSize(0.05, "z");
+//   // use large fonts
+//   gStyle->SetTextFont(42);
+//   gStyle->SetTextSize(0.05);
+//   gStyle->SetLabelFont(42, "x");
+//   gStyle->SetTitleFont(42, "x");
+//   gStyle->SetLabelFont(42, "y");
+//   gStyle->SetTitleFont(42, "y");
+//   gStyle->SetLabelFont(42, "z");
+//   gStyle->SetTitleFont(42, "z");
+//   gStyle->SetLabelSize(0.05, "x");
+//   gStyle->SetTitleSize(0.05, "x");
+//   gStyle->SetLabelSize(0.05, "y");
+//   gStyle->SetTitleSize(0.05, "y");
+//   gStyle->SetLabelSize(0.05, "z");
+//   gStyle->SetTitleSize(0.05, "z");
 
-  // use bold lines and markers
-  gStyle->SetMarkerStyle(20);
-  gStyle->SetMarkerSize(1.2);
-  gStyle->SetHistLineWidth(2.);
-  gStyle->SetLineStyleString(2, "[12 12]");
+//   // use bold lines and markers
+//   gStyle->SetMarkerStyle(20);
+//   gStyle->SetMarkerSize(1.2);
+//   gStyle->SetHistLineWidth(2.);
+//   gStyle->SetLineStyleString(2, "[12 12]");
 
-  // get rid of error bar caps
-  gStyle->SetEndErrorSize(0.);
+//   // get rid of error bar caps
+//   gStyle->SetEndErrorSize(0.);
 
-  // do not display any of the standard histogram decorations
-  gStyle->SetOptTitle(0);
-  gStyle->SetOptStat(0);
-  gStyle->SetOptFit(0);
+//   // do not display any of the standard histogram decorations
+//   gStyle->SetOptTitle(0);
+//   gStyle->SetOptStat(0);
+//   gStyle->SetOptFit(0);
 
-  // put tick marks on top and RHS of plots
-  gStyle->SetPadTickX(1);
-  gStyle->SetPadTickY(1);
-}
+//   // put tick marks on top and RHS of plots
+//   gStyle->SetPadTickX(1);
+//   gStyle->SetPadTickY(1);
+// }
 
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text) {
   Double_t tsize = 0.044;

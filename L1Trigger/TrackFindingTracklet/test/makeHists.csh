@@ -13,7 +13,7 @@
 ########################################################################
 
 if ($#argv == 0) then
-  set inputFullFileName = "TTbar_PU200_D88.root"
+  set inputFullFileName = "SingleMuon_PU0_D88_Displaced_Combined_DataSet1_BugFix_2023-11-8.root"
 else
   set inputFullFileName = $1
 endif
