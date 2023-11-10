@@ -360,7 +360,6 @@ void TrackletProcessorDisplaced::execute(unsigned int iSector, double phimin, do
                 continue;
               }
 
-
               if ((layer2_ == 4 && layer3_ == 2) || (layer2_ == 6 && layer3_ == 4)) {
                 constexpr int vmbitshift = 10;
                 constexpr int andlookupbits_ = 1023;
@@ -391,7 +390,6 @@ void TrackletProcessorDisplaced::execute(unsigned int iSector, double phimin, do
                       countall++;
 
                       const VMStubTE& thirdvmstub = innervmstubs_.at(k)->getVMStubTEBinned(ibin_, l);
-
 
                       const Stub* innerFPGAStub = firstallstub;
                       const Stub* middleFPGAStub = secondvmstub.stub();
@@ -512,7 +510,6 @@ void TrackletProcessorDisplaced::execute(unsigned int iSector, double phimin, do
 
                       const VMStubTE& thirdvmstub = innervmstubs_.at(k)->getVMStubTEBinned(ibin_, l);
 
-
                       const Stub* innerFPGAStub = firstallstub;
                       const Stub* middleFPGAStub = secondvmstub.stub();
                       const Stub* outerFPGAStub = thirdvmstub.stub();
@@ -587,7 +584,6 @@ void TrackletProcessorDisplaced::execute(unsigned int iSector, double phimin, do
             }
 
             for (unsigned int j = 0; j < outervmstubs_.at(m)->nVMStubsBinned(ibin); j++) {
-
               const VMStubTE& secondvmstub = outervmstubs_.at(m)->getVMStubTEBinned(ibin, j);
               int rbin = (secondvmstub.vmbits().value() & 7);
               if (start != ibin)
@@ -627,7 +623,6 @@ void TrackletProcessorDisplaced::execute(unsigned int iSector, double phimin, do
                       countall++;
 
                       const VMStubTE& thirdvmstub = innervmstubs_.at(k)->getVMStubTEBinned(ibin_, l);
-
 
                       const Stub* innerFPGAStub = firstallstub;
                       const Stub* middleFPGAStub = secondvmstub.stub();
