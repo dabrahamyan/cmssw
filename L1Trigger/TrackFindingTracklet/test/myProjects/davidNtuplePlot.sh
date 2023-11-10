@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename='DisplacedMuon_PU0_D88_DISPLACED_Comb_BugFix_2023_11_8'
+filename='DisplacedMuon_PU0_D88_DISPLACED_Uncomb_BugFix_2023_11_8'
 
 filedir='/eos/user/d/dabraham/DisplacedCombinedBugFix/'
 

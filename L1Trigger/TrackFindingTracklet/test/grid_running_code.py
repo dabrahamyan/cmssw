@@ -7,7 +7,7 @@ from itertools import islice
 # filename = 'TTbarPU200_all.txt' ## location of the txt file used to help locate samples
 # cfgFile = 'L1TrackNtupleMaker_cfg_grid_HYBRID.py' # cfg file used to run each job
 
-dataName = 'DisplacedMuon_PU0_D88_DISPLACED_Comb_BugFix_2023_11_8' # what submit files and output files are named (no ".root")
+dataName = 'DisplacedMuon_PU0_D88_DISPLACED_Uncomb_BugFix_2023_11_8' # what submit files and output files are named (no ".root")
 filename = 'Muon_Displaced_all.txt' ## location of the txt file used to help locate samples
 cfgFile = 'L1TrackNtupleMaker_cfg_grid_DISPLACED.py' # cfg file used to run each job
 

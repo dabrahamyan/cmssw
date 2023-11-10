@@ -27,7 +27,7 @@ void overlayHists_twoFiles_eff (){
     // separate plots for params within algos
     vector <TString> params = {"eta", "pt", "phi", "z0", "absd0", "absd0_eta2"};
     // combined or not
-    vector <TString> fileNames = {"", "DisplacedMuon_PU0_D88_DISPLACED_Comb_BugFix_2023_11_8"};
+    vector <TString> fileNames = {"output_DisplacedMuon_PU0_D88_DISPLACED_Uncomb_BugFix_2023_11_8", "output_DisplacedMuon_PU0_D88_DISPLACED_Comb_BugFix_2023_11_8"};
 
     /////////////////////// STYLIN ////////////////////////
     // Labels for plots
@@ -93,7 +93,7 @@ void overlayHists_twoFiles_eff (){
           delete files[iFile];
         }
         files.clear();
-      }
+      
     
 }
 
