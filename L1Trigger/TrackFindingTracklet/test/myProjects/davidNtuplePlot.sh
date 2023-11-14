@@ -14,4 +14,5 @@ dirName="../LocalChecks/"
 fileName="newkfDebug_SingleMuon_DR_off"
 
 # Open root, run davidNtuplePlot, quit root
-root -l -b -q "davidNtuplePlot_etaMatching.C(\"${fileName}\", \"${dirName}\", \"\", 0)" | tail -n 22 > NtuplePlotOutput/${fileName}.out 
+# root -l -b -q "davidNtuplePlot_etaMatching.C(\"${fileName}\", \"${dirName}\", \"\", 0)" | tail -n 22 > NtuplePlotOutput/${fileName}.out 
+root -l -b -q "davidNtuplePlot_etaMatching.C(\"${fileName}\", \"${dirName}\", \"\", 0)" > NtuplePlotOutput/${fileName}.out 

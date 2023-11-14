@@ -22,12 +22,12 @@ void overlayHists_resVsEta_hybridVSnewkf (){
 
     // Load in directory and files where the root files containing histograms are stored
     TString dir = "../LocalChecks/";
-    TString hybridFileNameStart = "output_newkfDebug_SingleMuon_DR_off";
+    TString hybridFileName = "output_oldkf_HOcorrecOff_DRon_2023_11_1";
     TString newkfFileNameStart = "output_newkfDebug_SingleMuon_DR_off_ownDR_";
 
     // save settings
     TString saveDir = "hybrid_vs_newkf_plots/";
-    TString saveFileStart = "newkfDebug_hybridVSnewkf_OwnDR_HOcorrecOnForOld_";
+    TString saveFileStart = "newkfDebug_hybridVSnewkf_OwnDR_HOcorrecOffForOld_";
     
     // Property you want to plot
     TString prop = "resVsEta_";
@@ -43,6 +43,7 @@ void overlayHists_resVsEta_hybridVSnewkf (){
     TCanvas c;
     char ctxt[500];
     char ctxt2[500];
+    char ctxt3[500];
     double max;
 
     int maxCounter = 0;
@@ -54,7 +55,7 @@ void overlayHists_resVsEta_hybridVSnewkf (){
         // For parameters like eta, phi, ...
         for (int iParam = 0; iParam < params.size(); iParam++) {
             // Load hybrid and newkf root files
-            TFile *hybridFile= new TFile(dir + hybridFileNameStart + ".root");
+            TFile *hybridFile= new TFile(dir + hybridFileName + ".root");
             TFile *newkfFile= new TFile(dir + newkfFileNameStart + params[iParam] + ".root");
 
             // copy hybrid and newkf hists for param
@@ -95,8 +96,10 @@ void overlayHists_resVsEta_hybridVSnewkf (){
             newkfHist90->Draw("p same");
             sprintf(ctxt, labels[iDataSet]); // Add label saying 
             mySmallText(0.2, 0.57, 1, ctxt); // which data set it is
-            sprintf(ctxt2, "No DR");
+            sprintf(ctxt2, "Jank DR for new KF");
             mySmallText(0.2, 0.52, 1, ctxt2);
+            sprintf(ctxt3, "HO off for old KF");
+            mySmallText(0.2, 0.47, 1, ctxt3);
             leg->Draw();
             gStyle->SetOptStat(1);
             c.SaveAs(saveDir + saveFileStart + "_" + dataSets[iDataSet] + "_" + prop + params[iParam] + ".pdf");

@@ -429,6 +429,11 @@ void davidNtuplePlot_etaMatching(TString type, // SingleMuon_PU0_D88_NEWKF //Sin
   // 'H' - High pt range, pt>8 GeV               //
   /////////////////////////////////////////////////
 
+
+  TH1F* h_etaRes = new TH1F("etaRes", ";#eta Resolution; # of Tracks", 100, -50.0, 50.0);
+  TH1F* h_etaRes_fineBins = new TH1F("etaRes_fineBins", ";#eta Resolution; # of Tracks", 2000, -1.0, 1.0);
+  TH1F* h_etaRes_focusBadRes = new TH1F("etaRes_focusBadRes", ";#eta Resolution; # of Tracks", 500, -5.0, 5.0);
+
   // ----------------------------------------------------------------------------------------------------------------
   // for efficiencies
 
@@ -1313,9 +1318,13 @@ void davidNtuplePlot_etaMatching(TString type, // SingleMuon_PU0_D88_NEWKF //Sin
       };
       //cout << "after my DR code" << endl;
 
-      // what is used in res fill: std::abs(matchtrk_eta->at(it) - tp_eta->at(it))
-
       
+      // eta residuals (resolution) Histogram
+      h_etaRes->Fill(tp_eta->at(it) - matchtrk_eta->at(it));
+      h_etaRes_fineBins->Fill(tp_eta->at(it) - matchtrk_eta->at(it));
+      h_etaRes_focusBadRes->Fill(tp_eta->at(it) - matchtrk_eta->at(it));
+
+
 
     //for (int it = 0; it < 3; it++) {
       // only look at TPs in (ttbar) jets ?
@@ -1329,10 +1338,10 @@ void davidNtuplePlot_etaMatching(TString type, // SingleMuon_PU0_D88_NEWKF //Sin
       }
 
       // cut on PDG ID at plot stage?
-      if (TP_select_pdgid != 0) {
-        if (abs(tp_pdgid->at(it)) != abs(TP_select_pdgid))
-          continue;
-      }
+      // if (TP_select_pdgid != 0) {
+      //   if (abs(tp_pdgid->at(it)) != abs(TP_select_pdgid))
+      //     continue;
+      // }
 
       // kinematic cuts
       if (std::abs(tp_dxy->at(it)) > TP_maxDxy)
@@ -1345,6 +1354,10 @@ void davidNtuplePlot_etaMatching(TString type, // SingleMuon_PU0_D88_NEWKF //Sin
         continue;
       if (std::abs(tp_eta->at(it)) > TP_maxEta)
         continue;
+
+      // eta resolution cut
+      // if (std::abs(tp_eta->at(it) - matchtrk_eta->at(it)) > 1.0)
+      //   continue;
 
       // total track rates
       if (tp_pt->at(it) > TP_minPt) {
@@ -2942,6 +2955,15 @@ void davidNtuplePlot_etaMatching(TString type, // SingleMuon_PU0_D88_NEWKF //Sin
   // ----------------------------------------------------------------------------------------------------------------
   // track quality plots
   // ----------------------------------------------------------------------------------------------------------------
+
+  h_etaRes->Write();
+  h_etaRes_fineBins->Write();
+  h_etaRes_focusBadRes->Write();
+  for (int i = 0; i < 24; i++) {
+    h_absResVsEta_eta[i]->Write();
+    cout << "Entries in h_absResVsEta[" << i << "]: " << h_absResVsEta_eta[i]->GetEntries() << endl;
+  }
+
 
   if (doDetailedPlots) {
     h_match_trk_nstub->Write();
