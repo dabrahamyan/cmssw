@@ -47,6 +47,9 @@ void ZRplot_1plot() {
         vector<float>* allstub_z;
         vector<float>* allstub_x;
         vector<float>* allstub_y;
+        vector<float>* allstub_isPSmodule;
+        vector<float>* allstub_isTiltedBarrel;
+        vector<float>* allstub_isBarrel;
         
         TBranch* b_tp_z0;
         TBranch* b_matchtrk_z0;
@@ -63,6 +66,9 @@ void ZRplot_1plot() {
         TBranch* b_allstub_z;
         TBranch* b_allstub_x;
         TBranch* b_allstub_y;
+        TBranch* b_allstub_isPSmodule;
+        TBranch* b_allstub_isTiltedBarrel;
+        TBranch* b_allstub_isBarrel;
 
         tp_z0 = 0;
         matchtrk_z0 = 0;
@@ -79,6 +85,9 @@ void ZRplot_1plot() {
         allstub_z = 0;
         allstub_x = 0;
         allstub_y = 0;
+        allstub_isPSmodule = 0;
+        allstub_isTiltedBarrel = 0;
+        allstub_isBarrel = 0;
 
         tree->SetBranchAddress("tp_z0", &tp_z0, &b_tp_z0);
         tree->SetBranchAddress("matchtrk_z0", &matchtrk_z0, &b_matchtrk_z0);
@@ -95,15 +104,18 @@ void ZRplot_1plot() {
         tree->SetBranchAddress("allstub_z", &allstub_z, &b_allstub_z);
         tree->SetBranchAddress("allstub_x", &allstub_x, &b_allstub_x);
         tree->SetBranchAddress("allstub_y", &allstub_y, &b_allstub_y);
+        tree->SetBranchAddress("allstub_isPSmodule", &allstub_isPSmodule, &b_allstub_isPSmodule);
+        tree->SetBranchAddress("allstub_isTiltedBarrel", &allstub_isTiltedBarrel, &b_allstub_isTiltedBarrel);
+        tree->SetBranchAddress("allstub_isBarrel", &allstub_isBarrel, &b_allstub_isBarrel);
 
         TCanvas c;
         char ctxt[500];
         char ctxt2[500];
         char ctxt3[500];
-
+        char ctxt4[500];
         
         // choose event and tp that has the bad eta residual
-        int eventNum = 38;
+        int eventNum = 4267;
         int tpNum = 0;
 
         tree->GetEntry(eventNum,0);
@@ -199,13 +211,37 @@ void ZRplot_1plot() {
         cout << "tp_z0: " << tp_z0->at(tpNum) << endl;
         cout << "matchtrk_z0: " << matchtrk_z0->at(tpNum) << endl;
 
+        // ----------------------------------------------------------------------------------------
+        // dZ error for stubs
+        // some constants
+        static constexpr double m = 0.884;
+        static constexpr double b = 0.507;
+        static constexpr double lengthPS = 0.01;
+        static constexpr double length2S = 5.025;
+
+        // calculating dZ in cm
+        float dZ_stub[nstub];
+        float dR_stub[nstub];
+        double length;
+        double cot;
+        for (int i = 0; i < nstub; i++) {
+                length = allstub_isPSmodule->at(stubInd[i]) ? lengthPS : length2S;
+                cot = std::abs(sinh(tp_eta->at(tpNum))); //cot(theta) is same as sinh(eta)
+
+                dZ_stub[i] = (std::abs((allstub_isBarrel->at(stubInd[i]) ? (allstub_isTiltedBarrel->at(stubInd[i]) ? m * cot + b : 1.0) : cot) * length)) / 2; // divide by two because the formula gives full Z strip length
+                dR_stub[i] = 0;
+                // debug code
+                cout << "dZ " << i << ": " << dZ_stub[i]*2<< "   isBarrel: " << allstub_isBarrel->at(stubInd[i]) << "   is Tilted: " << allstub_isTiltedBarrel->at(stubInd[i]) << "   length: " << length << "   is PS: " << allstub_isPSmodule->at(stubInd[i])<< "    cot: " << cot << "   z: "<< z_stub[i] << "    r: " << r_stub[i] << endl;
+        }
+
         // ---------------------------------------------------------------------------------------------
         // Draw things 
 
         // Draw Stubs
-        TGraph *stubGraph = new TGraph(nstub, r_stub, z_stub);
+        TGraphErrors *stubGraph = new TGraphErrors(nstub, r_stub, z_stub, dR_stub, dZ_stub);
+        stubGraph->SetMarkerStyle(kDot);
         stubGraph->SetTitle(";R;Z");
-        stubGraph->Draw("A*");
+        stubGraph->Draw("AP");
         //stubGraph->SetMinimum(0); FAIL: that sets minimum of Y-axis. I want to set minimum of x-axis
 
         // Draw tp and matchtrk
@@ -213,18 +249,16 @@ void ZRplot_1plot() {
         TGraph *matchtrkGraph = new TGraph(2, matchtrk_x, matchtrk_y);
         tpGraph->SetLineColor(kGreen);
         matchtrkGraph->SetLineColor(kBlue);
+        tpGraph->SetLineWidth(1);
+        matchtrkGraph->SetLineWidth(1);
         tpGraph->Draw("same");
         matchtrkGraph->Draw("same");
-
-        // ----------------------------------------------------------------------------------------
-        // dZ error bars
-
 
         // ----------------------------------------------------------------------------------------
         // legend and labels
 
         // make legend
-        TLegend* leg = new TLegend(0.7, 0.4, 0.85, 0.55);
+        TLegend* leg = new TLegend(0.72, 0.4, 0.87, 0.55);
         leg->AddEntry(stubGraph, "stubs"); 
         leg->AddEntry(tpGraph, "tp");
         leg->AddEntry(matchtrkGraph, "matchtrk"); 
@@ -233,15 +267,21 @@ void ZRplot_1plot() {
         // make labels 
         TString eventLabel = "Event: " + to_string(eventNum);
         sprintf(ctxt, eventLabel);
-        mySmallText(0.15, 0.52, 1, ctxt);
+        mySmallText(0.15, 0.57, 1, ctxt);
         TString tpLabel = "tp: " + to_string(tpNum);
         sprintf(ctxt2, tpLabel);
-        mySmallText(0.15, 0.47, 1, ctxt2);
+        mySmallText(0.15, 0.52, 1, ctxt2);
+        TString etaLabel = "#eta: " + to_string(tp_eta->at(tpNum));
+        sprintf(ctxt4, etaLabel);
+        mySmallText(0.15, 0.47, 1, ctxt4);
         TString residualLabel = "#eta Residual: " + to_string(etaResidual); 
         sprintf(ctxt3, residualLabel);
         mySmallText(0.15, 0.42, 1, ctxt3);
 
         c.SaveAs(saveDir + saveName);
+
+        cout << "isBarrel Size: " << allstub_isBarrel->size() << endl;
+        cout << "isTiltedBarrel Size: " << allstub_isTiltedBarrel->size() << endl;
 }
 
 void mySmallText(Double_t x, Double_t y, Color_t color, char* text) {
