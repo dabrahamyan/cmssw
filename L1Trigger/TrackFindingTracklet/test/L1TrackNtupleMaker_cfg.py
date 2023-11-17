@@ -106,7 +106,7 @@ if GEOMETRY == "D76":
 # Use skipEvents to select particular single events for test vectors
 #process.source.skipEvents = cms.untracked.uint32(11)
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string('newkfDebug_SingleMuon_DR_off_stubs.root'), closeFileFast = cms.untracked.bool(True))
+process.TFileService = cms.Service("TFileService", fileName = cms.string('newkfDebug_SingleMuon_DR_off_stubs_check_plus10_retryCompile.root'), closeFileFast = cms.untracked.bool(True))
 process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))
 
 

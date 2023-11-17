@@ -12,7 +12,7 @@ void mySmallText(Double_t x, Double_t y, Color_t color, char* text);
 
 void ZRplot_1plot() {
         // File and directory to get Ntuple from -------------------------------------------------------------------------
-        TString file = "newkfDebug_SingleMuon_DR_off_stubs"; // without ".root"
+        TString file = "newkfDebug_SingleMuon_DR_off_stubs_check_plus10"; // without ".root"
         TString fileDir = "../LocalChecks/";
 
         // save settings
@@ -115,7 +115,7 @@ void ZRplot_1plot() {
         char ctxt4[500];
         
         // choose event and tp that has the bad eta residual
-        int eventNum = 4267;
+        int eventNum = 2064;
         int tpNum = 0;
 
         tree->GetEntry(eventNum,0);
