@@ -57,10 +57,10 @@ namespace tmtt {
         kalmanMaxStubsPerLayer_(4),  // To save resources, consider at most this many stubs per layer per track.
         kalmanMultiScattTerm_(0.00075),
         kalmanChi2RphiScale_(8),
-        kalmanHOtilted_(true),
-        kalmanHOhelixExp_(true),
-        kalmanHOalpha_(1),
-        kalmanHOprojZcorr_(1),
+        kalmanHOtilted_(false),
+        kalmanHOhelixExp_(false),
+        kalmanHOalpha_(0),
+        kalmanHOprojZcorr_(0),
         kalmanHOfw_(false) {
     hybrid_ = true;
     magneticField_ = 0.;  // Value set later
