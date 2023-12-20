@@ -13,7 +13,7 @@ process = cms.Process("L1TrackNtuple")
 
 # D76 used for old CMSSW_11_3 MC datasets. D88 used for CMSSW_12_6 datasets.
 #GEOMETRY = "D76"  
-GEOMETRY = "D88"
+GEOMETRY = "D98"
 
 # Set L1 tracking algorithm:
 # 'HYBRID' (baseline, 4par fit) or 'HYBRID_DISPLACED' (extended, 5par fit).
@@ -43,6 +43,10 @@ if GEOMETRY == "D76" or GEOMETRY == "D88":
     print("using geometry " + GEOMETRY + " (tilted)")
     process.load('Configuration.Geometry.GeometryExtended2026D88Reco_cff')
     process.load('Configuration.Geometry.GeometryExtended2026D88_cff')
+elif GEOMETRY == "D98":
+    print("using geometry " + GEOMETRY + " (tilted)")
+    process.load('Configuration.Geometry.GeometryExtended2026D98Reco_cff')
+    process.load('Configuration.Geometry.GeometryExtended2026D98_cff')
 else:
     print("this is not a valid geometry!!!")
 
@@ -86,6 +90,9 @@ elif GEOMETRY == "D88":
 
   # Read specified .root file:
   inputMC = ["/store/mc/CMSSW_12_6_0/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_125X_mcRun4_realistic_v5_2026D88PU200RV183v2-v1/30000/0959f326-3f52-48d8-9fcf-65fc41de4e27.root"]
+
+elif GEOMETRY == "D98":
+  inputMC = ["/store/relval/CMSSW_13_3_0_pre5/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_133X_mcRun4_realistic_v1_2026D98PU200-v1/2590000/0527a197-537c-4a62-9a66-ec71eaa82a0d.root"]
 
 else:
 
